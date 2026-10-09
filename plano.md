@@ -1,0 +1,463 @@
+---
+tipo: plano
+status: referência (só alterar quando você pedir)
+atualizado: 2026-10-09
+---
+
+# Plano de estudos de IA: do zero ao avançado
+
+## Como usar este plano
+
+São 12 fases em cerca de 14 meses, estudando 1 a 2 horas por dia, só com fontes gratuitas. Cada fase tem objetivo, tópicos, ferramentas, cursos oficiais, um projeto e um critério de "pronto".
+
+- **Ordem:** prática antes da teoria profunda. Você constrói com APIs e agentes (fases 2 a 6) antes de estudar matemática e redes neurais (fase 7), porque a teoria fica mais clara depois de ver o modelo errar na prática.
+- **Regra 70/30:** 70% do tempo construindo, 30% assistindo ou lendo.
+- **Um projeto por fase:** publicado no GitHub, com um post curto no LinkedIn sobre o que aprendeu.
+- **Com o tutor:** em cada tópico, peça explicação, exercícios, revisão de código ou resumo de artigo.
+- **Atualização:** ferramentas e cursos mudam rápido. Itens marcados "(conferir)" são verificados quando você chegar neles.
+- **Custo:** todas as fontes são gratuitas. O único gasto possível é o uso de APIs pagas por uso, evitável com cotas grátis e modelos locais (Ollama).
+
+## Cronograma
+
+| Fase | Tema | Duração | Semanas |
+| --- | --- | --- | --- |
+| 0 | Base técnica | 3 sem | 1 a 3 |
+| 1 | Prompt e uso avançado | 4 sem | 4 a 7 |
+| 2 | APIs de modelos | 4 sem | 8 a 11 |
+| 3 | RAG e dados | 4 sem | 12 a 15 |
+| 4 | Agentes, MCP e OpenClaw | 6 sem | 16 a 21 |
+| 5 | Agentes de código e automação | 4 sem | 22 a 25 |
+| 6 | Evals e confiabilidade | 4 sem | 26 a 29 |
+| 7 | Fundamentos de ML e LLMs por dentro | 12 sem | 30 a 41 |
+| 8 | Modelos abertos e fine-tuning | 6 sem | 42 a 47 |
+| 9 | Multimodal | 3 sem | 48 a 50 |
+| 10 | Segurança, ética e regulação | 2 sem | 51 a 52 |
+| 11 | IA aplicada a QA | 6 sem | 53 a 58 |
+
+## Fase 0: Base técnica (2 a 3 semanas)
+
+Objetivo: ter a caixa de ferramentas de quem constrói com IA. Como QA de automação, você já tem boa parte; aqui é revisar e tapar buracos.
+
+**Tópicos**
+
+- **Python para IA:** ambientes virtuais (venv, uv), pip, tipagem, dataclasses e Pydantic, async/await, leitura de JSON, CSV e arquivos, variáveis de ambiente e segredos (.env).
+- **HTTP e APIs:** métodos, status, headers, autenticação por chave, JSON, paginação, rate limit, retries com backoff, webhooks.
+- **Terminal e Git:** navegação, pipes, scripts, branches, pull requests, GitHub Actions básico.
+- **Docker:** imagens, containers, volumes, docker compose (vai rodar n8n, bancos vetoriais e modelos locais).
+- **SQL básico:** SELECT, JOIN, GROUP BY; base para bancos vetoriais como o pgvector.
+- **Jupyter Notebooks:** para experimentos rápidos.
+- **TypeScript (opcional):** a segunda linguagem do AI engineer, útil para interfaces e agentes em Node.
+
+**Fontes gratuitas:** documentação oficial do Python, do Docker e do Git; Kaggle Learn (Python, Pandas, SQL).
+
+**Projeto:** um script em Python que consome uma API pública, trata erros e retries, e salva o resultado em JSON, rodando dentro de um container Docker.
+
+**Pronto quando:** você sobe um serviço com docker compose e escreve um cliente HTTP robusto sem consultar tutorial.
+
+## Fase 1: Usuário avançado e engenharia de prompt (4 semanas)
+
+Objetivo: usar qualquer IA no nível máximo e saber escrever prompts que funcionam de forma previsível.
+
+**Conceitos**
+
+- O que é um LLM, em linguagem simples: tokens, janela de contexto, temperatura, alucinação, data de corte do conhecimento.
+- Modelo versus ferramenta versus agente; assistente versus agente autônomo.
+- Pontos fortes e fracos de cada família (Claude, GPT, Gemini, Llama, Mistral, DeepSeek, Qwen) e como comparar.
+
+**Engenharia de prompt**
+
+- Anatomia de um prompt: papel, contexto, tarefa, formato de saída, exemplos, restrições.
+- Zero-shot e few-shot; exemplos positivos e negativos.
+- Chain-of-thought e raciocínio estendido; quando ele ajuda e quando atrapalha.
+- Decomposição de tarefas e encadeamento de prompts (prompt chaining).
+- Tags XML e delimitadores; saída estruturada em JSON.
+- Ancoragem em documentos (grounding) e citação de fontes.
+- Autocrítica e validação: pedir que a IA revise o próprio resultado.
+- Meta-prompting: usar a IA para escrever e melhorar prompts.
+
+**Recursos das ferramentas**
+
+- Claude: projetos, artefatos, skills, conectores, pesquisa, memória.
+- ChatGPT: GPTs personalizados, memória, Deep Research, tarefas agendadas, conectores.
+- Gemini: Gems, Canvas, Deep Research, NotebookLM.
+- Uso responsável: o que não colar numa IA (dados sensíveis, código de cliente), checagem de fatos.
+
+**Cursos oficiais gratuitos**
+
+- Anthropic Academy (anthropic.skilljar.com): Claude 101 e AI Fluency.
+- Tutorial interativo de engenharia de prompt da Anthropic (GitHub "anthropics/courses").
+- OpenAI Academy (academy.openai.com): AI Foundations.
+- Google: Introduction to Generative AI e Introduction to Large Language Models.
+- Guias oficiais de prompt da Anthropic, OpenAI e Google.
+
+**Projeto:** uma biblioteca pessoal de 20 prompts testados nas três IAs, com comparação dos resultados e o que funcionou em cada uma.
+
+**Pronto quando:** você explica por que um prompt falhou e corrige sem tentativa e erro às cegas.
+
+## Fase 2: Construir com APIs de modelos (4 semanas)
+
+Objetivo: sair do chat e colocar modelos dentro de programas. É aqui que você vira construtor.
+
+**Tópicos**
+
+- APIs da Anthropic, OpenAI e Gemini: mensagens, papéis (system, user, assistant), parâmetros (temperatura, max tokens, stop sequences).
+- SDKs oficiais em Python; chaves de API e boas práticas de segredos.
+- Streaming de respostas.
+- Saídas estruturadas: JSON schema, validação com Pydantic, o que fazer quando o modelo devolve JSON quebrado.
+- Tool use (function calling): definir ferramentas, receber a chamada, executar, devolver o resultado.
+- Entradas multimodais: imagens e PDFs.
+- Raciocínio estendido (extended thinking) e quando vale o custo.
+- Prompt caching, processamento em lote (batch) e como reduzir custo.
+- Tokens, preços, limites de taxa, retries e tratamento de erros.
+- Interfaces simples: Streamlit ou Gradio em Python; Vercel AI SDK se for de TypeScript.
+- Bibliotecas que unificam provedores (LiteLLM, por exemplo) para trocar de modelo sem reescrever código.
+
+**Cursos oficiais gratuitos**
+
+- Anthropic Academy: Claude Platform 101 e Building with the Claude API.
+- Cursos da Anthropic no GitHub "anthropics/courses" (fundamentos de API, tool use).
+- OpenAI Cookbook e a documentação da plataforma da OpenAI.
+- Codelabs da API do Gemini (texto, multimodal, function calling, embeddings, streaming).
+
+**Projeto:** um assistente de linha de comando que lê um arquivo (PDF ou CSV), responde perguntas sobre ele e devolve um relatório em JSON validado, funcionando com dois provedores diferentes.
+
+**Pronto quando:** você implementa tool use do zero, sem framework, e sabe estimar quanto custa cada chamada.
+
+## Fase 3: RAG, embeddings e dados (4 semanas)
+
+Objetivo: fazer a IA responder com base nos seus documentos, com fontes, sem inventar.
+
+**Tópicos**
+
+- Embeddings: o que são, similaridade de cosseno, modelos de embedding (abertos e por API).
+- Ingestão: extração de PDF, HTML e planilhas; limpeza; metadados.
+- Chunking: por tamanho, por estrutura, sobreposição; impacto na qualidade.
+- Bancos vetoriais: pgvector (Postgres), Chroma, Qdrant; índices aproximados (HNSW).
+- Busca híbrida: vetorial + palavra-chave (BM25); reranking.
+- Técnicas avançadas: reescrita de consulta, HyDE, contextual retrieval, RAG com grafos (GraphRAG).
+- Agentic RAG: o agente decide quando e onde buscar.
+- Janela de contexto longa versus RAG: quando cada um vale a pena.
+- Avaliação de RAG: relevância da recuperação, fidelidade da resposta, citações.
+- Frameworks: LlamaIndex e LangChain para RAG, e como fazer sem framework.
+
+**Fontes gratuitas**
+
+- Cursos curtos da DeepLearning.AI sobre RAG e embeddings (conferir os títulos atuais).
+- Artigo sobre contextual retrieval no blog de engenharia da Anthropic.
+- Documentação do pgvector, Chroma e Qdrant.
+- Artigo original de RAG (Lewis et al., 2020).
+
+**Projeto:** um "pergunte à documentação" sobre um conjunto real de documentos (por exemplo, a documentação de uma ferramenta de testes), com busca híbrida, citações e um conjunto de 30 perguntas de avaliação.
+
+**Pronto quando:** você mede a qualidade da recuperação com números e melhora um RAG ruim mudando chunking e busca, não só o prompt.
+
+## Fase 4: Agentes, MCP, frameworks e OpenClaw (6 semanas)
+
+Objetivo: entender e construir agentes que agem sozinhos com ferramentas, memória e outros agentes.
+
+**Conceitos**
+
+- O loop agêntico: o modelo pede uma ferramenta, o sistema executa, devolve o resultado, e repete até terminar.
+- Padrões de workflow versus agente autônomo: encadeamento, roteamento, paralelização, orquestrador e trabalhadores, avaliador e otimizador.
+- Planejamento, reflexão e ReAct.
+- Memória: curto prazo (contexto), longo prazo (arquivos, banco), engenharia de contexto e compactação.
+- Multiagentes e subagentes: quando dividir, custo em tokens, handoffs.
+- Humano no circuito (human in the loop) e aprovações.
+- Agentes de computador e navegador (computer use, browser agents).
+
+**Protocolos**
+
+- MCP (Model Context Protocol): clientes, servidores, ferramentas, recursos e prompts; escrever seu próprio servidor MCP em Python.
+- A2A (Agent-to-Agent): agentes de equipes diferentes se descobrindo e chamando uns aos outros.
+- Skills (arquivos SKILL.md) como forma de empacotar capacidades para agentes.
+
+**Frameworks (aprender 2 a fundo, conhecer os outros)**
+
+- Claude Agent SDK: o mesmo motor do Claude Code, com hooks, skills, subagentes e MCP.
+- OpenAI Agents SDK: enxuto, com handoffs e tracing.
+- LangGraph: agentes como grafos de estado; o mais usado em produção.
+- CrewAI: equipes de agentes por papéis; bom para protótipos.
+- Também conhecer: Pydantic AI, Google ADK, Microsoft Agent Framework, smolagents, LlamaIndex Agents, Mastra (TypeScript).
+
+**OpenClaw (estudo de caso)**
+
+- Agente pessoal open source (MIT), antes chamado Clawdbot e depois Moltbot, criado por Peter Steinberger no fim de 2025.
+- Roda no seu computador ou servidor e conversa por Telegram, WhatsApp, Slack, Discord e outros canais.
+- Arquitetura para estudar: gateway (processo que mantém o agente vivo), runtime do agente (loop e ferramentas), skills e ClawHub, memória em arquivos, comportamento definido em AGENTS.md, roteamento multiagente. Funciona com qualquer modelo.
+- Riscos para estudar junto: acesso ao sistema operacional e prompt injection (instruções escondidas em páginas web podem virar comandos). Rode isolado, em container ou máquina separada, nunca com suas contas principais.
+
+**Cursos oficiais gratuitos**
+
+- Anthropic Academy: Introduction to MCP e MCP Advanced Topics.
+- OpenAI Academy: Agents and Workflows.
+- Hugging Face Agents Course.
+- Cursos curtos da DeepLearning.AI sobre LangGraph, CrewAI e MCP (conferir os títulos atuais).
+- Artigo "Building effective agents" do blog de engenharia da Anthropic e a especificação oficial do MCP.
+- Documentação oficial do OpenClaw (docs.openclaw.ai).
+
+**Projetos**
+
+1. Um agente do zero, sem framework, com 3 ferramentas e loop próprio.
+2. Um servidor MCP seu (por exemplo, que consulta resultados de testes) usado pelo Claude.
+3. O mesmo agente reescrito em LangGraph e no Claude Agent SDK, comparando.
+4. Um OpenClaw rodando em Docker, com uma skill escrita por você.
+
+**Pronto quando:** você desenha a arquitetura de um agente, escolhe entre workflow e agente autônomo com argumento, e sabe onde ele pode ser atacado.
+
+## Fase 5: Agentes de código e automação (4 semanas)
+
+Objetivo: programar com agentes como parceiros e automatizar processos inteiros sem escrever tudo à mão.
+
+**Agentes de código**
+
+- Claude Code a fundo: CLAUDE.md, plan mode, gestão de contexto (compact, clear), subagentes, hooks, skills, MCP, modo headless e uso no CI.
+- Outros: OpenAI Codex, Cursor, GitHub Copilot (agent mode), Gemini CLI; entender o que muda entre eles.
+- Boas práticas: especificar antes de gerar, testes como guarda, revisão de código gerado, commits pequenos, segurança de dependências.
+- "Vibe coding" versus engenharia assistida: onde termina a velocidade e começa a dívida técnica.
+
+**Automação**
+
+- n8n rodando localmente com Docker (gratuito): triggers, nós, webhooks, APIs, tratamento de erros, condicionais e loops, nós de IA e agentes dentro do fluxo, humano no circuito.
+- Conhecer as alternativas: Make, Zapier, Power Automate.
+- Agendamento e integrações com e-mail, planilhas, Slack ou Teams, GitHub.
+
+**Cursos oficiais gratuitos**
+
+- Anthropic Academy: Claude Code 101 e Claude Code in Action.
+- Documentação oficial do Claude Code (code.claude.com/docs) e guia de boas práticas no blog de engenharia da Anthropic.
+- Documentação e cursos oficiais do n8n (docs.n8n.io).
+
+**Projetos**
+
+1. Um app completo (API + interface + testes) construído com Claude Code a partir de uma especificação escrita por você.
+2. Um fluxo no n8n que roda uma suíte de testes, resume as falhas com IA e manda o relatório no Teams ou Slack.
+
+**Pronto quando:** você entrega uma funcionalidade inteira com um agente de código sem perder o controle do que foi gerado.
+
+## Fase 6: Evals, observabilidade e confiabilidade (4 semanas)
+
+Objetivo: provar com números que um sistema de IA funciona. Evals são os testes unitários da engenharia de IA, e é aqui que seu background de QA vira vantagem.
+
+**Tópicos**
+
+- Golden datasets: conjuntos de casos com resposta esperada, versionados.
+- Tipos de avaliação: por código (regras, regex, schema), por comparação, por humano e LLM como juiz (LLM-as-judge), com calibração do juiz.
+- Métricas: acurácia, fidelidade, relevância, taxa de alucinação, sucesso de tarefa em agentes, custo e latência.
+- Testes de regressão de prompt e de modelo: um alarme quando a nota cai.
+- Avaliação de agentes: trajetória (ferramentas certas na ordem certa), não só a resposta final.
+- Observabilidade: tracing de chamadas, logs de ferramentas, custo por requisição.
+- Guardrails: validação de entrada e saída, filtros, limites de ação.
+- Segurança: prompt injection direta e indireta, vazamento de dados, jailbreaks, red teaming.
+- Benchmarks públicos (MMLU, SWE-bench e outros): o que medem e por que não bastam.
+
+**Ferramentas (código aberto ou com plano grátis)**
+
+- promptfoo, DeepEval e Ragas para avaliação; Langfuse e LangSmith para tracing (conferir planos gratuitos atuais).
+- Avaliação nativa das plataformas: console da Anthropic e evals da OpenAI.
+
+**Fontes gratuitas**
+
+- Curso de avaliação de prompts da Anthropic (GitHub "anthropics/courses").
+- Guias de evals da Anthropic e da OpenAI.
+- Cursos curtos da DeepLearning.AI sobre avaliação de LLMs e agentes (conferir).
+
+**Projeto:** uma suíte de evals no CI para o projeto da Fase 3 ou 4, com golden dataset, LLM como juiz calibrado, tracing e um relatório de regressão a cada mudança de prompt.
+
+**Pronto quando:** você mostra um gráfico de qualidade antes e depois de uma mudança e explica uma falha silenciosa que os evals pegaram.
+
+## Fase 7: Fundamentos de ML, deep learning e LLMs por dentro (12 semanas)
+
+Objetivo: entender de verdade como os modelos funcionam, a ponto de construir um pequeno GPT do zero.
+
+**Matemática essencial (3 semanas)**
+
+- Álgebra linear: vetores, matrizes, produto escalar, multiplicação de matrizes.
+- Cálculo: derivadas, regra da cadeia, gradiente.
+- Probabilidade e estatística: distribuições, esperança, entropia, softmax.
+
+**Machine learning clássico (3 semanas)**
+
+- Aprendizado supervisionado e não supervisionado; regressão linear e logística; árvores e ensembles.
+- Função de perda, gradiente descendente, overfitting, regularização, validação cruzada.
+- Métricas: precisão, recall, F1, matriz de confusão, AUC. Pandas, NumPy e scikit-learn na prática.
+
+**Deep learning (3 semanas)**
+
+- Redes neurais, ativações, backpropagation, otimizadores (SGD, Adam).
+- PyTorch: tensores, autograd, laço de treino.
+- Redes convolucionais e recorrentes, só o suficiente para entender a evolução até os transformers.
+
+**LLMs por dentro (3 semanas)**
+
+- Tokenização (BPE), embeddings, atenção, multi-head attention, arquitetura transformer.
+- Pré-treino, ajuste por instruções (SFT), RLHF, RLAIF e Constitutional AI.
+- Leis de escala, modelos de raciocínio, mixture of experts, janelas de contexto longas.
+- Noções de interpretabilidade: o que os pesquisadores conseguem ver dentro do modelo.
+
+**Fontes gratuitas**
+
+- 3Blue1Brown: séries "Essence of Linear Algebra", "Essence of Calculus" e "Neural Networks" (YouTube).
+- Khan Academy para revisar matemática.
+- Google Machine Learning Crash Course.
+- Machine Learning Specialization do Andrew Ng (Coursera, assistindo como ouvinte sem certificado).
+- fast.ai: Practical Deep Learning for Coders.
+- Andrej Karpathy: "Neural Networks: Zero to Hero" e "Let's build GPT" (YouTube).
+- Hugging Face LLM Course.
+- Trilha de IA generativa do Google Cloud Skills Boost (atenção, transformers, encoder-decoder).
+
+**Projeto:** um mini GPT treinado do zero em PyTorch sobre um texto em português, seguindo o Karpathy, com um README explicando cada parte com suas palavras.
+
+**Pronto quando:** você explica a atenção com um desenho e uma conta, e sabe por que um modelo alucina.
+
+## Fase 8: Modelos abertos, fine-tuning e infraestrutura (6 semanas)
+
+Objetivo: rodar, adaptar e servir modelos você mesmo, sem depender só de APIs.
+
+**Modelos abertos e locais**
+
+- Ecossistema Hugging Face: Hub, model cards, licenças, Transformers, Datasets.
+- Famílias abertas: Llama, Mistral, Qwen, DeepSeek, Gemma (conferir as versões atuais).
+- Rodar localmente: Ollama e LM Studio; requisitos de memória; quantização (GGUF, 4 e 8 bits).
+- Servir em produção: vLLM e similares; API compatível com a da OpenAI.
+
+**Fine-tuning**
+
+- Quando vale (raramente) versus prompt e RAG (quase sempre).
+- Preparação de dataset de instruções; qualidade acima de quantidade.
+- LoRA e QLoRA; Unsloth para treinar em GPU gratuita do Google Colab ou do Kaggle.
+- Avaliação antes e depois; noções de destilação e de preferência (DPO).
+
+**Infraestrutura e LLMOps**
+
+- Servir um modelo ou agente com FastAPI e Docker; deploy em nuvem com plano gratuito.
+- Filas, cache, limites de custo, versionamento de prompts e modelos.
+- Monitoramento em produção e rollback.
+
+**Fontes gratuitas**
+
+- Hugging Face LLM Course e documentação do Transformers e do PEFT.
+- Documentação do Ollama, do vLLM e do Unsloth (com notebooks prontos para Colab).
+- Artigo do LoRA (Hu et al., 2021).
+
+**Projeto:** um modelo pequeno ajustado com LoRA para uma tarefa específica (por exemplo, transformar histórias de usuário em casos de teste no seu formato), comparado com o modelo base e com um prompt bem feito, servido localmente por API.
+
+**Pronto quando:** você decide com dados entre prompt, RAG e fine-tuning para um problema real.
+
+## Fase 9: Multimodal: imagem, voz e vídeo (3 semanas)
+
+Objetivo: saber como funcionam e como usar por API os modelos que veem, ouvem, falam e geram mídia.
+
+- **Visão:** entender imagens, gráficos, documentos e telas; OCR com LLMs; limites (contagem, detalhes pequenos).
+- **Geração de imagem:** como funcionam os modelos de difusão; geração e edição por API; direitos de uso.
+- **Voz:** transcrição (Whisper e similares), síntese de voz, agentes de voz em tempo real e latência.
+- **Vídeo:** geração e compreensão de vídeo, noções e limites atuais.
+- **Fontes:** documentação de visão e áudio da Anthropic, OpenAI e Gemini; Hugging Face Diffusion Course.
+- **Projeto:** um agente que recebe a foto de uma tela com erro e devolve um relatório de bug estruturado, com passos e evidência.
+
+## Fase 10: Segurança, ética e regulação (2 semanas)
+
+Objetivo: saber construir e usar IA de forma segura e responsável, e falar disso com propriedade.
+
+- **Segurança de sistemas:** prompt injection, envenenamento de dados, vazamento de segredos, permissões mínimas para agentes, OWASP Top 10 para aplicações com LLM.
+- **Alinhamento e segurança de modelos:** o que é alinhamento, Constitutional AI, políticas de escalonamento responsável, avaliações de capacidades perigosas.
+- **Ética:** vieses, transparência, direitos autorais, impacto no trabalho.
+- **Regulação:** LGPD aplicada a IA, AI Act da União Europeia e o projeto de lei de IA no Brasil (conferir o status atual).
+- **Fontes:** OWASP Top 10 for LLM Applications; páginas de pesquisa e segurança da Anthropic, OpenAI e Google DeepMind; site da ANPD sobre IA e dados pessoais.
+- **Projeto:** um relatório de red teaming do seu próprio agente da Fase 4, com ataques, resultados e correções.
+
+## Fase 11: IA aplicada a QA (6 semanas)
+
+Objetivo: juntar tudo na sua área e virar referência em IA para qualidade de software.
+
+**IA para testar software**
+
+- Geração de casos de teste a partir de requisitos e histórias de usuário, com critérios de aceite.
+- Revisão de requisitos: ambiguidades, lacunas e riscos apontados pela IA.
+- Dados de teste sintéticos e mascaramento de dados reais.
+- Automação com Playwright ou Selenium assistida por agentes de código; testes que se recuperam de mudança de seletor (self-healing).
+- Playwright MCP e agentes de navegador para testes exploratórios.
+- Análise de falhas: classificar testes instáveis (flaky), agrupar erros, sugerir causa provável.
+- Testes de API gerados a partir de contratos (OpenAPI).
+- Agentes de QA no CI: revisão de PR com foco em testes e risco.
+
+**Testar sistemas de IA (a fronteira nova de QA)**
+
+- Estratégia de testes para chatbots, RAG e agentes: evals, golden datasets, regressão de prompt.
+- Testes não determinísticos: múltiplas execuções, limiares, testes por propriedade.
+- Red teaming e testes de segurança (prompt injection, vazamento, abuso de ferramentas).
+- Monitoramento de qualidade em produção.
+
+**Fontes gratuitas**
+
+- Documentação do Playwright e do Playwright MCP.
+- Material das fases 4 e 6 aplicado a QA.
+- Comunidades e conferências de testes que discutem IA (conferir eventos atuais).
+
+**Projeto final (capstone):** um "assistente de QA" que lê uma história de usuário, gera casos de teste, escreve os testes em Playwright, roda no CI, analisa as falhas e publica um relatório, com sua própria suíte de evals medindo a qualidade de cada etapa.
+
+**Pronto quando:** você apresenta esse projeto numa entrevista ou palestra e responde perguntas técnicas sobre cada parte.
+
+## Leituras essenciais
+
+| Leitura | Tipo | Ano | Fase |
+| --- | --- | --- | --- |
+| Guia de engenharia de prompt (Anthropic, OpenAI, Google) | Documentação | atual | 1 |
+| Language Models are Few-Shot Learners (GPT-3) | Artigo | 2020 | 1 |
+| Chain-of-Thought Prompting Elicits Reasoning | Artigo | 2022 | 1 |
+| Documentação das APIs e OpenAI Cookbook | Documentação | atual | 2 |
+| Retrieval-Augmented Generation (Lewis et al.) | Artigo | 2020 | 3 |
+| Contextual Retrieval (blog da Anthropic) | Artigo técnico | 2024 | 3 |
+| ReAct: Synergizing Reasoning and Acting | Artigo | 2022 | 4 |
+| Toolformer | Artigo | 2023 | 4 |
+| Building Effective Agents (blog da Anthropic) | Artigo técnico | 2024 | 4 |
+| Especificação do Model Context Protocol | Documentação | atual | 4 |
+| Boas práticas do Claude Code (blog da Anthropic) | Artigo técnico | atual | 5 |
+| Guias de evals da Anthropic e da OpenAI | Documentação | atual | 6 |
+| OWASP Top 10 for LLM Applications | Guia | atual | 6 e 10 |
+| Attention Is All You Need | Artigo | 2017 | 7 |
+| Training language models to follow instructions (InstructGPT) | Artigo | 2022 | 7 |
+| Constitutional AI | Artigo | 2022 | 7 e 10 |
+| Scaling Laws (Kaplan) e Chinchilla | Artigos | 2020 e 2022 | 7 |
+| LoRA: Low-Rank Adaptation | Artigo | 2021 | 8 |
+| Denoising Diffusion Probabilistic Models | Artigo | 2020 | 9 |
+
+Os artigos estão disponíveis de graça no arXiv; os textos técnicos, nos blogs de engenharia e pesquisa das empresas.
+
+## Como se manter atualizado
+
+Reserve 2 horas por semana só para novidades; o resto do tempo segue o plano.
+
+- **Fontes primárias:** blogs de notícias, engenharia e pesquisa da Anthropic, OpenAI, Google DeepMind e Meta AI; changelogs das APIs e do Claude Code.
+- **Curadoria:** newsletter The Batch (DeepLearning.AI), blog do Simon Willison, podcast Latent Space, página Daily Papers da Hugging Face.
+- **Código:** repositórios em alta no GitHub sobre agentes e LLMs.
+- **Comunidades:** fóruns e Discords oficiais da Anthropic, OpenAI, Hugging Face e n8n; comunidades brasileiras de IA e de QA.
+- **Ritual semanal:** escolha uma novidade, teste em 30 minutos e anote em uma linha se vale entrar no seu trabalho.
+
+## Projetos de portfólio
+
+| Fase | Projeto | O que prova |
+| --- | --- | --- |
+| 0 | Cliente HTTP robusto em Docker | Base de engenharia |
+| 1 | Biblioteca de 20 prompts comparados em 3 IAs | Domínio de prompt |
+| 2 | Assistente de arquivos com JSON validado e 2 provedores | Uso de APIs e tool use |
+| 3 | "Pergunte à documentação" com busca híbrida e 30 perguntas de avaliação | RAG medido |
+| 4 | Agente do zero, servidor MCP próprio, versão em LangGraph e Claude Agent SDK, OpenClaw com skill própria | Arquitetura de agentes |
+| 5 | App feito com Claude Code e fluxo n8n de relatório de testes | Produtividade com agentes e automação |
+| 6 | Suíte de evals no CI com LLM como juiz | Confiabilidade |
+| 7 | Mini GPT treinado do zero | Fundamentos |
+| 8 | Modelo ajustado com LoRA, servido localmente | Modelos abertos |
+| 9 | Agente que transforma print de erro em relatório de bug | Multimodal |
+| 10 | Relatório de red teaming do próprio agente | Segurança |
+| 11 | Assistente de QA completo com evals | Especialização |
+
+Cada projeto ganha um README com o problema, a arquitetura, os resultados medidos e o que você faria diferente.
+
+## Rotina semanal
+
+- **Segunda a sexta (1 a 2 horas):** 30 minutos de curso ou leitura, o resto construindo o projeto da fase.
+- **Sábado (2 a 3 horas):** avançar o projeto e publicar o progresso no GitHub.
+- **Domingo:** descanso, ou 2 horas de novidades da semana.
+- **A cada 2 semanas:** revisão com o tutor, um quiz curto e ajuste do plano.
+- **Fim de cada fase:** README do projeto e um post no LinkedIn sobre o que aprendeu.
+
+**Atrasou?** Normal. Corte tópicos opcionais, nunca o projeto da fase: é ele que transforma estudo em habilidade.

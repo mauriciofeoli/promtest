@@ -1,0 +1,32 @@
+# Segredos
+.env
+.env.*
+!.env.example
+
+# Obsidian (configuração local de cada computador)
+.obsidian/workspace*.json
+.obsidian/cache
+.trash/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# Node
+node_modules/
+
+# Exercícios descartáveis e dados grandes
+sandbox/
+*.gguf
+*.safetensors
+data/raw/
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Claude Code (configuração pessoal)
+.claude/settings.local.json

@@ -1,0 +1,7 @@
+{
+  "files.associations": { "*.md": "markdown" },
+  "markdown.extension.toc.levels": "2..3",
+  "editor.wordWrap": "on",
+  "[markdown]": { "editor.formatOnSave": false },
+  "python.terminal.activateEnvironment": true
+}
