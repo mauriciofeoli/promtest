@@ -10,6 +10,7 @@ atualizado: 2026-10-09
 
 São 12 fases em cerca de 14 meses, estudando 1 a 2 horas por dia, só com fontes gratuitas. Cada fase tem objetivo, tópicos, ferramentas, cursos oficiais, um projeto e um critério de "pronto".
 
+- **Nível de partida:** iniciante absoluto em programação. A Fase 0 foi reescrita para ensinar terminal, Python e Git do zero antes de qualquer coisa de IA; as fases seguintes contam com isso.
 - **Ordem:** prática antes da teoria profunda. Você constrói com APIs e agentes (fases 2 a 6) antes de estudar matemática e redes neurais (fase 7), porque a teoria fica mais clara depois de ver o modelo errar na prática.
 - **Regra 70/30:** 70% do tempo construindo, 30% assistindo ou lendo.
 - **Um projeto por fase:** publicado no GitHub, com um post curto no LinkedIn sobre o que aprendeu.
@@ -21,34 +22,36 @@ São 12 fases em cerca de 14 meses, estudando 1 a 2 horas por dia, só com fonte
 
 | Fase | Tema | Duração | Semanas |
 | --- | --- | --- | --- |
-| 0 | Base técnica | 3 sem | 1 a 3 |
-| 1 | Prompt e uso avançado | 4 sem | 4 a 7 |
-| 2 | APIs de modelos | 4 sem | 8 a 11 |
-| 3 | RAG e dados | 4 sem | 12 a 15 |
-| 4 | Agentes, MCP e OpenClaw | 6 sem | 16 a 21 |
-| 5 | Agentes de código e automação | 4 sem | 22 a 25 |
-| 6 | Evals e confiabilidade | 4 sem | 26 a 29 |
-| 7 | Fundamentos de ML e LLMs por dentro | 12 sem | 30 a 41 |
-| 8 | Modelos abertos e fine-tuning | 6 sem | 42 a 47 |
-| 9 | Multimodal | 3 sem | 48 a 50 |
-| 10 | Segurança, ética e regulação | 2 sem | 51 a 52 |
-| 11 | IA aplicada a QA | 6 sem | 53 a 58 |
+| 0 | Base técnica | 6 sem | 1 a 6 |
+| 1 | Prompt e uso avançado | 4 sem | 7 a 10 |
+| 2 | APIs de modelos | 4 sem | 11 a 14 |
+| 3 | RAG e dados | 4 sem | 15 a 18 |
+| 4 | Agentes, MCP e OpenClaw | 6 sem | 19 a 24 |
+| 5 | Agentes de código e automação | 4 sem | 25 a 28 |
+| 6 | Evals e confiabilidade | 4 sem | 29 a 32 |
+| 7 | Fundamentos de ML e LLMs por dentro | 12 sem | 33 a 44 |
+| 8 | Modelos abertos e fine-tuning | 6 sem | 45 a 50 |
+| 9 | Multimodal | 3 sem | 51 a 53 |
+| 10 | Segurança, ética e regulação | 2 sem | 54 a 55 |
+| 11 | IA aplicada a QA | 6 sem | 56 a 61 |
 
-## Fase 0: Base técnica (2 a 3 semanas)
+## Fase 0: Base técnica (6 semanas)
 
-Objetivo: ter a caixa de ferramentas de quem constrói com IA. Como QA de automação, você já tem boa parte; aqui é revisar e tapar buracos.
+Objetivo: ter a caixa de ferramentas de quem constrói com IA, partindo do zero absoluto. O plano assume iniciante: sem experiência prévia em programação, Python, Git ou Docker. O conhecimento de QA entra como ponte nos exemplos (testar uma API, achar bug, pensar em cenários), mas nenhuma ferramenta é tida como conhecida.
 
-**Tópicos**
+**Tópicos (nesta ordem; cada um só começa quando o anterior estiver firme)**
 
-- **Python para IA:** ambientes virtuais (venv, uv), pip, tipagem, dataclasses e Pydantic, async/await, leitura de JSON, CSV e arquivos, variáveis de ambiente e segredos (.env).
-- **HTTP e APIs:** métodos, status, headers, autenticação por chave, JSON, paginação, rate limit, retries com backoff, webhooks.
-- **Terminal e Git:** navegação, pipes, scripts, branches, pull requests, GitHub Actions básico.
-- **Docker:** imagens, containers, volumes, docker compose (vai rodar n8n, bancos vetoriais e modelos locais).
-- **SQL básico:** SELECT, JOIN, GROUP BY; base para bancos vetoriais como o pgvector.
-- **Jupyter Notebooks:** para experimentos rápidos.
-- **TypeScript (opcional):** a segunda linguagem do AI engineer, útil para interfaces e agentes em Node.
+1. **Terminal básico:** o que é o terminal, abrir, navegar entre pastas, criar e apagar arquivos, rodar comandos, ler mensagens de erro.
+2. **Python do zero:** instalar e rodar, variáveis, texto, números, listas e dicionários, `if`, `for`, funções, ler e escrever arquivos, erros e `try/except`.
+3. **Git e GitHub básico:** o que é versionar, `init`, `add`, `commit`, `push`, ler o histórico, branches, pull request.
+4. **Python para IA:** ambientes virtuais (`uv`, venv), instalar bibliotecas, JSON e CSV, variáveis de ambiente e segredos (`.env`), tipagem, dataclasses e Pydantic, `async/await`.
+5. **HTTP e APIs:** o que é uma API, métodos, status, headers, autenticação por chave, JSON, paginação, rate limit, retries com backoff, webhooks.
+6. **Docker:** o que é um container, imagens, volumes, `docker compose` (vai rodar n8n, bancos vetoriais e modelos locais).
+7. **SQL básico:** `SELECT`, `JOIN`, `GROUP BY`; base para bancos vetoriais como o pgvector.
+8. **Jupyter Notebooks:** para experimentos rápidos.
+9. **TypeScript (opcional):** a segunda linguagem do AI engineer, útil para interfaces e agentes em Node. É o primeiro item a cortar se houver atraso.
 
-**Fontes gratuitas:** documentação oficial do Python, do Docker e do Git; Kaggle Learn (Python, Pandas, SQL).
+**Fontes gratuitas:** Kaggle Learn (Python, Pandas, SQL); tutorial oficial do Python em português (docs.python.org/pt-br/3/tutorial); documentação do `uv` (docs.astral.sh/uv); documentação do Git (git-scm.com/book/pt-br) e do Docker (docs.docker.com/get-started).
 
 **Projeto:** um script em Python que consome uma API pública, trata erros e retries, e salva o resultado em JSON, rodando dentro de um container Docker.
 

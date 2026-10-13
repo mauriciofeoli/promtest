@@ -12,7 +12,7 @@ O tutor lê este arquivo no início de cada sessão e o atualiza no fim.
 
 - **Fase atual:** 0. Base técnica
 - **Tópico atual:** nenhum ainda
-- **Próximo passo:** primeira sessão, um diagnóstico rápido do que você já domina da Fase 0.
+- **Próximo passo:** começar do zero, como iniciante absoluto: Terminal básico, depois Python do zero. O diagnóstico confirmou: zero em Python, Git e Docker.
 - **Última sessão:** nenhuma ainda.
 
 ## Fases
@@ -36,12 +36,15 @@ Status possíveis: Não iniciada, Em andamento, Concluída.
 
 ## Tópicos da fase atual (Fase 0)
 
-- [ ] Python para IA (venv ou uv, Pydantic, async, .env)
+- [ ] Terminal básico
+- [ ] Python do zero (variáveis, listas, if, for, funções, arquivos, erros)
+- [ ] Git e GitHub básico
+- [ ] Python para IA (uv, .env, JSON, Pydantic, async)
 - [ ] HTTP e APIs (status, headers, retries, webhooks)
-- [ ] Terminal e Git
 - [ ] Docker e docker compose
 - [ ] SQL básico
 - [ ] Jupyter Notebooks
+- [ ] TypeScript (opcional)
 - [ ] Projeto: cliente HTTP robusto em Docker
 
 ## Registro
