@@ -1,6 +1,6 @@
 ---
 tipo: duvidas
-atualizado: 2026-10-09
+atualizado: 2026-10-13
 ---
 
 # Dúvidas e revisão
@@ -15,7 +15,9 @@ O tutor acrescenta aqui o que ficou em aberto e o que você errou nos exercício
 
 | Tópico | Fase | Errei em | Próxima revisão |
 | --- | --- | --- | --- |
-| | | | |
+| `cd ..` (comando, espaço, destino) | 0 | 2026-10-13 | 2026-10-14 e 2026-10-20 |
+| `cat` lê, `Set-Content` escreve; `mkdir` é só para pasta | 0 | 2026-10-13 | 2026-10-14 e 2026-10-20 |
+| Aspas em texto e caminho com espaço | 0 | 2026-10-13 | 2026-10-14 e 2026-10-20 |
 
 ## Resolvidas
 
