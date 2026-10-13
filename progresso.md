@@ -13,7 +13,8 @@ O tutor lê este arquivo no início de cada sessão e o atualiza no fim.
 - **Fase atual:** 0. Base técnica
 - **Tópico atual:** Terminal básico (em andamento)
 - **Próximo passo:** fechar o Terminal básico com `mv` e `rm` e um quiz curto; depois Python do zero.
-- **Última sessão:** 2026-10-13. Navegação, criar pasta/arquivo, ler e copiar.
+- **Última sessão:** [[2026-10-13]]. Navegação, criar pasta/arquivo, ler e copiar.
+- **Ver também:** [[plano]] | [[duvidas]]
 
 ## Fases
 
