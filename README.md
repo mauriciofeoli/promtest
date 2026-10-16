@@ -1,65 +1,117 @@
 # PromTest
 
-PromTest (prompt + test) é meu workspace de estudo e de conteúdo sobre IA aplicada a QA. Meu caminho para dominar Inteligência Artificial, dos fundamentos ao avançado, com aplicação em Qualidade de Software. Só fontes gratuitas, 12 fases, um projeto por fase.
+**Prompt + test.** Um QA Engineer aprendendo Inteligência Artificial do zero, em público, com um tutor de IA e só fontes gratuitas.
 
-## Comece aqui
+![Fase atual](https://img.shields.io/badge/fase%20atual-0%20Base%20t%C3%A9cnica-blue)
+![Fases](https://img.shields.io/badge/fases-12-lightgrey)
+![Fontes](https://img.shields.io/badge/fontes-100%25%20gratuitas-green)
+![Ritmo](https://img.shields.io/badge/ritmo-1%20a%202h%20por%20dia-orange)
 
-Não precisa colar prompt nenhum: o `CLAUDE.md` é o prompt, e o Claude Code lê esse arquivo sozinho ao abrir a pasta.
+## Por que existe
 
-### Opção A: terminal com Claude Code (exige plano pago do Claude)
+Trabalho com automação de testes há mais de 4 anos, mas comecei este repositório sem saber Python, Git ou terminal. O objetivo é sair do básico, chegar ao avançado em IA e, no fim, aplicar tudo em qualidade de software.
 
-1. Instale o que precisa: [docs/SETUP.md](docs/SETUP.md) (no mínimo Git, VS Code e Claude Code).
-2. Na primeira vez, dentro da pasta:
+Três regras guiam o caminho:
 
-   ```bash
-   cd PromTest
-   git init
-   git add . && git commit -m "estudo: estrutura inicial"
-   claude
-   ```
+- **Um projeto por fase.** Só avanço quando o projeto da fase está pronto.
+- **Cursos oficiais e gratuitos**, como Anthropic Academy, OpenAI Academy e Google.
+- **Tudo registrado.** Cada sessão vira uma nota e um commit.
 
-3. Confira se o tutor leu tudo: digite `/onde-paramos` (deve dizer Fase 0, nenhuma sessão ainda).
-4. Comece: `/estudar 60` (60 = minutos disponíveis) ou escreva "vamos estudar".
-5. Para parar, só se despeça ("por hoje é isso"). O tutor salva o progresso e faz o commit sozinho.
+## Progresso
 
-Nas próximas vezes, é só `cd PromTest` e `claude`.
+| Fase | Tema | Status |
+| --- | --- | --- |
+| 0 | Base técnica | Em andamento |
+| 1 | Prompt e uso avançado | Não iniciada |
+| 2 | APIs de modelos | Não iniciada |
+| 3 | RAG e dados | Não iniciada |
+| 4 | Agentes, MCP e OpenClaw | Não iniciada |
+| 5 | Agentes de código e automação | Não iniciada |
+| 6 | Evals e confiabilidade | Não iniciada |
+| 7 | Fundamentos de ML e LLMs por dentro | Não iniciada |
+| 8 | Modelos abertos e fine-tuning | Não iniciada |
+| 9 | Multimodal | Não iniciada |
+| 10 | Segurança, ética e regulação | Não iniciada |
+| 11 | IA aplicada a QA | Não iniciada |
 
-### Opção B: claude.ai, sem instalar nada (plano gratuito)
+O detalhe de cada fase, tópico e sessão está em [progresso.md](progresso.md) e o plano completo em [plano.md](plano.md).
 
-1. Crie um Projeto "PromTest" no claude.ai.
-2. Cole nas instruções do Projeto o bloco da aba "Tutor (PRD)" do documento do plano no Claude (o mesmo conteúdo está em [docs/PRD-tutor.md](docs/PRD-tutor.md)).
-3. Abra uma conversa no Projeto e escreva "vamos estudar".
+## Como funciona
 
-Nessa opção o progresso fica na aba Progresso do documento. Quando passar para a opção A, peça ao tutor para copiar esse progresso para `progresso.md`.
+O tutor é o próprio Claude Code. O arquivo [CLAUDE.md](CLAUDE.md) define como ele ensina, e ele o lê sozinho ao abrir a pasta. Cada sessão segue o mesmo ciclo:
 
-## Estrutura
-
+```mermaid
+flowchart LR
+    A["/estudar"] --> B[Conceito em camadas]
+    B --> C[Exercício]
+    C --> D{Entendi?}
+    D -- não --> B
+    D -- sim --> E[Próximo tópico]
+    E --> F["/encerrar"]
+    F --> G[Nota da sessão + progresso + commit]
 ```
-PromTest/
-├── CLAUDE.md            instruções do tutor (lidas pelo Claude Code)
-├── plano.md             o plano completo: 12 fases, cursos, projetos
-├── progresso.md         onde parei, fases, tópicos, registro
-├── duvidas.md           dúvidas abertas e tópicos para revisar
-├── sessoes/             uma nota por sessão (AAAA-MM-DD.md)
-├── projetos/            um projeto por fase (fase-N-nome/)
-├── templates/           modelos de sessão e de README
-├── conteudo/          LinkedIn + Substack: guia (CLAUDE.md próprio), pautas, métricas, posts
-├── docs/
-│   ├── SETUP.md         instalação, extensões, Obsidian, conectores
-│   └── PRD-tutor.md     como o tutor funciona
-└── .claude/skills/      comandos /estudar /encerrar /onde-paramos /me-testa /revisao
-```
 
-## Comandos do tutor
+### Comandos do tutor
 
 | Comando | O que faz |
 | --- | --- |
 | `/estudar [minutos]` | Começa a sessão do ponto certo |
 | `/onde-paramos` | Resumo rápido do progresso |
-| `/me-testa [tópico]` | Quiz de 5 perguntas |
+| `/me-testa [tópico]` | Quiz curto sobre o tópico |
 | `/revisao` | Revisão quinzenal e ajuste de ritmo |
-| `/encerrar` | Registra a sessão, atualiza o progresso e propõe o commit |
+| `/encerrar` | Registra a sessão, atualiza o progresso e faz o commit |
 
-## Fases
+## Estrutura
 
-0 Base técnica · 1 Prompt · 2 APIs · 3 RAG · 4 Agentes, MCP e OpenClaw · 5 Código e automação · 6 Evals · 7 Fundamentos de ML · 8 Modelos abertos · 9 Multimodal · 10 Segurança · 11 IA aplicada a QA
+```
+PromTest/
+├── CLAUDE.md          instruções do tutor (lidas pelo Claude Code)
+├── plano.md           o plano completo: 12 fases, cursos, projetos
+├── progresso.md       onde parei, fases, tópicos, registro
+├── duvidas.md         dúvidas abertas e tópicos para revisar
+├── sessoes/           uma nota por sessão (AAAA-MM-DD.md)
+├── projetos/          um projeto por fase (fase-N-nome/)
+├── templates/         modelos de sessão e de README
+├── conteudo/          LinkedIn e Substack: guia, pautas, métricas, posts
+├── docs/
+│   ├── SETUP.md       instalação, extensões, Obsidian, conectores
+│   └── PRD-tutor.md   como o tutor funciona
+└── .claude/skills/    comandos /estudar /encerrar /onde-paramos /me-testa /revisao
+```
+
+## Quer usar o método?
+
+Não precisa colar prompt nenhum: o `CLAUDE.md` é o prompt. Escolha uma das opções abaixo.
+
+<details>
+<summary><strong>Opção A: terminal com Claude Code</strong> (exige plano pago do Claude)</summary>
+
+1. Instale o que precisa: [docs/SETUP.md](docs/SETUP.md) (no mínimo Git, VS Code e Claude Code).
+2. Baixe o repositório e abra o tutor:
+
+   ```bash
+   git clone https://github.com/mauriciofeoli/promtest.git PromTest
+   cd PromTest
+   claude
+   ```
+
+3. Confira se o tutor leu tudo: digite `/onde-paramos`.
+4. Comece: `/estudar 60` (60 = minutos disponíveis) ou escreva "vamos estudar".
+5. Para parar, só se despeça ("por hoje é isso"). O tutor salva o progresso e faz o commit sozinho.
+
+Nas próximas vezes, é só `cd PromTest` e `claude`.
+
+Para começar do zero com o seu próprio progresso, zere `progresso.md`, `duvidas.md` e a pasta `sessoes/`.
+
+</details>
+
+<details>
+<summary><strong>Opção B: claude.ai, sem instalar nada</strong> (plano gratuito)</summary>
+
+1. Crie um Projeto "PromTest" no claude.ai.
+2. Cole nas instruções do Projeto o conteúdo de [docs/PRD-tutor.md](docs/PRD-tutor.md).
+3. Abra uma conversa no Projeto e escreva "vamos estudar".
+
+Nessa opção o progresso fica no próprio Projeto. Quando passar para a opção A, peça ao tutor para copiar esse progresso para `progresso.md`.
+
+</details>
