@@ -30,3 +30,6 @@ Thumbs.db
 
 # Claude Code (configuração pessoal)
 .claude/settings.local.json
+
+# Obsidian: estado do grafo muda a cada uso
+.obsidian/graph.json
