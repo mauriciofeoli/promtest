@@ -1,15 +1,15 @@
 # PromTest
 
-**Prompt + test.** Um QA Engineer aprendendo Inteligência Artificial do zero, em público, com um tutor de IA e só fontes gratuitas.
+**Prompt + test.** Workspace de estudo de Inteligência Artificial, dos fundamentos ao avançado, com um tutor de IA e só fontes gratuitas.
 
 ![Fase atual](https://img.shields.io/badge/fase%20atual-0%20Base%20t%C3%A9cnica-blue)
 ![Fases](https://img.shields.io/badge/fases-12-lightgrey)
 ![Fontes](https://img.shields.io/badge/fontes-100%25%20gratuitas-green)
 ![Ritmo](https://img.shields.io/badge/ritmo-1%20a%202h%20por%20dia-orange)
 
-## Por que existe
+## Objetivo
 
-Trabalho com automação de testes há mais de 4 anos, mas comecei este repositório sem saber Python, Git ou terminal. O objetivo é sair do básico, chegar ao avançado em IA e, no fim, aplicar tudo em qualidade de software.
+Ganhar habilidade prática e aprender os fundamentos principais de IA, do básico ao avançado. A última fase aplica o que foi aprendido em qualidade de software.
 
 Três regras guiam o caminho:
 
@@ -63,7 +63,7 @@ flowchart LR
 
 ## Estrutura
 
-```
+```text
 PromTest/
 ├── CLAUDE.md          instruções do tutor (lidas pelo Claude Code)
 ├── plano.md           o plano completo: 12 fases, cursos, projetos
