@@ -1,6 +1,6 @@
 ---
 tipo: progresso
-atualizado: 2026-10-13
+atualizado: 2026-10-16
 fase_atual: 0
 ---
 
@@ -11,9 +11,9 @@ O tutor lê este arquivo no início de cada sessão e o atualiza no fim.
 ## Onde paramos
 
 - **Fase atual:** 0. Base técnica
-- **Tópico atual:** Terminal básico (em andamento)
-- **Próximo passo:** fechar o Terminal básico com `mv` e `rm` e um quiz curto; depois Python do zero.
-- **Última sessão:** [[2026-10-13]]. Navegação, criar pasta/arquivo, ler e copiar.
+- **Tópico atual:** Python do zero (a iniciar)
+- **Próximo passo:** instalar/verificar o Python e rodar o primeiro script; depois variáveis e tipos.
+- **Última sessão:** [[2026-10-16]]. `mv`, `rm`, `-WhatIf` e quiz do terminal (7/7).
 - **Ver também:** [[plano]] | [[duvidas]]
 
 ## Fases
@@ -37,7 +37,7 @@ Status possíveis: Não iniciada, Em andamento, Concluída.
 
 ## Tópicos da fase atual (Fase 0)
 
-- [ ] Terminal básico
+- [x] Terminal básico
 - [ ] Python do zero (variáveis, listas, if, for, funções, arquivos, erros)
 - [ ] Git e GitHub básico
 - [ ] Python para IA (uv, .env, JSON, Pydantic, async)
@@ -54,4 +54,5 @@ Mais recente primeiro. Detalhes de cada sessão ficam em `sessoes/`.
 
 | Data | Fase | Tópico | Resumo | Nota |
 | --- | --- | --- | --- | --- |
+| 2026-10-16 | 0 | Terminal básico (concluído) | Revisão de cd .., mv, rm, -WhatIf; quiz 1/6 na 1ª rodada e 7/7 na 2ª | [[2026-10-16]] |
 | 2026-10-13 | 0 | Terminal básico | pwd, ls, cd, mkdir, Set-Content, cat, cp; ler a coluna Mode; aspas com espaço. Falta mv e rm | |

@@ -15,10 +15,11 @@ O tutor acrescenta aqui o que ficou em aberto e o que você errou nos exercício
 
 | Tópico | Fase | Errei em | Próxima revisão |
 | --- | --- | --- | --- |
-| `cd ..` (comando, espaço, destino) | 0 | 2026-10-13 | 2026-10-14 e 2026-10-20 |
-| `cat` lê, `Set-Content` escreve; `mkdir` é só para pasta | 0 | 2026-10-13 | 2026-10-14 e 2026-10-20 |
-| Aspas em texto e caminho com espaço | 0 | 2026-10-13 | 2026-10-14 e 2026-10-20 |
+| Comando completo com argumentos (`mkdir nome`, `cp origem destino`, `cd "pasta"`); um comando por linha | 0 | 2026-10-16 | 2026-10-17 e 2026-10-23 |
+| `pwd` mostra onde está; `ls` lista o conteúdo | 0 | 2026-10-16 | 2026-10-17 e 2026-10-23 |
+| `cd ..` leva só `..` (sem nome de pasta depois) | 0 | 2026-10-16 | 2026-10-23 |
 
 ## Resolvidas
 
-- (nenhuma ainda)
+- `cat` lê, `Set-Content` escreve; `mkdir` é só para pasta (acertou no quiz de 2026-10-16)
+- Aspas em texto e caminho com espaço (acertou no quiz de 2026-10-16)
