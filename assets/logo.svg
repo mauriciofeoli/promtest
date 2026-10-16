@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="64" viewBox="0 0 300 64" role="img" aria-label="PromTest">
+  <rect x="0" y="0" width="64" height="64" rx="14" fill="#0f172a"/>
+  <polyline points="15,21 27,32 15,43" fill="none" stroke="#60a5fa" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <polyline points="33,34 40,41 51,25" fill="none" stroke="#4ade80" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="80" y="45" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="40" font-weight="700" fill="#0f172a">Prom<tspan fill="#16a34a">Test</tspan></text>
+</svg>
