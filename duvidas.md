@@ -1,6 +1,6 @@
 ---
 tipo: duvidas
-atualizado: 2026-10-13
+atualizado: 2026-10-22
 ---
 
 # Dúvidas e revisão
@@ -15,11 +15,10 @@ O tutor acrescenta aqui o que ficou em aberto e o que você errou nos exercício
 
 | Tópico | Fase | Errei em | Próxima revisão |
 | --- | --- | --- | --- |
-| Comando completo com argumentos (`mkdir nome`, `cp origem destino`, `cd "pasta"`); um comando por linha | 0 | 2026-10-16 | 2026-10-17 e 2026-10-23 |
-| `pwd` mostra onde está; `ls` lista o conteúdo | 0 | 2026-10-16 | 2026-10-17 e 2026-10-23 |
-| `cd ..` leva só `..` (sem nome de pasta depois) | 0 | 2026-10-16 | 2026-10-23 |
+| `print("texto")` é o comando que mostra texto na tela | 0 | 2026-10-22 | próxima sessão e 2026-10-29 |
 
 ## Resolvidas
 
+- Comando completo com argumentos; `pwd` x `ls`; `cd ..` sem nome depois (acertou 3/3 na revisão de 2026-10-22)
 - `cat` lê, `Set-Content` escreve; `mkdir` é só para pasta (acertou no quiz de 2026-10-16)
 - Aspas em texto e caminho com espaço (acertou no quiz de 2026-10-16)

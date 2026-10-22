@@ -1,6 +1,6 @@
 ---
 tipo: progresso
-atualizado: 2026-10-16
+atualizado: 2026-10-22
 fase_atual: 0
 ---
 
@@ -11,9 +11,9 @@ O tutor lê este arquivo no início de cada sessão e o atualiza no fim.
 ## Onde paramos
 
 - **Fase atual:** 0. Base técnica
-- **Tópico atual:** Python do zero (a iniciar)
-- **Próximo passo:** instalar/verificar o Python e rodar o primeiro script; depois variáveis e tipos.
-- **Última sessão:** [[2026-10-16]]. `mv`, `rm`, `-WhatIf` e quiz do terminal (7/7).
+- **Tópico atual:** Python do zero (em andamento)
+- **Próximo passo:** variáveis e tipos (texto, inteiro, decimal) e `print` com variáveis.
+- **Última sessão:** [[2026-10-22]]. Python 3.12.10 confirmado, primeiro script com `print()` e leitura de `SyntaxError`.
 - **Ver também:** [[plano]] | [[duvidas]]
 
 ## Fases
@@ -54,5 +54,6 @@ Mais recente primeiro. Detalhes de cada sessão ficam em `sessoes/`.
 
 | Data | Fase | Tópico | Resumo | Nota |
 | --- | --- | --- | --- | --- |
+| 2026-10-22 | 0 | Python do zero | Revisão do terminal 3/3; `python --version`; primeiro script `ola.py` com `print()`; erro de aspa de propósito e leitura do `SyntaxError` | [[2026-10-22]] |
 | 2026-10-16 | 0 | Terminal básico (concluído) | Revisão de cd .., mv, rm, -WhatIf; quiz 1/6 na 1ª rodada e 7/7 na 2ª | [[2026-10-16]] |
 | 2026-10-13 | 0 | Terminal básico | pwd, ls, cd, mkdir, Set-Content, cat, cp; ler a coluna Mode; aspas com espaço. Falta mv e rm | |
