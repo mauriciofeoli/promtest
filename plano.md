@@ -22,7 +22,7 @@ O estudo segue um roteiro único de 21 blocos: as 12 fases de IA deste arquivo e
 
 ## Roteiro
 
-A ordem abaixo é a ordem de estudo: fases de IA (detalhadas neste arquivo) e etapas de DevOps e cloud (detalhadas em [[trilha-devops]]) num caminho só. Um bloco só começa quando o anterior estiver com o projeto pronto e o "pronto quando" atendido. A estimativa considera 1 a 2 horas por dia e serve só de referência inicial; a previsão real vem do seu ritmo.
+A ordem abaixo é a ordem de estudo: fases de IA (detalhadas neste arquivo) e etapas de DevOps e cloud (detalhadas em [[trilha-devops]]) num caminho só. Um bloco só começa quando o anterior estiver com o projeto pronto e o "pronto quando" atendido. A estimativa considera 1 a 2 horas por dia e dá só uma noção do tamanho de cada bloco; não é prazo.
 
 | Ordem | Bloco | Tema | Estimativa | Por que aqui |
 | --- | --- | --- | --- | --- |
@@ -48,17 +48,15 @@ A ordem abaixo é a ordem de estudo: fases de IA (detalhadas neste arquivo) e et
 | 20 | Fase 10 | Segurança, ética e regulação | 2 sem | Red teaming dos agentes e revisão de segurança da infraestrutura |
 | 21 | Fase 11 | IA aplicada a QA | 6 sem | Projeto final no CI, com deploy e monitoramento |
 
-Somando as estimativas, são cerca de 88 semanas. O número real depende do ritmo.
-
 ## Ritmo
 
-O roteiro acompanha a sua velocidade, não um calendário.
+O ritmo é seu. Não há prazo nem meta de velocidade: o objetivo é continuar estudando porque gosta, não cumprir um calendário.
 
-- **O que se mede:** sessões feitas, minutos estudados e tópicos concluídos. Um tópico está concluído quando você fez o exercício sem receber a resposta pronta e, se houve quiz, acertou pelo menos 4 de 5. Tudo isso fica na seção "Ritmo" de `progresso.md`, atualizada a cada `/encerrar`.
-- **Previsão:** a partir de 3 tópicos concluídos, o tutor troca a estimativa da tabela pela previsão real: minutos médios por tópico vezes tópicos que faltam no bloco, divididos pelos minutos que você estuda por semana. Os tópicos têm tamanhos diferentes, então a previsão melhora com mais dados e é recalculada a cada sessão.
-- **Mais rápido que o previsto:** se você acerta os exercícios de primeira e vai bem nos quizzes, o tutor avança para o próximo tópico na mesma sessão e oferece desafios ou tópicos opcionais. Nunca pula o projeto nem o "pronto quando".
-- **Mais devagar:** se você erra o mesmo ponto duas vezes ou fica abaixo de 3 de 5 no quiz, o tutor divide o tópico em partes menores, passa mais exercícios e revisa antes de seguir. Se a previsão do bloco passar do dobro da estimativa, ele propõe cortar tópicos opcionais, nunca o projeto.
-- **Revisão quinzenal:** compara você com você mesmo (as últimas 2 semanas contra as anteriores), não com datas fixas.
+- **Continuidade acima de velocidade:** uma sessão curta vale mais que nenhuma. Se o tempo do dia for pouco, o tutor propõe algo que caiba (uma revisão, um exercício, um trecho de documentação). Depois de uma pausa, a volta começa com uma revisão leve, sem cobrança.
+- **O que fica registrado:** sessões, minutos e tópicos concluídos, na seção "Ritmo" de `progresso.md`. Serve para planejar o tamanho de cada sessão e para você ver o caminho já feito, não para medir atraso. Um tópico está concluído quando você fez o exercício sem receber a resposta pronta e, se houve quiz, acertou pelo menos 4 de 5.
+- **Dentro da sessão:** se você acerta de primeira, o tutor avança e oferece desafios; se erra o mesmo ponto duas vezes, divide o tópico em partes menores e passa mais exercícios. O projeto e o "pronto quando" de cada bloco nunca são pulados.
+- **Sem previsão de término:** as estimativas do roteiro dão só uma noção do tamanho de cada bloco. Ninguém compara o seu avanço com datas.
+- **Revisão quinzenal:** olha o que você aprendeu e o que precisa voltar; se quiser, ajusta o que vem a seguir.
 
 ## Como os projetos se conectam
 
@@ -86,7 +84,7 @@ Objetivo: ter a caixa de ferramentas de quem constrói com IA, partindo do zero 
 6. **Docker:** o que é um container, imagens, volumes, `docker compose` (vai rodar n8n, bancos vetoriais e modelos locais). Dockerfile próprio e boas práticas vêm na Etapa 4.
 7. **SQL básico:** `SELECT`, `JOIN`, `GROUP BY`; base para bancos vetoriais como o pgvector.
 8. **Jupyter Notebooks:** para experimentos rápidos.
-9. **TypeScript (opcional):** a segunda linguagem do AI engineer, útil para interfaces e agentes em Node. É o primeiro item a cortar se houver atraso.
+9. **TypeScript (opcional):** a segunda linguagem do AI engineer, útil para interfaces e agentes em Node. Fica a seu critério.
 
 **Fontes gratuitas:** Kaggle Learn (Python, Pandas, SQL); tutorial oficial do Python em português (docs.python.org/pt-br/3/tutorial); documentação do `uv` (docs.astral.sh/uv); documentação do Git (git-scm.com/book/pt-br) e do Docker (docs.docker.com/get-started).
 
@@ -492,7 +490,7 @@ Reserve 2 horas por semana só para novidades; o resto do tempo segue o plano.
 
 Os projetos das etapas de DevOps e cloud estão em [[trilha-devops]], na seção "Projetos de portfólio". Cada projeto ganha um README com o problema, as tecnologias, como rodar, os resultados medidos e o que você faria diferente.
 
-## Rotina semanal
+## Rotina semanal (sugestão)
 
 - **Segunda a sexta (1 a 2 horas):** 30 minutos de curso ou leitura, o resto construindo o projeto do bloco.
 - **Sábado (2 a 3 horas):** avançar o projeto e publicar o progresso no GitHub.
@@ -500,4 +498,4 @@ Os projetos das etapas de DevOps e cloud estão em [[trilha-devops]], na seção
 - **A cada 2 semanas:** revisão com o tutor, um quiz curto e ajuste do ritmo.
 - **Fim de cada bloco:** README do projeto e um post no LinkedIn sobre o que aprendeu.
 
-**Atrasou?** Normal. Corte tópicos opcionais, nunca o projeto do bloco: é ele que transforma estudo em habilidade.
+**Semana corrida?** Normal. Volte com uma sessão curta; o roteiro espera. Tópicos opcionais ficam a seu critério, mas o projeto do bloco fica: é ele que transforma estudo em habilidade.

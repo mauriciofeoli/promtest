@@ -19,7 +19,7 @@ O tutor lê este arquivo no início de cada sessão e o atualiza no fim.
 
 ## Ritmo
 
-Atualizado a cada `/encerrar`. As regras estão em [[plano]], seção "Ritmo".
+Atualizado a cada `/encerrar`. Serve para planejar as sessões e ver o caminho feito, não é meta. As regras estão em [[plano]], seção "Ritmo".
 
 | Medida | Valor |
 | --- | --- |
@@ -29,8 +29,6 @@ Atualizado a cada `/encerrar`. As regras estão em [[plano]], seção "Ritmo".
 | Sessões por semana | 2,1 |
 | Tópicos concluídos | 1 |
 | Minutos por tópico concluído | 60 |
-| Previsão do bloco atual | Sem dados suficientes (começa com 3 tópicos concluídos) |
-| Tendência | Sem dados (precisa de 2 quinzenas) |
 
 ## Roteiro
 

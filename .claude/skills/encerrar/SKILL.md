@@ -12,7 +12,7 @@ Encerre a sessão de estudo.
 4. Atualize `progresso.md`:
    - bloco "Onde paramos" (bloco atual, tópico, próximo passo, próximo bloco, última sessão);
    - marque os tópicos concluídos;
-   - seção "Ritmo": sessões, minutos, média por sessão, sessões por semana, tópicos concluídos, minutos por tópico e previsão do bloco atual (a partir de 3 tópicos concluídos);
+   - seção "Ritmo": sessões, minutos, média por sessão, sessões por semana, tópicos concluídos e minutos por tópico;
    - status, início ou conclusão no "Roteiro", se mudou. Ao concluir um bloco, troque a lista "Tópicos do bloco atual" pelos tópicos do próximo bloco do roteiro (de `plano.md` ou `trilha-devops.md`);
    - uma linha nova no topo da tabela "Registro";
    - o campo `atualizado` do cabeçalho.

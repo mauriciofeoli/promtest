@@ -8,7 +8,7 @@
 ![Fase atual](https://img.shields.io/badge/fase%20atual-0%20Base%20t%C3%A9cnica-blue)
 ![Roteiro](https://img.shields.io/badge/roteiro-21%20blocos-lightgrey)
 ![Fontes](https://img.shields.io/badge/fontes-100%25%20gratuitas-green)
-![Ritmo](https://img.shields.io/badge/ritmo-acompanha%20o%20progresso-orange)
+![Ritmo](https://img.shields.io/badge/ritmo-livre%2C%20sem%20prazo-orange)
 
 ## Objetivo
 

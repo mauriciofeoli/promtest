@@ -18,7 +18,7 @@ São 9 etapas de DevOps e cloud que fazem parte do roteiro único de estudo, int
 
 ## Onde cada etapa entra
 
-As estimativas são referência inicial; a previsão real segue o seu ritmo (seção "Ritmo" do [[plano]]).
+As estimativas dão só uma noção do tamanho de cada etapa; não são prazo (seção "Ritmo" do [[plano]]).
 
 | Etapa | Tema | Estimativa | Vem depois de | Prepara para |
 | --- | --- | --- | --- | --- |
@@ -303,4 +303,4 @@ Sem emojis, sem chaves ou senhas, e com um `.env.example` mostrando quais variá
 
 A mesma do [[plano]]: 30 minutos de curso ou leitura por dia e o resto construindo; sábado para avançar o projeto e publicar no GitHub; revisão com o tutor a cada 2 semanas.
 
-**Atrasou?** Corte tópicos opcionais (Helm, OpenTelemetry, OpenTofu, HPA), nunca o projeto da etapa.
+Os tópicos opcionais (Helm, OpenTelemetry, OpenTofu, HPA) ficam a seu critério; o projeto da etapa fica.

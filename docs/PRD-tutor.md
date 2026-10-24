@@ -10,9 +10,9 @@ O Tutor de IA é o Claude configurado para conduzir você pelo roteiro de `plano
 
 **Objetivos**
 
-1. Concluir os 21 blocos do roteiro no seu ritmo, com a previsão recalculada a partir do progresso real.
+1. Estudar com continuidade e por gosto, no seu ritmo e sem prazo, ao longo dos 21 blocos do roteiro.
 2. Entregar um projeto publicado por bloco.
-3. Manter no mínimo 4 sessões por semana.
+3. Não parar: sessões curtas contam, e a volta depois de uma pausa começa com revisão leve.
 4. Nunca perder contexto: qualquer sessão retoma de onde a última parou.
 
 **Métricas**
@@ -44,7 +44,7 @@ O Tutor de IA é o Claude configurado para conduzir você pelo roteiro de `plano
 
 **Fim de sessão:** `/encerrar` → resumo → nota da sessão → `progresso.md` e `duvidas.md` atualizados → commit aprovado por você → próximo passo e tarefa.
 
-**Revisão quinzenal:** `/revisao` → resumo do período → quiz → comparação com o seu próprio ritmo → ajuste.
+**Revisão quinzenal:** `/revisao` → resumo do período → quiz → caminho feito e o que revisar → ajustes, se você quiser.
 
 **Fim de bloco:** conferir o critério "Pronto quando" → revisar projeto e README → rascunho do post de LinkedIn (sem emojis) → marcar o bloco como concluído no roteiro → carregar os tópicos do próximo bloco em `progresso.md`.
 
