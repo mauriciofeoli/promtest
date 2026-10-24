@@ -13,7 +13,7 @@ O tutor acrescenta aqui o que ficou em aberto e o que você errou nos exercício
 
 ## Para revisar
 
-| Tópico | Fase | Errei em | Próxima revisão |
+| Tópico | Módulo | Errei em | Próxima revisão |
 | --- | --- | --- | --- |
 
 ## Resolvidas

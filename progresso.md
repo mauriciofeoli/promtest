@@ -1,7 +1,7 @@
 ---
 tipo: progresso
-atualizado: 2026-10-23
-bloco_atual: Fase 0
+atualizado: 2026-10-24
+modulo_atual: 1
 ---
 
 # Progresso
@@ -10,12 +10,12 @@ O tutor lê este arquivo no início de cada sessão e o atualiza no fim.
 
 ## Onde paramos
 
-- **Bloco atual:** Fase 0. Base técnica (bloco 1 de 21 do roteiro)
+- **Módulo atual:** 1. Base técnica (Base), de 21 no roteiro
 - **Tópico atual:** Python do zero (em andamento)
 - **Próximo passo:** variáveis e tipos (texto, inteiro, decimal) e `print` com variáveis.
-- **Próximo bloco:** Etapa 1. Linux e terminal
+- **Próximo módulo:** 2. Linux e terminal (DevOps)
 - **Última sessão:** [[2026-10-22]]. Python 3.12.10 confirmado, primeiro script com `print()` e leitura de `SyntaxError`.
-- **Ver também:** [[plano]] | [[trilha-devops]] | [[duvidas]]
+- **Ver também:** [[plano]] | [[duvidas]]
 
 ## Ritmo
 
@@ -32,33 +32,33 @@ Atualizado a cada `/encerrar`. Serve para planejar as sessões e ver o caminho f
 
 ## Roteiro
 
-| Ordem | Bloco | Tema | Status | Início | Conclusão | Projeto |
+| Módulo | Área | Tema | Status | Início | Conclusão | Projeto |
 | --- | --- | --- | --- | --- | --- | --- |
-| 1 | Fase 0 | Base técnica | Em andamento | 2026-10-13 | | |
-| 2 | Etapa 1 | Linux e terminal | Não iniciada | | | |
-| 3 | Fase 1 | Prompt e uso avançado | Não iniciada | | | |
-| 4 | Etapa 2 | Redes | Não iniciada | | | |
-| 5 | Fase 2 | APIs de modelos | Não iniciada | | | |
-| 6 | Etapa 3 | Git e scripting | Não iniciada | | | |
-| 7 | Fase 3 | RAG e dados | Não iniciada | | | |
-| 8 | Etapa 4 | Docker | Não iniciada | | | |
-| 9 | Fase 4 | Agentes, MCP e OpenClaw | Não iniciada | | | |
-| 10 | Etapa 5 | CI/CD com GitHub Actions | Não iniciada | | | |
-| 11 | Fase 5 | Agentes de código e automação | Não iniciada | | | |
-| 12 | Etapa 6 | AWS | Não iniciada | | | |
-| 13 | Etapa 7 | Terraform | Não iniciada | | | |
-| 14 | Fase 6 | Evals e confiabilidade | Não iniciada | | | |
-| 15 | Etapa 8 | Kubernetes | Não iniciada | | | |
-| 16 | Etapa 9 | Observabilidade e SRE | Não iniciada | | | |
-| 17 | Fase 7 | Fundamentos de ML e LLMs por dentro | Não iniciada | | | |
-| 18 | Fase 8 | Modelos abertos e fine-tuning | Não iniciada | | | |
-| 19 | Fase 9 | Multimodal | Não iniciada | | | |
-| 20 | Fase 10 | Segurança, ética e regulação | Não iniciada | | | |
-| 21 | Fase 11 | IA aplicada a QA | Não iniciada | | | |
+| 1 | Base | Base técnica | Em andamento | 2026-10-13 | | |
+| 2 | DevOps | Linux e terminal | Não iniciado |  | | |
+| 3 | IA | Prompt e uso avançado | Não iniciado |  | | |
+| 4 | DevOps | Redes | Não iniciado |  | | |
+| 5 | IA | APIs de modelos | Não iniciado |  | | |
+| 6 | DevOps | Git e scripting | Não iniciado |  | | |
+| 7 | IA | RAG e dados | Não iniciado |  | | |
+| 8 | DevOps | Docker | Não iniciado |  | | |
+| 9 | IA | Agentes, MCP e OpenClaw | Não iniciado |  | | |
+| 10 | DevOps | CI/CD com GitHub Actions | Não iniciado |  | | |
+| 11 | IA | Agentes de código e automação | Não iniciado |  | | |
+| 12 | Cloud | AWS | Não iniciado |  | | |
+| 13 | Cloud | Terraform | Não iniciado |  | | |
+| 14 | IA | Evals e confiabilidade | Não iniciado |  | | |
+| 15 | Cloud | Kubernetes | Não iniciado |  | | |
+| 16 | DevOps | Observabilidade e SRE | Não iniciado |  | | |
+| 17 | IA | Fundamentos de ML e LLMs por dentro | Não iniciado |  | | |
+| 18 | IA | Modelos abertos e fine-tuning | Não iniciado |  | | |
+| 19 | IA | Multimodal | Não iniciado |  | | |
+| 20 | IA | Segurança, ética e regulação | Não iniciado |  | | |
+| 21 | QA | IA aplicada a QA | Não iniciado |  | | |
 
-Status possíveis: Não iniciada, Em andamento, Concluída.
+Status possíveis: Não iniciado, Em andamento, Concluído.
 
-## Tópicos do bloco atual (Fase 0)
+## Tópicos do módulo atual (Módulo 1)
 
 - [x] Terminal básico
 - [ ] Python do zero (variáveis, listas, if, for, funções, arquivos, erros)
@@ -75,8 +75,8 @@ Status possíveis: Não iniciada, Em andamento, Concluída.
 
 Mais recente primeiro. Detalhes de cada sessão ficam em `sessoes/`.
 
-| Data | Bloco | Tópico | Resumo | Nota |
+| Data | Módulo | Tópico | Resumo | Nota |
 | --- | --- | --- | --- | --- |
-| 2026-10-22 | Fase 0 | Python do zero | Revisão do terminal 3/3; `python --version`; primeiro script `ola.py` com `print()`; erro de aspa de propósito e leitura do `SyntaxError` | [[2026-10-22]] |
-| 2026-10-16 | Fase 0 | Terminal básico (concluído) | Revisão de cd .., mv, rm, -WhatIf; quiz 1/6 na 1ª rodada e 7/7 na 2ª | [[2026-10-16]] |
-| 2026-10-13 | Fase 0 | Terminal básico | pwd, ls, cd, mkdir, Set-Content, cat, cp; ler a coluna Mode; aspas com espaço. Falta mv e rm | |
+| 2026-10-22 | 1 | Python do zero | Revisão do terminal 3/3; `python --version`; primeiro script `ola.py` com `print()`; erro de aspa de propósito e leitura do `SyntaxError` | [[2026-10-22]] |
+| 2026-10-16 | 1 | Terminal básico (concluído) | Revisão de cd .., mv, rm, -WhatIf; quiz 1/6 na 1ª rodada e 7/7 na 2ª | [[2026-10-16]] |
+| 2026-10-13 | 1 | Terminal básico | pwd, ls, cd, mkdir, Set-Content, cat, cp; ler a coluna Mode; aspas com espaço. Falta mv e rm | |

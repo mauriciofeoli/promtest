@@ -6,11 +6,11 @@ allowed-tools: Read
 
 Leia `progresso.md` e `duvidas.md` e responda em no máximo 7 linhas:
 
-- bloco atual (fase ou etapa), posição no roteiro (N de 21) e tópico atual;
-- porcentagem de tópicos concluídos no bloco atual;
+- módulo atual (número de 21, tema e área) e tópico atual;
+- porcentagem de tópicos concluídos no módulo atual;
 - caminho feito: sessões, minutos estudados e tópicos concluídos;
 - data e resumo da última sessão;
 - dúvidas abertas (quantas e a principal);
-- próximo passo e próximo bloco.
+- próximo passo e próximo módulo.
 
 Não edite nenhum arquivo.

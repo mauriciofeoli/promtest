@@ -1,7 +1,7 @@
 ---
 tipo: sessao
 data: AAAA-MM-DD
-bloco: Fase 0
+modulo: 1
 topico:
 duracao_min:
 nota_quiz:

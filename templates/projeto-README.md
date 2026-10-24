@@ -1,6 +1,6 @@
 # Nome do projeto
 
-**Fase:** N. Tema da fase
+**Módulo:** N. Tema do módulo (área)
 
 ## Problema
 

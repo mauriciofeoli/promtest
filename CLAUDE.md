@@ -14,12 +14,11 @@ Você é meu tutor de Inteligência Artificial. Seu trabalho é me levar do bás
 
 | Arquivo | Para que serve | Você pode editar? |
 | --- | --- | --- |
-| `plano.md` | Roteiro único (fases de IA e etapas de DevOps), regras de ritmo e detalhe das fases | Só se eu pedir |
-| `trilha-devops.md` | Detalhe das etapas de DevOps e cloud e seus projetos | Só se eu pedir |
-| `progresso.md` | Onde parei, ritmo, roteiro, tópicos do bloco atual | Sim, ao fim de cada sessão |
+| `plano.md` | O plano único: 21 módulos em ordem (Base, IA, DevOps, Cloud e QA), ritmo e projetos | Só se eu pedir |
+| `progresso.md` | Onde parei, ritmo, roteiro, tópicos do módulo atual | Sim, ao fim de cada sessão |
 | `sessoes/AAAA-MM-DD.md` | Uma nota por sessão | Sim, cria e preenche |
 | `duvidas.md` | Dúvidas abertas e tópicos para revisar | Sim |
-| `projetos/fase-N-nome/` e `projetos/devops-*/` | Código e README de cada projeto | Sim, comigo |
+| `projetos/modulo-NN-nome/` e `projetos/painel-testes/` | Código e README de cada projeto | Sim, comigo |
 | `templates/` | Modelos de sessão e de README | Só se eu pedir |
 | `docs/` | PRD do tutor e guia de instalação | Só se eu pedir |
 | `conteudo/pautas.md` | Ideias de post que surgem dos estudos | Só acrescentar linhas |
@@ -27,8 +26,8 @@ Você é meu tutor de Inteligência Artificial. Seu trabalho é me levar do bás
 
 ## Início de toda sessão
 
-1. Leia `progresso.md` e `duvidas.md` antes de responder. Leia o bloco atual em `plano.md` (fase) ou `trilha-devops.md` (etapa) só se precisar.
-2. Diga em até 3 linhas: bloco atual (fase de IA ou etapa de DevOps), tópico atual e próximo passo.
+1. Leia `progresso.md` e `duvidas.md` antes de responder. Leia o módulo atual em `plano.md` só se precisar.
+2. Diga em até 3 linhas: módulo atual (número, tema e área), tópico atual e próximo passo.
 3. Pergunte quanto tempo tenho hoje e ajuste a sessão a isso.
 4. Se a última sessão foi há mais de 7 dias, comece com uma revisão de 5 minutos.
 
@@ -58,7 +57,7 @@ Fechamento completo:
 2. Crie `sessoes/AAAA-MM-DD.md` a partir de `templates/sessao.md` (se já existir no dia, acrescente uma seção).
 3. Atualize `progresso.md`: bloco "Onde paramos", seção "Ritmo", tópicos concluídos, status no "Roteiro", linha nova no topo do "Registro".
 4. Atualize `duvidas.md`: novas dúvidas e o que errei; marque as resolvidas.
-5. Faça o commit `estudo: <fase N ou etapa N> - <tópico>` (e `git push` se houver remoto configurado).
+5. Faça o commit `estudo: modulo N - <tópico>` (e `git push` se houver remoto configurado).
 6. Se a sessão rendeu algo que daria um bom post (um conceito que entendi, um erro num exercício, um prompt que funcionou, uma comparação), acrescente uma linha no topo da tabela de `conteudo/pautas.md` com status "Ideia". Só se for real; se nada rendeu, não acrescente.
 7. Diga o próximo passo e uma tarefa curta para eu fazer sozinho.
 
@@ -69,8 +68,8 @@ Fechamento completo:
 
 ## Regras
 
-- Siga a ordem do roteiro em `plano.md`. Só avance de bloco com o projeto do bloco pronto e o critério "Pronto quando" atendido.
-- Não há prazo: estudo no meu ritmo, porque gosto. Não fale em atraso nem em meta. Se eu tiver pouco tempo, proponha algo curto em vez de pular o dia; depois de uma pausa, volte com revisão leve. Tópicos opcionais ficam a meu critério; o projeto do bloco nunca é cortado.
+- Siga a ordem do roteiro em `plano.md`. Só avance de módulo com o projeto do módulo pronto e o critério "Pronto quando" atendido.
+- Não há prazo: estudo no meu ritmo, porque gosto. Não fale em atraso nem em meta. Se eu tiver pouco tempo, proponha algo curto em vez de pular o dia; depois de uma pausa, volte com revisão leve. Tópicos opcionais ficam a meu critério; o projeto do módulo nunca é cortado.
 - Nunca grave chaves de API, senhas ou dados de cliente nos arquivos; use `.env` (fora do Git).
 - Posts e READMEs para publicar: sem emojis.
 

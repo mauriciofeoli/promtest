@@ -34,7 +34,7 @@ Tudo o que você precisa para começar, na ordem. Comandos para macOS/Linux; qua
 | Obsidian | Ler e navegar as notas | obsidian.md | Grátis |
 | Ollama | Rodar modelos localmente, sem custo de API | ollama.com/download | Grátis |
 
-Ollama e Docker só são necessários a partir das fases 3 e 4; instale quando chegar lá se quiser poupar espaço.
+Ollama e Docker só são necessários a partir dos módulos 7 e 9; instale quando chegar lá se quiser poupar espaço.
 
 ## 2. Claude Code
 
@@ -77,7 +77,7 @@ Ao abrir a pasta, o VS Code sugere estas extensões automaticamente (arquivo `.v
 | GitLens | Histórico do Git |
 | Markdown All in One e markdownlint | Escrever e checar os .md |
 | YAML (Red Hat) | Arquivos de configuração e docker compose |
-| Playwright Test (Microsoft) | Fase 11, testes com IA |
+| Playwright Test (Microsoft) | Módulo 21, testes com IA |
 
 ## 4. Obsidian
 
@@ -88,7 +88,7 @@ Ao abrir a pasta, o VS Code sugere estas extensões automaticamente (arquivo `.v
 | Plugin | Para quê |
 | --- | --- |
 | Obsidian Git | Commit e pull automáticos (sincroniza com o GitHub) |
-| Dataview | Listas e tabelas automáticas a partir das sessões (ex.: todas as sessões da Fase 2) |
+| Dataview | Listas e tabelas automáticas a partir das sessões (ex.: todas as sessões do Módulo 5) |
 | Tasks | Ver todos os checkboxes de tópicos em um só lugar |
 | Calendar | Navegar pelas notas de sessão por data |
 
@@ -111,14 +111,14 @@ Deixe privado enquanto quiser. Quando for usar como portfólio, torne público o
 
 ## 6. Conectores e MCP
 
-Nenhum é obrigatório para começar. Adicione conforme a fase pedir.
+Nenhum é obrigatório para começar. Adicione conforme o módulo pedir.
 
 | Conector | Quando | Como |
 | --- | --- | --- |
 | GitHub no claude.ai | Agora, para estudar pelo celular | claude.ai > Configurações > Conectores > GitHub, dando acesso ao repositório `promtest` |
-| Context7 (documentação atualizada de bibliotecas) | Fase 2 em diante | `claude mcp add --transport http context7 https://mcp.context7.com/mcp` (conferir na documentação do Context7) |
-| Playwright MCP | Fase 11 | `claude mcp add playwright -- npx @playwright/mcp@latest` (conferir na documentação do Playwright) |
-| Servidor MCP próprio | Fase 4 | Você vai construir um |
+| Context7 (documentação atualizada de bibliotecas) | Módulo 5 em diante | `claude mcp add --transport http context7 https://mcp.context7.com/mcp` (conferir na documentação do Context7) |
+| Playwright MCP | Módulo 21 | `claude mcp add playwright -- npx @playwright/mcp@latest` (conferir na documentação do Playwright) |
+| Servidor MCP próprio | Módulo 9 | Você vai construir um |
 
 Para ver e remover: `claude mcp list` e `claude mcp remove <nome>`.
 
@@ -130,7 +130,7 @@ Só se você quiser um painel bonito no celular. O Notion vira um espelho, nunca
 - **No Claude Code:** `claude mcp add --transport http notion https://mcp.notion.com/mcp` e depois `/mcp` para autenticar. Em algumas versões a autenticação desse servidor no terminal falhou; se acontecer, use o conector pelo claude.ai.
 - Peça ao tutor, no `/encerrar`, para também atualizar uma página de progresso no Notion.
 
-## 8. Chaves de API (a partir da Fase 2)
+## 8. Chaves de API (a partir do Módulo 5)
 
 - Crie um arquivo `.env` na raiz (já está no `.gitignore`) a partir de `.env.example`.
 - Para não gastar: use cotas gratuitas quando existirem e modelos locais pelo Ollama.
@@ -143,4 +143,4 @@ cd PromTest
 claude
 ```
 
-Digite `/estudar 60` (60 minutos disponíveis). O tutor faz um diagnóstico da Fase 0 e começa. Para terminar, `/encerrar`.
+Digite `/estudar 60` (60 minutos disponíveis). O tutor faz um diagnóstico do Módulo 1 e começa. Para terminar, `/encerrar`.

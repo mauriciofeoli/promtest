@@ -2,7 +2,7 @@
 
 ## Resumo e objetivo
 
-O Tutor de IA é o Claude configurado para conduzir você pelo roteiro de `plano.md` (fases de IA, intercaladas com as etapas de DevOps e cloud de `trilha-devops.md`), sessão a sessão, ensinando, cobrando prática e registrando o progresso nos arquivos deste repositório.
+O Tutor de IA é o Claude configurado para conduzir você pelos 21 módulos de `plano.md` (Base, IA, DevOps, Cloud e QA), sessão a sessão, ensinando, cobrando prática e registrando o progresso nos arquivos deste repositório.
 
 **Problema:** estudar IA sozinho leva a pular etapas, esquecer o que já viu e perder o fio entre conversas.
 
@@ -10,8 +10,8 @@ O Tutor de IA é o Claude configurado para conduzir você pelo roteiro de `plano
 
 **Objetivos**
 
-1. Estudar com continuidade e por gosto, no seu ritmo e sem prazo, ao longo dos 21 blocos do roteiro.
-2. Entregar um projeto publicado por bloco.
+1. Estudar com continuidade e por gosto, no seu ritmo e sem prazo, ao longo dos 21 módulos do roteiro.
+2. Entregar um projeto publicado por módulo.
 3. Não parar: sessões curtas contam, e a volta depois de uma pausa começa com revisão leve.
 4. Nunca perder contexto: qualquer sessão retoma de onde a última parou.
 
@@ -29,16 +29,16 @@ O Tutor de IA é o Claude configurado para conduzir você pelo roteiro de `plano
 | Instruções do tutor | `CLAUDE.md` | O Claude Code lê automaticamente ao abrir a pasta |
 | Comandos | `.claude/skills/` | `/estudar`, `/encerrar`, `/onde-paramos`, `/me-testa`, `/revisao` |
 | Plano | `plano.md` | Referência, só muda quando você pede |
-| Progresso | `progresso.md` | Onde paramos, fases, tópicos, registro |
+| Progresso | `progresso.md` | Onde paramos, ritmo, roteiro, tópicos, registro |
 | Sessões | `sessoes/AAAA-MM-DD.md` | Uma nota por dia de estudo |
 | Dúvidas | `duvidas.md` | Abertas, para revisar, resolvidas |
-| Projetos | `projetos/fase-N-nome/` e `projetos/devops-*/` | Código e README de cada bloco |
+| Projetos | `projetos/modulo-NN-nome/` e `projetos/painel-testes/` | Código e README de cada módulo |
 | Leitura e navegação | Obsidian | Mesma pasta, aberta como vault |
 | Sincronização | Git + GitHub privado | Histórico e acesso pelo celular |
 
 ## Fluxos
 
-**Início de sessão:** `/estudar [minutos]` → lê progresso e dúvidas → revisão rápida se houver itens vencidos → diz bloco, tópico e próximo passo → ensina.
+**Início de sessão:** `/estudar [minutos]` → lê progresso e dúvidas → revisão rápida se houver itens vencidos → diz módulo, tópico e próximo passo → ensina.
 
 **Sessão:** explicação em camadas → exercício → dicas graduais → correção → próximo conceito → curso ou documentação oficial do tópico.
 
@@ -46,7 +46,7 @@ O Tutor de IA é o Claude configurado para conduzir você pelo roteiro de `plano
 
 **Revisão quinzenal:** `/revisao` → resumo do período → quiz → caminho feito e o que revisar → ajustes, se você quiser.
 
-**Fim de bloco:** conferir o critério "Pronto quando" → revisar projeto e README → rascunho do post de LinkedIn (sem emojis) → marcar o bloco como concluído no roteiro → carregar os tópicos do próximo bloco em `progresso.md`.
+**Fim de módulo:** conferir o critério "Pronto quando" → revisar projeto e README → rascunho do post de LinkedIn (sem emojis) → marcar o módulo como concluído no roteiro → carregar os tópicos do próximo módulo em `progresso.md`.
 
 ## Regras pedagógicas
 
@@ -73,9 +73,9 @@ O Tutor de IA é o Claude configurado para conduzir você pelo roteiro de `plano
 ## Plano da POC (2 semanas)
 
 - [ ] Instalar o básico (docs/SETUP.md, seções 1 a 5)
-- [ ] Primeira sessão com `/estudar`: diagnóstico da Fase 0
+- [ ] Primeira sessão com `/estudar`: diagnóstico do Módulo 1
 - [ ] Pelo menos 8 sessões em 2 semanas, cada uma terminando com `/encerrar`
-- [ ] Projeto da Fase 0 publicado no GitHub
+- [ ] Projeto do Módulo 1 publicado no GitHub
 - [ ] Revisão do fim da POC: o que funcionou e o que ajustar no `CLAUDE.md`
 
 **Critérios de sucesso:** toda sessão retomou do ponto certo sem você explicar o contexto; o registro está completo; o quiz e o projeto comprovam o aprendizado; você quer continuar.

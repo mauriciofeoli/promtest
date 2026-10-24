@@ -3,52 +3,50 @@
   <img src="assets/logo.svg" alt="PromTest" width="300">
 </picture>
 
-**Prompt + test.** Workspace de estudo de Inteligência Artificial, dos fundamentos ao avançado, com um tutor de IA e só fontes gratuitas.
+**Prompt + test.** Workspace de estudo de Inteligência Artificial, DevOps, cloud e QA, dos fundamentos ao avançado, com um tutor de IA e só fontes gratuitas.
 
-![Fase atual](https://img.shields.io/badge/fase%20atual-0%20Base%20t%C3%A9cnica-blue)
-![Roteiro](https://img.shields.io/badge/roteiro-21%20blocos-lightgrey)
+![Módulo atual](https://img.shields.io/badge/m%C3%B3dulo%20atual-1%20Base%20t%C3%A9cnica-blue)
+![Módulos](https://img.shields.io/badge/m%C3%B3dulos-21-lightgrey)
 ![Fontes](https://img.shields.io/badge/fontes-100%25%20gratuitas-green)
 ![Ritmo](https://img.shields.io/badge/ritmo-livre%2C%20sem%20prazo-orange)
 
 ## Objetivo
 
-Ganhar habilidade prática e aprender os fundamentos principais de IA, do básico ao avançado. No caminho entram etapas de DevOps e cloud (Linux, redes, Docker, CI/CD, AWS, Terraform, Kubernetes e observabilidade), intercaladas com as fases de IA num roteiro único. A última fase aplica o que foi aprendido em qualidade de software.
+Ganhar habilidade prática e aprender os fundamentos principais de IA, do básico ao avançado. É um plano único de 21 módulos, cada um de uma área: Base, IA, DevOps (Linux, redes, Docker, CI/CD, observabilidade), Cloud (AWS, Terraform, Kubernetes) e QA. Os módulos se alternam para que cada um prepare o seguinte, e o último aplica tudo em qualidade de software.
 
 Três regras guiam o caminho:
 
-- **Um projeto por bloco.** Só avanço quando o projeto do bloco está pronto, no meu ritmo e sem prazo fixo.
+- **Um projeto por módulo.** Só avanço quando o projeto do módulo está pronto, no meu ritmo e sem prazo fixo.
 - **Cursos oficiais e gratuitos**, como Anthropic Academy, OpenAI Academy e Google.
 - **Tudo registrado.** Cada sessão vira uma nota e um commit.
 
 ## Progresso
 
-| Ordem | Bloco | Tema | Status |
+| Módulo | Área | Tema | Status |
 | --- | --- | --- | --- |
-| 1 | Fase 0 | Base técnica | Em andamento |
-| 2 | Etapa 1 | Linux e terminal | Não iniciada |
-| 3 | Fase 1 | Prompt e uso avançado | Não iniciada |
-| 4 | Etapa 2 | Redes | Não iniciada |
-| 5 | Fase 2 | APIs de modelos | Não iniciada |
-| 6 | Etapa 3 | Git e scripting | Não iniciada |
-| 7 | Fase 3 | RAG e dados | Não iniciada |
-| 8 | Etapa 4 | Docker | Não iniciada |
-| 9 | Fase 4 | Agentes, MCP e OpenClaw | Não iniciada |
-| 10 | Etapa 5 | CI/CD com GitHub Actions | Não iniciada |
-| 11 | Fase 5 | Agentes de código e automação | Não iniciada |
-| 12 | Etapa 6 | AWS | Não iniciada |
-| 13 | Etapa 7 | Terraform | Não iniciada |
-| 14 | Fase 6 | Evals e confiabilidade | Não iniciada |
-| 15 | Etapa 8 | Kubernetes | Não iniciada |
-| 16 | Etapa 9 | Observabilidade e SRE | Não iniciada |
-| 17 | Fase 7 | Fundamentos de ML e LLMs por dentro | Não iniciada |
-| 18 | Fase 8 | Modelos abertos e fine-tuning | Não iniciada |
-| 19 | Fase 9 | Multimodal | Não iniciada |
-| 20 | Fase 10 | Segurança, ética e regulação | Não iniciada |
-| 21 | Fase 11 | IA aplicada a QA | Não iniciada |
+| 1 | Base | Base técnica | Em andamento |
+| 2 | DevOps | Linux e terminal | Não iniciado |
+| 3 | IA | Prompt e uso avançado | Não iniciado |
+| 4 | DevOps | Redes | Não iniciado |
+| 5 | IA | APIs de modelos | Não iniciado |
+| 6 | DevOps | Git e scripting | Não iniciado |
+| 7 | IA | RAG e dados | Não iniciado |
+| 8 | DevOps | Docker | Não iniciado |
+| 9 | IA | Agentes, MCP e OpenClaw | Não iniciado |
+| 10 | DevOps | CI/CD com GitHub Actions | Não iniciado |
+| 11 | IA | Agentes de código e automação | Não iniciado |
+| 12 | Cloud | AWS | Não iniciado |
+| 13 | Cloud | Terraform | Não iniciado |
+| 14 | IA | Evals e confiabilidade | Não iniciado |
+| 15 | Cloud | Kubernetes | Não iniciado |
+| 16 | DevOps | Observabilidade e SRE | Não iniciado |
+| 17 | IA | Fundamentos de ML e LLMs por dentro | Não iniciado |
+| 18 | IA | Modelos abertos e fine-tuning | Não iniciado |
+| 19 | IA | Multimodal | Não iniciado |
+| 20 | IA | Segurança, ética e regulação | Não iniciado |
+| 21 | QA | IA aplicada a QA | Não iniciado |
 
-Fase é um bloco de IA; etapa é um bloco de DevOps e cloud.
-
-O ritmo, os tópicos e as sessões estão em [progresso.md](progresso.md). O roteiro e as fases de IA estão em [plano.md](plano.md); as etapas de DevOps e cloud, com o projeto principal, em [trilha-devops.md](trilha-devops.md).
+O ritmo, os tópicos e as sessões estão em [progresso.md](progresso.md); o plano completo, com cada módulo e os projetos, em [plano.md](plano.md).
 
 ## Como funciona
 
@@ -72,7 +70,7 @@ flowchart LR
 | `/estudar [minutos]` | Começa a sessão do ponto certo |
 | `/onde-paramos` | Resumo rápido do progresso |
 | `/me-testa [tópico]` | Quiz curto sobre o tópico |
-| `/revisao` | Revisão quinzenal e ajuste de ritmo |
+| `/revisao` | Revisão quinzenal do que aprendi |
 | `/encerrar` | Registra a sessão, atualiza o progresso e faz o commit |
 
 ## Estrutura
@@ -80,12 +78,11 @@ flowchart LR
 ```text
 PromTest/
 ├── CLAUDE.md          instruções do tutor (lidas pelo Claude Code)
-├── plano.md           roteiro único, regras de ritmo e as 12 fases de IA
-├── trilha-devops.md   as 9 etapas de DevOps e cloud e seus projetos
+├── plano.md           o plano único: 21 módulos, ritmo e projetos
 ├── progresso.md       onde parei, ritmo, roteiro, tópicos, registro
 ├── duvidas.md         dúvidas abertas e tópicos para revisar
 ├── sessoes/           uma nota por sessão (AAAA-MM-DD.md)
-├── projetos/          um projeto por bloco (fase-N-nome/, devops-*/)
+├── projetos/          um projeto por módulo (modulo-NN-nome/, painel-testes/)
 ├── templates/         modelos de sessão e de README
 ├── conteudo/          LinkedIn e Substack: guia, pautas, métricas, posts
 ├── docs/
