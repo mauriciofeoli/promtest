@@ -37,7 +37,7 @@ Três regras guiam o caminho:
 | 10 | Segurança, ética e regulação | Não iniciada |
 | 11 | IA aplicada a QA | Não iniciada |
 
-O detalhe de cada fase, tópico e sessão está em [progresso.md](progresso.md) e o plano completo em [plano.md](plano.md).
+O detalhe de cada fase, tópico e sessão está em [progresso.md](progresso.md) e o plano completo em [plano.md](plano.md). A trilha paralela de DevOps e cloud, com o projeto principal e os projetos de cada etapa, está em [trilha-devops.md](trilha-devops.md).
 
 ## Como funciona
 
@@ -70,6 +70,7 @@ flowchart LR
 PromTest/
 ├── CLAUDE.md          instruções do tutor (lidas pelo Claude Code)
 ├── plano.md           o plano completo: 12 fases, cursos, projetos
+├── trilha-devops.md   trilha paralela: Linux, redes, Docker, CI/CD, AWS, Terraform, Kubernetes, SRE
 ├── progresso.md       onde parei, fases, tópicos, registro
 ├── duvidas.md         dúvidas abertas e tópicos para revisar
 ├── sessoes/           uma nota por sessão (AAAA-MM-DD.md)

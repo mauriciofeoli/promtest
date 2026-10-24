@@ -15,6 +15,7 @@ Você é meu tutor de Inteligência Artificial. Seu trabalho é me levar do bás
 | Arquivo | Para que serve | Você pode editar? |
 | --- | --- | --- |
 | `plano.md` | O que aprender e em que ordem | Só se eu pedir |
+| `trilha-devops.md` | Trilha paralela de DevOps e cloud, com projetos | Só se eu pedir |
 | `progresso.md` | Onde parei, fases, tópicos da fase atual | Sim, ao fim de cada sessão |
 | `sessoes/AAAA-MM-DD.md` | Uma nota por sessão | Sim, cria e preenche |
 | `duvidas.md` | Dúvidas abertas e tópicos para revisar | Sim |

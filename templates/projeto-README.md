@@ -6,6 +6,10 @@
 
 O que este projeto resolve, em 2 ou 3 frases.
 
+## Tecnologias
+
+- Ferramenta: para que foi usada.
+
 ## Como funciona
 
 Arquitetura em poucas linhas (e um diagrama, se ajudar).
