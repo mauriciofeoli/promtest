@@ -6,38 +6,49 @@
 **Prompt + test.** Workspace de estudo de Inteligência Artificial, dos fundamentos ao avançado, com um tutor de IA e só fontes gratuitas.
 
 ![Fase atual](https://img.shields.io/badge/fase%20atual-0%20Base%20t%C3%A9cnica-blue)
-![Fases](https://img.shields.io/badge/fases-12-lightgrey)
+![Roteiro](https://img.shields.io/badge/roteiro-21%20blocos-lightgrey)
 ![Fontes](https://img.shields.io/badge/fontes-100%25%20gratuitas-green)
-![Ritmo](https://img.shields.io/badge/ritmo-1%20a%202h%20por%20dia-orange)
+![Ritmo](https://img.shields.io/badge/ritmo-acompanha%20o%20progresso-orange)
 
 ## Objetivo
 
-Ganhar habilidade prática e aprender os fundamentos principais de IA, do básico ao avançado. A última fase aplica o que foi aprendido em qualidade de software.
+Ganhar habilidade prática e aprender os fundamentos principais de IA, do básico ao avançado. No caminho entram etapas de DevOps e cloud (Linux, redes, Docker, CI/CD, AWS, Terraform, Kubernetes e observabilidade), intercaladas com as fases de IA num roteiro único. A última fase aplica o que foi aprendido em qualidade de software.
 
 Três regras guiam o caminho:
 
-- **Um projeto por fase.** Só avanço quando o projeto da fase está pronto.
+- **Um projeto por bloco.** Só avanço quando o projeto do bloco está pronto, no meu ritmo e sem prazo fixo.
 - **Cursos oficiais e gratuitos**, como Anthropic Academy, OpenAI Academy e Google.
 - **Tudo registrado.** Cada sessão vira uma nota e um commit.
 
 ## Progresso
 
-| Fase | Tema | Status |
-| --- | --- | --- |
-| 0 | Base técnica | Em andamento |
-| 1 | Prompt e uso avançado | Não iniciada |
-| 2 | APIs de modelos | Não iniciada |
-| 3 | RAG e dados | Não iniciada |
-| 4 | Agentes, MCP e OpenClaw | Não iniciada |
-| 5 | Agentes de código e automação | Não iniciada |
-| 6 | Evals e confiabilidade | Não iniciada |
-| 7 | Fundamentos de ML e LLMs por dentro | Não iniciada |
-| 8 | Modelos abertos e fine-tuning | Não iniciada |
-| 9 | Multimodal | Não iniciada |
-| 10 | Segurança, ética e regulação | Não iniciada |
-| 11 | IA aplicada a QA | Não iniciada |
+| Ordem | Bloco | Tema | Status |
+| --- | --- | --- | --- |
+| 1 | Fase 0 | Base técnica | Em andamento |
+| 2 | Etapa 1 | Linux e terminal | Não iniciada |
+| 3 | Fase 1 | Prompt e uso avançado | Não iniciada |
+| 4 | Etapa 2 | Redes | Não iniciada |
+| 5 | Fase 2 | APIs de modelos | Não iniciada |
+| 6 | Etapa 3 | Git e scripting | Não iniciada |
+| 7 | Fase 3 | RAG e dados | Não iniciada |
+| 8 | Etapa 4 | Docker | Não iniciada |
+| 9 | Fase 4 | Agentes, MCP e OpenClaw | Não iniciada |
+| 10 | Etapa 5 | CI/CD com GitHub Actions | Não iniciada |
+| 11 | Fase 5 | Agentes de código e automação | Não iniciada |
+| 12 | Etapa 6 | AWS | Não iniciada |
+| 13 | Etapa 7 | Terraform | Não iniciada |
+| 14 | Fase 6 | Evals e confiabilidade | Não iniciada |
+| 15 | Etapa 8 | Kubernetes | Não iniciada |
+| 16 | Etapa 9 | Observabilidade e SRE | Não iniciada |
+| 17 | Fase 7 | Fundamentos de ML e LLMs por dentro | Não iniciada |
+| 18 | Fase 8 | Modelos abertos e fine-tuning | Não iniciada |
+| 19 | Fase 9 | Multimodal | Não iniciada |
+| 20 | Fase 10 | Segurança, ética e regulação | Não iniciada |
+| 21 | Fase 11 | IA aplicada a QA | Não iniciada |
 
-O detalhe de cada fase, tópico e sessão está em [progresso.md](progresso.md) e o plano completo em [plano.md](plano.md). A trilha paralela de DevOps e cloud, com o projeto principal e os projetos de cada etapa, está em [trilha-devops.md](trilha-devops.md).
+Fase é um bloco de IA; etapa é um bloco de DevOps e cloud.
+
+O ritmo, os tópicos e as sessões estão em [progresso.md](progresso.md). O roteiro e as fases de IA estão em [plano.md](plano.md); as etapas de DevOps e cloud, com o projeto principal, em [trilha-devops.md](trilha-devops.md).
 
 ## Como funciona
 
@@ -69,12 +80,12 @@ flowchart LR
 ```text
 PromTest/
 ├── CLAUDE.md          instruções do tutor (lidas pelo Claude Code)
-├── plano.md           o plano completo: 12 fases, cursos, projetos
-├── trilha-devops.md   trilha paralela: Linux, redes, Docker, CI/CD, AWS, Terraform, Kubernetes, SRE
-├── progresso.md       onde parei, fases, tópicos, registro
+├── plano.md           roteiro único, regras de ritmo e as 12 fases de IA
+├── trilha-devops.md   as 9 etapas de DevOps e cloud e seus projetos
+├── progresso.md       onde parei, ritmo, roteiro, tópicos, registro
 ├── duvidas.md         dúvidas abertas e tópicos para revisar
 ├── sessoes/           uma nota por sessão (AAAA-MM-DD.md)
-├── projetos/          um projeto por fase (fase-N-nome/)
+├── projetos/          um projeto por bloco (fase-N-nome/, devops-*/)
 ├── templates/         modelos de sessão e de README
 ├── conteudo/          LinkedIn e Substack: guia, pautas, métricas, posts
 ├── docs/

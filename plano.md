@@ -1,39 +1,76 @@
 ---
 tipo: plano
 status: referência (só alterar quando você pedir)
-atualizado: 2026-10-09
+atualizado: 2026-10-23
 ---
 
-# Plano de estudos de IA: do zero ao avançado
+# Plano de estudos: IA do zero ao avançado, com DevOps e cloud
 
 ## Como usar este plano
 
-São 12 fases em cerca de 14 meses, estudando 1 a 2 horas por dia, só com fontes gratuitas. Cada fase tem objetivo, tópicos, ferramentas, cursos oficiais, um projeto e um critério de "pronto".
+O estudo segue um roteiro único de 21 blocos: as 12 fases de IA deste arquivo e as 9 etapas de DevOps e cloud de [[trilha-devops]], intercaladas para que cada bloco prepare o seguinte. Cada bloco tem objetivo, tópicos, fontes gratuitas, um projeto e um critério de "pronto". Não há prazo fixo: o roteiro anda na velocidade em que você aprende (veja "Ritmo").
+
+- **Nomes:** "Fase" é um bloco de IA (Fase 0 a 11); "Etapa" é um bloco de DevOps e cloud (Etapa 1 a 9). O detalhe das fases está aqui; o das etapas, em [[trilha-devops]].
 
 - **Nível de partida:** iniciante absoluto em programação. A Fase 0 foi reescrita para ensinar terminal, Python e Git do zero antes de qualquer coisa de IA; as fases seguintes contam com isso.
 - **Ordem:** prática antes da teoria profunda. Você constrói com APIs e agentes (fases 2 a 6) antes de estudar matemática e redes neurais (fase 7), porque a teoria fica mais clara depois de ver o modelo errar na prática.
 - **Regra 70/30:** 70% do tempo construindo, 30% assistindo ou lendo.
-- **Um projeto por fase:** publicado no GitHub, com um post curto no LinkedIn sobre o que aprendeu.
+- **Um projeto por bloco:** publicado no GitHub, com um post curto no LinkedIn sobre o que aprendeu. Os projetos de IA e de DevOps se conectam (veja "Como os projetos se conectam").
 - **Com o tutor:** em cada tópico, peça explicação, exercícios, revisão de código ou resumo de artigo.
 - **Atualização:** ferramentas e cursos mudam rápido. Itens marcados "(conferir)" são verificados quando você chegar neles.
 - **Custo:** todas as fontes são gratuitas. O único gasto possível é o uso de APIs pagas por uso, evitável com cotas grátis e modelos locais (Ollama).
 
-## Cronograma
+## Roteiro
 
-| Fase | Tema | Duração | Semanas |
-| --- | --- | --- | --- |
-| 0 | Base técnica | 6 sem | 1 a 6 |
-| 1 | Prompt e uso avançado | 4 sem | 7 a 10 |
-| 2 | APIs de modelos | 4 sem | 11 a 14 |
-| 3 | RAG e dados | 4 sem | 15 a 18 |
-| 4 | Agentes, MCP e OpenClaw | 6 sem | 19 a 24 |
-| 5 | Agentes de código e automação | 4 sem | 25 a 28 |
-| 6 | Evals e confiabilidade | 4 sem | 29 a 32 |
-| 7 | Fundamentos de ML e LLMs por dentro | 12 sem | 33 a 44 |
-| 8 | Modelos abertos e fine-tuning | 6 sem | 45 a 50 |
-| 9 | Multimodal | 3 sem | 51 a 53 |
-| 10 | Segurança, ética e regulação | 2 sem | 54 a 55 |
-| 11 | IA aplicada a QA | 6 sem | 56 a 61 |
+A ordem abaixo é a ordem de estudo: fases de IA (detalhadas neste arquivo) e etapas de DevOps e cloud (detalhadas em [[trilha-devops]]) num caminho só. Um bloco só começa quando o anterior estiver com o projeto pronto e o "pronto quando" atendido. A estimativa considera 1 a 2 horas por dia e serve só de referência inicial; a previsão real vem do seu ritmo.
+
+| Ordem | Bloco | Tema | Estimativa | Por que aqui |
+| --- | --- | --- | --- | --- |
+| 1 | Fase 0 | Base técnica | 6 sem | Ponto de partida: terminal, Python, Git, HTTP e Docker do zero |
+| 2 | Etapa 1 | Linux e terminal | 3 sem | Aprofunda o terminal da Fase 0 enquanto está fresco; servidores e agentes rodam em Linux |
+| 3 | Fase 1 | Prompt e uso avançado | 4 sem | Não depende de infraestrutura e traz IA logo no começo |
+| 4 | Etapa 2 | Redes | 2 sem | Prepara a Fase 2: chamar APIs exige entender DNS, HTTPS, portas e timeouts |
+| 5 | Fase 2 | APIs de modelos | 4 sem | Usa o HTTP da Fase 0 e as redes da Etapa 2 |
+| 6 | Etapa 3 | Git e scripting | 3 sem | Os projetos crescem: branches, PRs, pytest e o início do projeto principal de DevOps |
+| 7 | Fase 3 | RAG e dados | 4 sem | Bancos vetoriais sobem com o Docker básico da Fase 0 |
+| 8 | Etapa 4 | Docker | 3 sem | A Fase 4 roda o OpenClaw isolado em container |
+| 9 | Fase 4 | Agentes, MCP e OpenClaw | 6 sem | Usa Linux (Etapa 1) e Docker (Etapa 4) para isolar agentes |
+| 10 | Etapa 5 | CI/CD com GitHub Actions | 2 sem | A Fase 5 usa agentes de código no CI e a Fase 6 roda evals no pipeline |
+| 11 | Fase 5 | Agentes de código e automação | 4 sem | Claude Code em modo headless no pipeline da Etapa 5; n8n em Docker |
+| 12 | Etapa 6 | AWS | 4 sem | Primeira nuvem, feita à mão antes de automatizar |
+| 13 | Etapa 7 | Terraform | 3 sem | Fecha o deploy do projeto principal de DevOps |
+| 14 | Fase 6 | Evals e confiabilidade | 4 sem | Suíte de evals rodando no pipeline da Etapa 5 |
+| 15 | Etapa 8 | Kubernetes | 4 sem | Docker já firme; prepara a infraestrutura da Fase 8 |
+| 16 | Etapa 9 | Observabilidade e SRE | 3 sem | Completa a observabilidade de IA da Fase 6 com métricas, alertas e SLOs |
+| 17 | Fase 7 | Fundamentos de ML e LLMs por dentro | 12 sem | Bloco teórico longo, com a base de engenharia já completa |
+| 18 | Fase 8 | Modelos abertos e fine-tuning | 6 sem | Serve modelos com Docker, Kubernetes, Terraform e monitoramento |
+| 19 | Fase 9 | Multimodal | 3 sem | Usa as APIs e os agentes das fases anteriores |
+| 20 | Fase 10 | Segurança, ética e regulação | 2 sem | Red teaming dos agentes e revisão de segurança da infraestrutura |
+| 21 | Fase 11 | IA aplicada a QA | 6 sem | Projeto final no CI, com deploy e monitoramento |
+
+Somando as estimativas, são cerca de 88 semanas. O número real depende do ritmo.
+
+## Ritmo
+
+O roteiro acompanha a sua velocidade, não um calendário.
+
+- **O que se mede:** sessões feitas, minutos estudados e tópicos concluídos. Um tópico está concluído quando você fez o exercício sem receber a resposta pronta e, se houve quiz, acertou pelo menos 4 de 5. Tudo isso fica na seção "Ritmo" de `progresso.md`, atualizada a cada `/encerrar`.
+- **Previsão:** a partir de 3 tópicos concluídos, o tutor troca a estimativa da tabela pela previsão real: minutos médios por tópico vezes tópicos que faltam no bloco, divididos pelos minutos que você estuda por semana. Os tópicos têm tamanhos diferentes, então a previsão melhora com mais dados e é recalculada a cada sessão.
+- **Mais rápido que o previsto:** se você acerta os exercícios de primeira e vai bem nos quizzes, o tutor avança para o próximo tópico na mesma sessão e oferece desafios ou tópicos opcionais. Nunca pula o projeto nem o "pronto quando".
+- **Mais devagar:** se você erra o mesmo ponto duas vezes ou fica abaixo de 3 de 5 no quiz, o tutor divide o tópico em partes menores, passa mais exercícios e revisa antes de seguir. Se a previsão do bloco passar do dobro da estimativa, ele propõe cortar tópicos opcionais, nunca o projeto.
+- **Revisão quinzenal:** compara você com você mesmo (as últimas 2 semanas contra as anteriores), não com datas fixas.
+
+## Como os projetos se conectam
+
+| Projeto | Usa | É usado por |
+| --- | --- | --- |
+| Fase 0: cliente HTTP em Docker | | Etapa 2: a checagem de rede reaproveita o tratamento de erros e retries |
+| Etapas 3 a 9: painel de execuções de teste (projeto principal de DevOps) | Etapas 1 e 2 | Fases 6 e 11: a mesma estrutura de pipeline e deploy |
+| Fase 4: OpenClaw com skill própria | Etapas 1 e 4: Linux e container isolado | Fase 10: red teaming |
+| Fase 5: app feito com Claude Code | Etapa 5: pipeline com testes | |
+| Fase 6: suíte de evals no CI | Etapa 5: GitHub Actions | Etapa 9: métricas de qualidade no Grafana |
+| Fase 8: modelo servido por API | Etapas 4, 7, 8 e 9 | Fase 11 |
+| Fase 11: assistente de QA | Etapas 5, 7 e 9: CI, deploy e monitoramento | |
 
 ## Fase 0: Base técnica (6 semanas)
 
@@ -41,12 +78,12 @@ Objetivo: ter a caixa de ferramentas de quem constrói com IA, partindo do zero 
 
 **Tópicos (nesta ordem; cada um só começa quando o anterior estiver firme)**
 
-1. **Terminal básico:** o que é o terminal, abrir, navegar entre pastas, criar e apagar arquivos, rodar comandos, ler mensagens de erro.
+1. **Terminal básico:** o que é o terminal, abrir, navegar entre pastas, criar e apagar arquivos, rodar comandos, ler mensagens de erro. Aprofundado na Etapa 1.
 2. **Python do zero:** instalar e rodar, variáveis, texto, números, listas e dicionários, `if`, `for`, funções, ler e escrever arquivos, erros e `try/except`.
-3. **Git e GitHub básico:** o que é versionar, `init`, `add`, `commit`, `push`, ler o histórico, branches, pull request.
+3. **Git e GitHub básico:** o que é versionar, `init`, `add`, `commit`, `push`, ler o histórico, branches, pull request. Aprofundado na Etapa 3.
 4. **Python para IA:** ambientes virtuais (`uv`, venv), instalar bibliotecas, JSON e CSV, variáveis de ambiente e segredos (`.env`), tipagem, dataclasses e Pydantic, `async/await`.
-5. **HTTP e APIs:** o que é uma API, métodos, status, headers, autenticação por chave, JSON, paginação, rate limit, retries com backoff, webhooks.
-6. **Docker:** o que é um container, imagens, volumes, `docker compose` (vai rodar n8n, bancos vetoriais e modelos locais).
+5. **HTTP e APIs:** o que é uma API, métodos, status, headers, autenticação por chave, JSON, paginação, rate limit, retries com backoff, webhooks. O lado de redes e servidor vem na Etapa 2.
+6. **Docker:** o que é um container, imagens, volumes, `docker compose` (vai rodar n8n, bancos vetoriais e modelos locais). Dockerfile próprio e boas práticas vêm na Etapa 4.
 7. **SQL básico:** `SELECT`, `JOIN`, `GROUP BY`; base para bancos vetoriais como o pgvector.
 8. **Jupyter Notebooks:** para experimentos rápidos.
 9. **TypeScript (opcional):** a segunda linguagem do AI engineer, útil para interfaces e agentes em Node. É o primeiro item a cortar se houver atraso.
@@ -248,7 +285,7 @@ Objetivo: provar com números que um sistema de IA funciona. Evals são os teste
 - Métricas: acurácia, fidelidade, relevância, taxa de alucinação, sucesso de tarefa em agentes, custo e latência.
 - Testes de regressão de prompt e de modelo: um alarme quando a nota cai.
 - Avaliação de agentes: trajetória (ferramentas certas na ordem certa), não só a resposta final.
-- Observabilidade: tracing de chamadas, logs de ferramentas, custo por requisição.
+- Observabilidade: tracing de chamadas, logs de ferramentas, custo por requisição. A parte de infraestrutura (Prometheus, Grafana, alertas, SLO) vem na Etapa 9.
 - Guardrails: validação de entrada e saída, filtros, limites de ação.
 - Segurança: prompt injection direta e indireta, vazamento de dados, jailbreaks, red teaming.
 - Benchmarks públicos (MMLU, SWE-bench e outros): o que medem e por que não bastam.
@@ -332,9 +369,9 @@ Objetivo: rodar, adaptar e servir modelos você mesmo, sem depender só de APIs.
 
 **Infraestrutura e LLMOps**
 
-- Servir um modelo ou agente com FastAPI e Docker; deploy em nuvem com plano gratuito.
+- Servir um modelo ou agente com FastAPI e Docker; deploy na AWS com Terraform (Etapas 6 e 7) ou em Kubernetes (Etapa 8).
 - Filas, cache, limites de custo, versionamento de prompts e modelos.
-- Monitoramento em produção e rollback.
+- Monitoramento em produção e rollback, com o que foi visto na Etapa 9.
 
 **Fontes gratuitas**
 
@@ -453,14 +490,14 @@ Reserve 2 horas por semana só para novidades; o resto do tempo segue o plano.
 | 10 | Relatório de red teaming do próprio agente | Segurança |
 | 11 | Assistente de QA completo com evals | Especialização |
 
-Cada projeto ganha um README com o problema, a arquitetura, os resultados medidos e o que você faria diferente.
+Os projetos das etapas de DevOps e cloud estão em [[trilha-devops]], na seção "Projetos de portfólio". Cada projeto ganha um README com o problema, as tecnologias, como rodar, os resultados medidos e o que você faria diferente.
 
 ## Rotina semanal
 
-- **Segunda a sexta (1 a 2 horas):** 30 minutos de curso ou leitura, o resto construindo o projeto da fase.
+- **Segunda a sexta (1 a 2 horas):** 30 minutos de curso ou leitura, o resto construindo o projeto do bloco.
 - **Sábado (2 a 3 horas):** avançar o projeto e publicar o progresso no GitHub.
 - **Domingo:** descanso, ou 2 horas de novidades da semana.
-- **A cada 2 semanas:** revisão com o tutor, um quiz curto e ajuste do plano.
-- **Fim de cada fase:** README do projeto e um post no LinkedIn sobre o que aprendeu.
+- **A cada 2 semanas:** revisão com o tutor, um quiz curto e ajuste do ritmo.
+- **Fim de cada bloco:** README do projeto e um post no LinkedIn sobre o que aprendeu.
 
-**Atrasou?** Normal. Corte tópicos opcionais, nunca o projeto da fase: é ele que transforma estudo em habilidade.
+**Atrasou?** Normal. Corte tópicos opcionais, nunca o projeto do bloco: é ele que transforma estudo em habilidade.

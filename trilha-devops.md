@@ -8,35 +8,29 @@ atualizado: 2026-10-23
 
 ## Como usar esta trilha
 
-São 9 etapas em cerca de 27 semanas, estudando 1 a 2 horas por dia, só com fontes gratuitas. Cada etapa tem objetivo, tópicos, fontes, um projeto pequeno e um critério de "pronto". Os projetos vão crescendo até formar o projeto principal: uma aplicação em Docker, publicada na AWS com Terraform, com pipeline de CI/CD e monitoramento.
+São 9 etapas de DevOps e cloud que fazem parte do roteiro único de estudo, intercaladas com as fases de IA (veja "Roteiro" em [[plano]]). Cada etapa tem objetivo, tópicos, fontes, um projeto pequeno e um critério de "pronto". Os projetos vão crescendo até formar o projeto principal: uma aplicação em Docker, publicada na AWS com Terraform, com pipeline de CI/CD e monitoramento.
 
-- **Trilha paralela:** ela não substitui o [[plano]] de IA. As mesmas regras valem aqui: um projeto por etapa, prática antes da teoria (70/30) e só avançar com o "pronto quando" atendido.
-- **Ordem:** cada etapa usa a anterior. Kubernetes só entra depois de Docker estar firme.
+- **Mesmo roteiro, mesmas regras:** as etapas seguem o ritmo, as revisões e o registro do [[plano]]: um projeto por etapa, prática antes da teoria (70/30) e só avançar com o "pronto quando" atendido.
+- **Ordem:** cada etapa usa a anterior e prepara a fase de IA que vem depois. Kubernetes só entra depois de Docker estar firme.
 - **Sem duplicar a Fase 0:** terminal básico, Python do zero, Git básico e Docker básico já estão na Fase 0 do plano de IA. Aqui você parte do que aprendeu lá e vai mais fundo, com foco em servidor, automação e produção.
 - **Atualização:** ferramentas, preços e cursos mudam rápido. Itens marcados "(conferir)" são verificados quando você chegar neles.
 - **Custo:** os estudos são gratuitos. O único gasto possível é a AWS (etapas 6, 7 e no projeto principal). Veja "Cuidados com custo na AWS" antes de criar a conta.
 
-## Como encaixar com o plano de IA
+## Onde cada etapa entra
 
-Estudar as duas trilhas ao mesmo tempo, no mesmo 1 a 2 horas por dia, dobra o prazo de cada uma. Escolha uma destas formas e avise o tutor:
+As estimativas são referência inicial; a previsão real segue o seu ritmo (seção "Ritmo" do [[plano]]).
 
-1. **Depois da Fase 0 de IA:** a Fase 0 já cobre o começo das etapas 1, 3 e 4. É a forma mais natural de emendar.
-2. **Intercalada:** uma semana de IA, uma de DevOps. É mais lenta, mas mantém as duas vivas.
-3. **Antes de IA:** a trilha inteira primeiro, se o objetivo de curto prazo for uma vaga de DevOps, SRE ou QA de infraestrutura.
-
-## Cronograma
-
-| Etapa | Tema | Duração | Semanas |
-| --- | --- | --- | --- |
-| 1 | Linux e terminal | 3 sem | 1 a 3 |
-| 2 | Redes | 2 sem | 4 a 5 |
-| 3 | Git e scripting | 3 sem | 6 a 8 |
-| 4 | Docker | 3 sem | 9 a 11 |
-| 5 | CI/CD com GitHub Actions | 2 sem | 12 a 13 |
-| 6 | AWS | 4 sem | 14 a 17 |
-| 7 | Terraform | 3 sem | 18 a 20 |
-| 8 | Kubernetes | 4 sem | 21 a 24 |
-| 9 | Observabilidade e SRE | 3 sem | 25 a 27 |
+| Etapa | Tema | Estimativa | Vem depois de | Prepara para |
+| --- | --- | --- | --- | --- |
+| 1 | Linux e terminal | 3 sem | Fase 0 | Fase 1 e todas as etapas |
+| 2 | Redes | 2 sem | Fase 1 | Fase 2 |
+| 3 | Git e scripting | 3 sem | Fase 2 | Fase 3 e o projeto principal |
+| 4 | Docker | 3 sem | Fase 3 | Fase 4 |
+| 5 | CI/CD com GitHub Actions | 2 sem | Fase 4 | Fases 5 e 6 |
+| 6 | AWS | 4 sem | Fase 5 | Etapa 7 |
+| 7 | Terraform | 3 sem | Etapa 6 | Fases 6 e 8 |
+| 8 | Kubernetes | 4 sem | Fase 6 | Etapa 9 e Fase 8 |
+| 9 | Observabilidade e SRE | 3 sem | Etapa 8 | Fases 7, 8 e 11 |
 
 ## Etapa 1: Linux e terminal (3 semanas)
 

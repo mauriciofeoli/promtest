@@ -2,7 +2,7 @@
 
 ## Resumo e objetivo
 
-O Tutor de IA é o Claude configurado para conduzir você pelo `plano.md`, sessão a sessão, ensinando, cobrando prática e registrando o progresso nos arquivos deste repositório.
+O Tutor de IA é o Claude configurado para conduzir você pelo roteiro de `plano.md` (fases de IA, intercaladas com as etapas de DevOps e cloud de `trilha-devops.md`), sessão a sessão, ensinando, cobrando prática e registrando o progresso nos arquivos deste repositório.
 
 **Problema:** estudar IA sozinho leva a pular etapas, esquecer o que já viu e perder o fio entre conversas.
 
@@ -10,14 +10,14 @@ O Tutor de IA é o Claude configurado para conduzir você pelo `plano.md`, sess�
 
 **Objetivos**
 
-1. Concluir as 12 fases do plano em cerca de 14 meses.
-2. Entregar um projeto publicado por fase.
+1. Concluir os 21 blocos do roteiro no seu ritmo, com a previsão recalculada a partir do progresso real.
+2. Entregar um projeto publicado por bloco.
 3. Manter no mínimo 4 sessões por semana.
 4. Nunca perder contexto: qualquer sessão retoma de onde a última parou.
 
 **Métricas**
 
-- Tópicos concluídos por semana e porcentagem do plano concluída.
+- Tópicos concluídos por semana, minutos por tópico e porcentagem do roteiro concluída.
 - Sessões por semana (contadas em `sessoes/`).
 - Acerto nos quizzes (meta: 80% ou mais).
 - Projetos publicados no GitHub.
@@ -32,21 +32,21 @@ O Tutor de IA é o Claude configurado para conduzir você pelo `plano.md`, sess�
 | Progresso | `progresso.md` | Onde paramos, fases, tópicos, registro |
 | Sessões | `sessoes/AAAA-MM-DD.md` | Uma nota por dia de estudo |
 | Dúvidas | `duvidas.md` | Abertas, para revisar, resolvidas |
-| Projetos | `projetos/fase-N-nome/` | Código e README de cada fase |
+| Projetos | `projetos/fase-N-nome/` e `projetos/devops-*/` | Código e README de cada bloco |
 | Leitura e navegação | Obsidian | Mesma pasta, aberta como vault |
 | Sincronização | Git + GitHub privado | Histórico e acesso pelo celular |
 
 ## Fluxos
 
-**Início de sessão:** `/estudar [minutos]` → lê progresso e dúvidas → revisão rápida se houver itens vencidos → diz fase, tópico e próximo passo → ensina.
+**Início de sessão:** `/estudar [minutos]` → lê progresso e dúvidas → revisão rápida se houver itens vencidos → diz bloco, tópico e próximo passo → ensina.
 
 **Sessão:** explicação em camadas → exercício → dicas graduais → correção → próximo conceito → curso ou documentação oficial do tópico.
 
 **Fim de sessão:** `/encerrar` → resumo → nota da sessão → `progresso.md` e `duvidas.md` atualizados → commit aprovado por você → próximo passo e tarefa.
 
-**Revisão quinzenal:** `/revisao` → resumo do período → quiz → comparação com o cronograma → ajuste de ritmo.
+**Revisão quinzenal:** `/revisao` → resumo do período → quiz → comparação com o seu próprio ritmo → ajuste.
 
-**Fim de fase:** conferir o critério "Pronto quando" → revisar projeto e README → rascunho do post de LinkedIn (sem emojis) → marcar a fase como concluída → carregar os tópicos da próxima fase em `progresso.md`.
+**Fim de bloco:** conferir o critério "Pronto quando" → revisar projeto e README → rascunho do post de LinkedIn (sem emojis) → marcar o bloco como concluído no roteiro → carregar os tópicos do próximo bloco em `progresso.md`.
 
 ## Regras pedagógicas
 
