@@ -84,6 +84,7 @@ PromTest/
 ├── progresso.md       onde parei, ritmo, roteiro, tópicos, registro
 ├── duvidas.md         dúvidas abertas e tópicos para revisar
 ├── sessoes/           uma nota por sessão (AAAA-MM-DD.md)
+├── exercicios/        exercícios de código de cada módulo (modulo-NN-nome/)
 ├── projetos/          um projeto por módulo (modulo-NN-nome/, painel-testes/)
 ├── templates/         modelos de sessão e de README
 ├── conteudo/          LinkedIn e Substack: guia, pautas, métricas, posts
@@ -115,7 +116,7 @@ Não precisa colar prompt nenhum: o `CLAUDE.md` é o prompt. Escolha uma das op�
 
 Nas próximas vezes, é só `cd PromTest` e `claude`.
 
-Para começar do zero com o seu próprio progresso, zere `progresso.md`, `duvidas.md` e a pasta `sessoes/`.
+Para começar do zero com o seu próprio progresso, zere `progresso.md`, `duvidas.md` e as pastas `sessoes/` e `exercicios/`.
 
 </details>
 

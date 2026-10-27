@@ -10,7 +10,7 @@ atualizado: 2026-10-24
 
 Um plano só, com 21 módulos numa ordem única. Cada módulo pertence a uma área (Base, IA, DevOps, Cloud ou QA), mas a área é só uma etiqueta: ela diz de que tipo é o módulo, não cria um caminho separado. Cada módulo prepara o seguinte e tem objetivo, tópicos, fontes gratuitas, um projeto e um critério de "pronto".
 
-- **Nível de partida:** iniciante absoluto em programação. O Módulo 1 ensina terminal, Python, Git e Docker do zero; os módulos seguintes contam com isso.
+- **Nível de partida:** zero em tudo, de propósito, como nível padrão para qualquer pessoa usar o plano. O Módulo 1 ensina terminal, Python, Git e Docker do zero; os módulos seguintes contam com isso. Quem já conhece um assunto passa rápido por ele no diagnóstico do módulo.
 - **Ordem:** prática antes da teoria profunda. Você constrói com APIs e agentes (módulos 5 a 14) antes de estudar matemática e redes neurais (Módulo 17), porque a teoria fica mais clara depois de ver o modelo errar na prática. Os módulos de DevOps e cloud entram logo antes do módulo de IA que precisa deles.
 - **Ritmo livre:** não há prazo nem meta de velocidade (veja "Ritmo").
 - **Regra 70/30:** 70% do tempo construindo, 30% assistindo ou lendo.
@@ -100,7 +100,7 @@ O Módulo 21 concentra a parte de QA, mas o tema aparece antes, e o seu conhecim
 
 ## Módulo 1: Base técnica (Base, 6 semanas)
 
-Objetivo: ter a caixa de ferramentas de quem constrói com IA, partindo do zero absoluto. O plano assume iniciante: sem experiência prévia em programação, Python, Git ou Docker. O conhecimento de QA entra como ponte nos exemplos (testar uma API, achar bug, pensar em cenários), mas nenhuma ferramenta é tida como conhecida.
+Objetivo: ter a caixa de ferramentas de quem constrói com IA, partindo do zero. Por padrão, o plano não supõe experiência prévia em programação, Python, Git ou Docker; quem já conhece um assunto passa rápido por ele. O conhecimento de QA entra como ponte nos exemplos (testar uma API, achar bug, pensar em cenários), mas nenhuma ferramenta é tida como conhecida.
 
 **Tópicos (nesta ordem; cada um só começa quando o anterior estiver firme)**
 
