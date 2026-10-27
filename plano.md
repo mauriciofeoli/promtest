@@ -385,8 +385,11 @@ Objetivo: cada mudança é testada e empacotada sozinha. Se um teste falha, nada
 
 - Documentação do GitHub Actions (docs.github.com/pt/actions).
 - GitHub Skills: cursos de Actions (conferir os títulos atuais).
+- Documentação do GitHub Pages (docs.github.com/pt/pages) e do MkDocs (mkdocs.org), para o projeto extra.
 
 **Projeto:** `painel-testes`, Módulo 10. Um workflow que, a cada PR, roda lint e testes (unitários e de integração com Postgres) e bloqueia o merge se falhar; a cada merge na `main`, constrói e publica a imagem no GitHub Container Registry. O workflow fica em `.github/workflows/` na raiz do repositório, filtrado pela pasta do projeto.
+
+**Projeto extra:** site de documentação do PromTest. O plano de estudos e o progresso publicados como site com MkDocs e GitHub Pages, com menu e busca. Um workflow publica o site sozinho a cada merge na `main`, e só publica se o build passar e os links internos estiverem certos. Não bloqueia a conclusão do módulo.
 
 **Pronto quando:** um PR com um teste quebrado é bloqueado sozinho, e o merge na `main` gera uma imagem nova sem você rodar nada.
 
