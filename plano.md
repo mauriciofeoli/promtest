@@ -108,7 +108,7 @@ Objetivo: ter a caixa de ferramentas de quem constrói com IA, partindo do zero.
 2. **Python do zero:** instalar e rodar, variáveis, texto, números, listas e dicionários, `if`, `for`, funções, ler e escrever arquivos, erros e `try/except`.
 3. **Git e GitHub básico:** o que é versionar, `init`, `add`, `commit`, `push`, ler o histórico, branches, pull request. Aprofundado no Módulo 6.
 4. **Python para IA:** ambientes virtuais (`uv`, venv), instalar bibliotecas, JSON e CSV, variáveis de ambiente e segredos (`.env`), tipagem, dataclasses e Pydantic, `async/await`.
-5. **HTTP e APIs:** o que é uma API, métodos, status, headers, autenticação por chave, JSON, paginação, rate limit, retries com backoff, webhooks. O lado de redes e servidor vem no Módulo 4.
+5. **HTTP e APIs:** o que é uma API, métodos, status, headers, autenticação por chave, JSON e XML (ler, escrever e comparar os dois formatos), paginação, rate limit, retries com backoff, webhooks; ler o contrato OpenAPI de uma API pública e testá-la pelo Swagger UI. O lado de redes e servidor vem no Módulo 4.
 6. **Docker:** o que é um container, imagens, volumes, `docker compose` (vai rodar n8n, bancos vetoriais e modelos locais). Dockerfile próprio e boas práticas vêm no Módulo 8.
 7. **SQL básico:** `SELECT`, `JOIN`, `GROUP BY`; base para bancos vetoriais como o pgvector.
 8. **Jupyter Notebooks:** para experimentos rápidos.
@@ -252,6 +252,7 @@ Objetivo: trabalhar como numa equipe de engenharia: histórico limpo, branches, 
 - **Testes do próprio script:** `pytest` para funções de automação; o seu lado QA entra aqui.
 - **Bash ou Python:** Bash para colar comandos curtos; Python quando houver lógica, dados ou testes.
 - **Uma API pequena:** o que é um endpoint, FastAPI ou Flask para expor dados por HTTP.
+- **Documentação da API com OpenAPI:** o contrato OpenAPI (antigo Swagger) gerado pelo FastAPI, com descrições, exemplos de requisição e resposta e códigos de status; Swagger UI e ReDoc; exportar o `openapi.json`.
 
 **Fontes gratuitas**
 
@@ -260,9 +261,9 @@ Objetivo: trabalhar como numa equipe de engenharia: histórico limpo, branches, 
 - "Automate the Boring Stuff with Python" (automatetheboringstuff.com), gratuito para ler online.
 - Documentação do pytest e do FastAPI (fastapi.tiangolo.com/pt).
 
-**Projeto:** `painel-testes` (início do projeto principal). Uma API pequena em Python que registra e lista execuções de teste (nome da suíte, quantos passaram, quantos falharam, duração), com testes em `pytest`, desenvolvida com branches e pull requests. Junto, um script que lê um relatório JUnit XML e envia os resultados para a API.
+**Projeto:** `painel-testes` (início do projeto principal). Uma API pequena em Python que registra e lista execuções de teste (nome da suíte, quantos passaram, quantos falharam, duração), com testes em `pytest`, desenvolvida com branches e pull requests. Junto, um script que lê um relatório JUnit XML e envia os resultados para a API. A API sai documentada em OpenAPI, com Swagger UI no ar e o `openapi.json` versionado no repositório.
 
-**Pronto quando:** você resolve um conflito de merge sem medo, abre um PR com descrição e testes, e automatiza em Python uma tarefa que antes fazia à mão.
+**Pronto quando:** você resolve um conflito de merge sem medo, abre um PR com descrição e testes, documenta cada endpoint no Swagger com exemplo e códigos de resposta, e automatiza em Python uma tarefa que antes fazia à mão.
 
 ## Módulo 7: RAG, embeddings e dados (IA, 4 semanas)
 

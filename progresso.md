@@ -64,7 +64,7 @@ Status possíveis: Não iniciado, Em andamento, Concluído.
 - [ ] Python do zero (variáveis, listas, if, for, funções, arquivos, erros)
 - [ ] Git e GitHub básico
 - [ ] Python para IA (uv, .env, JSON, Pydantic, async)
-- [ ] HTTP e APIs (status, headers, retries, webhooks)
+- [ ] HTTP e APIs (status, headers, JSON e XML, OpenAPI e Swagger UI, retries, webhooks)
 - [ ] Docker e docker compose
 - [ ] SQL básico
 - [ ] Jupyter Notebooks

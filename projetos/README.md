@@ -9,7 +9,7 @@ Um projeto por módulo do roteiro em `plano.md`, cada um na própria pasta e com
 | 3 | IA | `modulo-03-prompts/` | Biblioteca de 20 prompts comparados em 3 IAs | Não iniciado |
 | 4 | DevOps | `modulo-04-checagem-rede/` | Checador de DNS, porta, HTTP e certificado TLS | Não iniciado |
 | 5 | IA | `modulo-05-assistente-arquivos/` | Assistente de arquivos com JSON validado | Não iniciado |
-| 6 | DevOps | `painel-testes/` | Projeto principal: API com pytest, feita com PRs | Não iniciado |
+| 6 | DevOps | `painel-testes/` | Projeto principal: API com pytest e Swagger, feita com PRs | Não iniciado |
 | 7 | IA | `modulo-07-rag-docs/` | "Pergunte à documentação" com busca híbrida | Não iniciado |
 | 8 | DevOps | `painel-testes/` | Projeto principal: API e Postgres em containers | Não iniciado |
 | 9 | IA | `modulo-09-agentes/` | Agente do zero, MCP próprio, LangGraph, Agent SDK, OpenClaw | Não iniciado |
