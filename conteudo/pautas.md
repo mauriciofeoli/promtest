@@ -1,6 +1,6 @@
 ---
 tipo: pautas
-atualizado: 2026-10-09
+atualizado: 2026-10-26
 ---
 
 # Banco de pautas
@@ -9,6 +9,7 @@ O tutor acrescenta aqui, no fim de cada sessão de estudo, o que rendeu post. Vo
 
 | Data | Ideia | Origem | Formato sugerido | Status |
 | --- | --- | --- | --- | --- |
+| 2026-10-26 | 10 + 10 dá 20, mas "10" + "10" dá "1010": o mesmo + soma ou junta conforme o tipo, o bug do carrinho que mostra 1010 itens quando o valor chega como texto | Variáveis e tipos em Python | LinkedIn | Ideia |
 | 2026-10-22 | Tirei uma aspa de propósito e o Python não rodou nem a linha 1: ele confere o arquivo inteiro antes de executar, como um smoke test que barra o build antes de qualquer caso rodar | Primeiro script em Python | LinkedIn | Ideia |
 | 2026-10-16 | O -WhatIf do PowerShell é um dry-run: simula o rm sem apagar nada, o mesmo cuidado de rodar o teste em ambiente de homologação antes de produção | Exercício de rm | LinkedIn | Ideia |
 | 2026-10-13 | Criei uma pasta chamada caso1.txt sem querer: o erro "acesso negado" foi o terminal me avisando que pasta não é arquivo | Exercício de terminal | LinkedIn | Ideia |
