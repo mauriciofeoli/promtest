@@ -1,6 +1,6 @@
 ---
 tipo: progresso
-atualizado: 2026-10-26
+atualizado: 2026-10-27
 modulo_atual: 1
 ---
 
@@ -12,9 +12,9 @@ O tutor lê este arquivo no início de cada sessão e o atualiza no fim.
 
 - **Módulo atual:** 1. Base técnica (Base), de 21 no roteiro
 - **Tópico atual:** Python do zero (em andamento)
-- **Próximo passo:** converter tipos (`int()`, `float()`, `str()`) e `input()`; depois, listas. Variáveis, tipos e f-string feitos.
+- **Próximo passo:** `for` sobre listas; depois dicionários, funções, `try/except` e arquivos. Feitos: variáveis, tipos, f-string, conversão, `input()`, listas e `if`/`elif`/`else`.
 - **Próximo módulo:** 2. Linux e terminal (DevOps)
-- **Última sessão:** [[2026-10-26]]. Variáveis, `str`/`int`/`float`, `type()`, f-string; `NameError` e `TypeError`.
+- **Última sessão:** [[2026-10-27]]. Conversão de tipos, `input()`, `ValueError`, listas e `IndexError`, `if`/`elif`/`else`; achou um bug no próprio `veredito.py`.
 - **Ver também:** [[plano]] | [[duvidas]]
 
 ## Ritmo
@@ -23,10 +23,10 @@ Atualizado a cada `/encerrar`. Serve para planejar as sessões e ver o caminho f
 
 | Medida | Valor |
 | --- | --- |
-| Sessões feitas | 4 |
-| Minutos estudados | 140 |
-| Média por sessão | 35 min |
-| Sessões por semana | 2,0 |
+| Sessões feitas | 5 |
+| Minutos estudados | 260 |
+| Média por sessão | 52 min |
+| Sessões por semana | 2,5 |
 | Tópicos concluídos | 1 |
 | Minutos por tópico concluído | 60 |
 
@@ -77,6 +77,7 @@ Mais recente primeiro. Detalhes de cada sessão ficam em `sessoes/`.
 
 | Data | Módulo | Tópico | Resumo | Nota |
 | --- | --- | --- | --- | --- |
+| 2026-10-27 | 1 | Python do zero | `int()`/`float()`/`str()`, `input()`, `ValueError` x `TypeError`, listas (índice, `len()`, `append()`, `-1`, `IndexError`), `if`/`elif`/`else`; 10 exercícios, bug de "-2 falharam" achado sozinho | [[2026-10-27]] |
 | 2026-10-26 | 1 | Python do zero | Variáveis, tipos `str`/`int`/`float`, `type()`, `+` com texto, f-string; `NameError` e `TypeError`; `caso2.py` sem dica | [[2026-10-26]] |
 | 2026-10-22 | 1 | Python do zero | Revisão do terminal 3/3; `python --version`; primeiro script `ola.py` com `print()`; erro de aspa de propósito e leitura do `SyntaxError` | [[2026-10-22]] |
 | 2026-10-16 | 1 | Terminal básico (concluído) | Revisão de cd .., mv, rm, -WhatIf; quiz 1/6 na 1ª rodada e 7/7 na 2ª | [[2026-10-16]] |

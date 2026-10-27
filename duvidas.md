@@ -1,6 +1,6 @@
 ---
 tipo: duvidas
-atualizado: 2026-10-26
+atualizado: 2026-10-27
 ---
 
 # Dúvidas e revisão
@@ -15,11 +15,17 @@ O tutor acrescenta aqui o que ficou em aberto e o que você errou nos exercício
 
 | Tópico | Módulo | Errei em | Próxima revisão |
 | --- | --- | --- | --- |
-| Erro de sintaxe (nada roda) x erro de execução (`NameError`, `TypeError`: rodam as linhas de antes) | 1 | Demorou a responder; acertou no fim (2026-10-26) | 2026-10-27 e 2026-11-02 |
-| Legibilidade da saída do `print` (separar as partes) | 1 | 1ª versão do `relatorio.py` com tudo colado (2026-10-26) | 2026-10-27 e 2026-11-02 |
+| Nome do erro quando falta uma aspa: `SyntaxError` (nada roda) x `NameError`/`TypeError` (rodam as linhas de antes) | 1 | Explicou o comportamento certo, mas não lembrou o nome (2026-10-27) | 2026-10-28 e 2026-11-03 |
+| `!=` (diferente) e maiúsculas em comparação: `10 != 10` e `"Login" == "login"` são `False` | 1 | Disse `True` nas duas na 1ª tentativa (2026-10-27) | 2026-10-28 e 2026-11-03 |
+| Prever o resultado antes de rodar e usar dado de teste que não se confunde com outro valor da saída | 1 | Rodou `[-3]`/`[-4]` antes de prever; testou `falhas.py` com a entrada `3` (2026-10-27) | 2026-10-28 e 2026-11-03 |
 
 ## Resolvidas
 
+- `int()`, `float()`, `str()`; `int(7.8)` corta para 7; `ValueError` (valor não converte) x `TypeError` (tipos não combinam), explicado com as próprias palavras (2026-10-27)
+- `input()` sempre devolve texto; `int(input(...))` (fez o `entrada.py`, 2026-10-27)
+- Listas: índice a partir de 0, `len()`, `append()`, `-1`, `IndexError`; chegou sozinho em `len(lista) - 1` (2026-10-27)
+- `if`/`elif`/`else` com recuo e ordem certa das condições (`veredito.py`, 2026-10-27)
+- Legibilidade da saída do `print` (acertou na revisão de 2026-10-27)
 - Variável sem aspas x texto com aspas; `NameError` ao errar o nome (acertou de primeira, 2026-10-26)
 - Tipos `str`, `int`, `float` e o `+` que soma ou junta; `10 + "10"` dá `TypeError` (5/5, 2026-10-26)
 - f-string com conta dentro das `{}` (fez o `caso2.py` sozinho, 2026-10-26)
