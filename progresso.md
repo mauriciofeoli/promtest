@@ -1,6 +1,6 @@
 ---
 tipo: progresso
-atualizado: 2026-10-27
+atualizado: 2026-10-28
 modulo_atual: 1
 ---
 
@@ -12,9 +12,9 @@ O tutor lê este arquivo no início de cada sessão e o atualiza no fim.
 
 - **Módulo atual:** 1. Base técnica (Base), de 21 no roteiro
 - **Tópico atual:** Python do zero (em andamento)
-- **Próximo passo:** `for` sobre listas; depois dicionários, funções, `try/except` e arquivos. Feitos: variáveis, tipos, f-string, conversão, `input()`, listas e `if`/`elif`/`else`.
+- **Próximo passo:** dicionários; depois funções, `try/except` e arquivos. Feitos: variáveis, tipos, f-string, conversão, `input()`, listas, `if`/`elif`/`else` e `for` com contador.
 - **Próximo módulo:** 2. Linux e terminal (DevOps)
-- **Última sessão:** [[2026-10-27]]. Conversão de tipos, `input()`, `ValueError`, listas e `IndexError`, `if`/`elif`/`else`; achou um bug no próprio `veredito.py`.
+- **Última sessão:** [[2026-10-28]]. Revisão 3/3; `for`, contador e `if` dentro do `for` (`contagem.py`), feito em passos pequenos.
 - **Ver também:** [[plano]] | [[duvidas]]
 
 ## Ritmo
@@ -23,10 +23,10 @@ Atualizado a cada `/encerrar`. Serve para planejar as sessões e ver o caminho f
 
 | Medida | Valor |
 | --- | --- |
-| Sessões feitas | 5 |
-| Minutos estudados | 260 |
-| Média por sessão | 52 min |
-| Sessões por semana | 2,5 |
+| Sessões feitas | 6 |
+| Minutos estudados | 305 |
+| Média por sessão | 51 min |
+| Sessões por semana | 2,6 |
 | Tópicos concluídos | 1 |
 | Minutos por tópico concluído | 60 |
 
@@ -77,6 +77,7 @@ Mais recente primeiro. Detalhes de cada sessão ficam em `sessoes/`.
 
 | Data | Módulo | Tópico | Resumo | Nota |
 | --- | --- | --- | --- | --- |
+| 2026-10-28 | 1 | Python do zero | Revisão 3/3; `for` sobre listas, contador `total = total + 1`, `if` dentro do `for`; `contagem.py` com previsão certa; travou com tudo junto e destravou em passos | [[2026-10-28]] |
 | 2026-10-27 | 1 | Python do zero | `int()`/`float()`/`str()`, `input()`, `ValueError` x `TypeError`, listas (índice, `len()`, `append()`, `-1`, `IndexError`), `if`/`elif`/`else`; 10 exercícios, bug de "-2 falharam" achado sozinho | [[2026-10-27]] |
 | 2026-10-26 | 1 | Python do zero | Variáveis, tipos `str`/`int`/`float`, `type()`, `+` com texto, f-string; `NameError` e `TypeError`; `caso2.py` sem dica | [[2026-10-26]] |
 | 2026-10-22 | 1 | Python do zero | Revisão do terminal 3/3; `python --version`; primeiro script `ola.py` com `print()`; erro de aspa de propósito e leitura do `SyntaxError` | [[2026-10-22]] |
