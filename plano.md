@@ -1,7 +1,7 @@
 ---
 tipo: plano
 status: referência (só alterar quando você pedir)
-atualizado: 2026-10-24
+atualizado: 2026-10-31
 ---
 
 # Plano de estudos: IA, DevOps, cloud e QA, do zero ao avançado
@@ -46,7 +46,7 @@ A ordem abaixo é a ordem de estudo. Um módulo só começa quando o anterior es
 | 9 | IA | Agentes, MCP e OpenClaw | 6 sem | Usa Linux (Módulo 2) e Docker (Módulo 8) para isolar agentes |
 | 10 | DevOps | CI/CD com GitHub Actions | 2 sem | O Módulo 11 usa agentes de código no CI e o Módulo 14 roda evals no pipeline |
 | 11 | IA | Agentes de código e automação | 4 sem | Claude Code em modo headless no pipeline do Módulo 10; n8n em Docker |
-| 12 | Cloud | AWS | 4 sem | Primeira nuvem, feita à mão antes de automatizar |
+| 12 | Cloud | AWS | 6 sem | Primeira nuvem, feita à mão antes de automatizar; inclui os serviços que mais aparecem em vagas |
 | 13 | Cloud | Terraform | 3 sem | Fecha o deploy do projeto principal |
 | 14 | IA | Evals e confiabilidade | 4 sem | Suíte de evals rodando no pipeline do Módulo 10 |
 | 15 | Cloud | Kubernetes | 4 sem | Docker já firme; prepara a infraestrutura do Módulo 18 |
@@ -424,7 +424,7 @@ Objetivo: programar com agentes como parceiros e automatizar processos inteiros 
 
 **Pronto quando:** você entrega uma funcionalidade inteira com um agente de código sem perder o controle do que foi gerado.
 
-## Módulo 12: AWS (Cloud, 4 semanas)
+## Módulo 12: AWS (Cloud, 6 semanas)
 
 Objetivo: entender as peças básicas da nuvem e publicar a aplicação de forma segura, primeiro pelo console, para saber o que o Terraform vai automatizar depois.
 
@@ -437,16 +437,23 @@ Objetivo: entender as peças básicas da nuvem e publicar a aplicação de forma
 - **S3:** buckets, objetos, bloqueio de acesso público, versionamento, ciclo de vida.
 - **RDS:** Postgres gerenciado, sub-rede privada, backup, acesso só a partir da aplicação.
 - **AWS CLI:** os mesmos passos pelo terminal.
+- **ECR e ECS com Fargate:** guardar a imagem no registro da AWS (ECR) e rodar o container sem cuidar de servidor; task definition, service, quando escolher ECS e quando EC2.
+- **Lambda e API Gateway:** função que roda sob demanda (serverless), gatilhos (S3, fila, agendamento, HTTP), limites de tempo e memória, quando vale mais que um servidor ligado.
+- **SQS e SNS:** fila e notificação para desacoplar partes do sistema; noções de arquitetura orientada a eventos e de microsserviços.
+- **DynamoDB:** banco NoSQL gerenciado, chave de partição, quando usar no lugar do RDS.
+- **CloudWatch e CloudTrail:** métricas, logs e alarmes dos serviços da AWS; trilha de auditoria de quem fez o quê na conta.
+- **Secrets Manager e Parameter Store:** segredos e configurações fora do código e fora do Git.
 
 **Fontes gratuitas**
 
 - AWS Skill Builder (skillbuilder.aws): AWS Cloud Practitioner Essentials e os cursos gratuitos de fundamentos (conferir o catálogo gratuito atual).
-- Documentação oficial da AWS para IAM, VPC, EC2, S3 e RDS, com os tutoriais "Getting started".
+- Documentação oficial da AWS para IAM, VPC, EC2, S3, RDS, ECS, Lambda, SQS, SNS, DynamoDB e CloudWatch, com os tutoriais "Getting started".
+- AWS Skill Builder: cursos gratuitos de serverless, containers e mensageria (conferir os títulos atuais).
 - Página do plano gratuito (aws.amazon.com/free) (conferir antes de criar a conta).
 
-**Projeto:** `modulo-12-aws-console`. Publicar a imagem do painel de testes numa EC2 dentro de uma VPC própria, com o banco no RDS em sub-rede privada e relatórios guardados no S3, tudo criado pelo console e documentado passo a passo no README (com prints), usando um usuário IAM com permissões mínimas. No fim, apagar tudo e conferir a fatura.
+**Projeto:** `modulo-12-aws-console`. Publicar a imagem do painel de testes numa EC2 dentro de uma VPC própria, com o banco no RDS em sub-rede privada e relatórios guardados no S3, tudo criado pelo console e documentado passo a passo no README (com prints), usando um usuário IAM com permissões mínimas. Parte 2, serverless e eventos: quando um relatório chega no S3, uma Lambda é disparada e grava um resumo no DynamoDB; falhas vão para uma fila SQS, e um alarme do CloudWatch avisa por SNS (e-mail) se a fila acumular. Parte 3, containers: a imagem vai para o ECR e roda no ECS com Fargate por uma sessão, para comparar com a EC2. Segredos no Secrets Manager e o CloudTrail ligado para ver quem fez cada mudança. No fim, apagar tudo e conferir a fatura.
 
-**Pronto quando:** você desenha a arquitetura num papel (VPC, sub-redes, security groups, EC2, RDS, S3), explica por que o banco não fica na sub-rede pública e não deixa nenhum recurso esquecido gerando custo.
+**Pronto quando:** você desenha a arquitetura num papel (VPC, sub-redes, security groups, EC2, RDS, S3), explica por que o banco não fica na sub-rede pública explica quando usaria EC2, ECS ou Lambda para a mesma aplicação, mostra no CloudWatch o alarme da fila disparando e não deixa nenhum recurso esquecido gerando custo.
 
 ## Módulo 13: Terraform (Cloud, 3 semanas)
 
@@ -516,6 +523,7 @@ Objetivo: entender como rodar e escalar containers num cluster. Só comece com D
 - **Saúde e recursos:** liveness e readiness probes, requests e limits de CPU e memória.
 - **Operação:** `kubectl get`, `describe`, `logs`, `exec`, rollout e rollback, escala manual e automática (HPA).
 - **Empacotamento:** noções de Helm.
+- **EKS:** o Kubernetes gerenciado da AWS; o que a AWS cuida e o que continua com você, e por que ele custa por hora. Só leitura e comparação com o cluster local, sem criar cluster.
 
 **Fontes gratuitas**
 
@@ -714,7 +722,7 @@ Uma API simples que registra e mostra resultados de execuções de teste, public
 | 9 | IA | `modulo-09-agentes/` | Agente do zero, servidor MCP próprio, versão em LangGraph e Claude Agent SDK, OpenClaw com skill própria | Arquitetura de agentes |
 | 10 | DevOps | `painel-testes/` | Projeto principal: pipeline que testa e publica a imagem | CI/CD com testes |
 | 11 | IA | `modulo-11-codigo-automacao/` | App feito com Claude Code e fluxo n8n de relatório de testes | Produtividade com agentes e automação |
-| 12 | Cloud | `modulo-12-aws-console/` | Deploy manual na AWS, documentado e destruído | Fundamentos de AWS |
+| 12 | Cloud | `modulo-12-aws-console/` | Deploy manual na AWS, fluxo serverless com Lambda, SQS e SNS, e container no ECS | Fundamentos de AWS, serverless e containers |
 | 13 | Cloud | `painel-testes/` | Projeto principal: infraestrutura em Terraform com plan no CI | Infraestrutura como código |
 | 14 | IA | `modulo-14-evals/` | Suíte de evals no CI com LLM como juiz | Confiabilidade |
 | 15 | Cloud | `modulo-15-kubernetes/` | A imagem do painel rodando em cluster local | Kubernetes |
@@ -742,7 +750,7 @@ Sem emojis, sem chaves ou senhas, e com um `.env.example` mostrando quais variá
 
 - Contas criadas a partir de julho de 2025 escolhem entre um plano gratuito (créditos iniciais, válido por até 6 meses) e um plano pago. Confira as regras atuais em aws.amazon.com/free antes de criar a conta.
 - No primeiro dia: MFA no usuário root, alarme de orçamento com valor baixo e um usuário ou papel IAM para o dia a dia.
-- Recursos que costumam surpreender na fatura: NAT gateway, load balancer, RDS ligado sem uso, IP público e snapshots esquecidos. Prefira instâncias pequenas do plano gratuito.
+- Recursos que costumam surpreender na fatura: NAT gateway, load balancer, RDS ligado sem uso, IP público, snapshots esquecidos, tarefas do ECS com Fargate deixadas rodando e cluster EKS. Lambda, SQS, SNS e DynamoDB costumam ficar perto de zero em uso de estudo, mas confira os limites gratuitos atuais. Prefira instâncias pequenas do plano gratuito.
 - Termine cada sessão com `terraform destroy` (ou apagando pelo console no Módulo 12) e confira o painel de custos.
 - Chaves de acesso nunca entram no Git. Use `.env` local (fora do Git), `aws configure` ou login pelo IAM Identity Center, e GitHub Secrets ou OIDC no pipeline.
 

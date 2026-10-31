@@ -22,7 +22,7 @@ Três regras guiam o caminho:
 
 ## Progresso
 
-Cada módulo tem um projeto próprio e só termina quando ele está pronto. A coluna "Tópicos" mostra o tamanho de cada assunto, com a contagem entre parênteses: são 178 no total.
+Cada módulo tem um projeto próprio e só termina quando ele está pronto. A coluna "Tópicos" mostra o tamanho de cada assunto, com a contagem entre parênteses: são 185 no total.
 
 | Módulo | Área | Tema | Tópicos | Status |
 | --- | --- | --- | --- | --- |
@@ -37,10 +37,10 @@ Cada módulo tem um projeto próprio e só termina quando ele está pronto. A co
 | 9 | IA | **Agentes, MCP e OpenClaw** | (12) Loop agêntico · Workflow x agente · Planejamento e ReAct · Memória e contexto · Multiagentes · Humano no circuito · Computer use · MCP · A2A · Skills · Frameworks (Claude Agent SDK, OpenAI Agents SDK, LangGraph, CrewAI) · OpenClaw | Não iniciado |
 | 10 | DevOps | **CI/CD com GitHub Actions** | (6) CI x CD · Workflows em YAML · Testes no pipeline · Build e publicação · Segredos · Boas práticas | Não iniciado |
 | 11 | IA | **Agentes de código e automação** | (7) Claude Code a fundo · Codex, Cursor, Copilot e Gemini CLI · Boas práticas · Vibe coding x engenharia · n8n · Make, Zapier e Power Automate · Integrações e agendamento | Não iniciado |
-| 12 | Cloud | **AWS** | (7) Conta e custo · IAM · VPC · EC2 · S3 · RDS · AWS CLI | Não iniciado |
+| 12 | Cloud | **AWS** | (13) Conta e custo · IAM · VPC · EC2 · S3 · RDS · AWS CLI · ECR e ECS · Lambda e API Gateway · SQS e SNS · DynamoDB · CloudWatch e CloudTrail · Secrets Manager | Não iniciado |
 | 13 | Cloud | **Terraform** | (8) Infraestrutura como código · Ciclo `plan` e `apply` · HCL · State remoto · Módulos Terraform · Segurança · Terraform no CI · OpenTofu | Não iniciado |
 | 14 | IA | **Evals e confiabilidade** | (9) Golden datasets · Tipos de avaliação e LLM como juiz · Métricas · Regressão de prompt · Avaliação de agentes · Tracing · Guardrails · Prompt injection e red teaming · Benchmarks | Não iniciado |
-| 15 | Cloud | **Kubernetes** | (7) Por que existe · Cluster local · Pod, Deployment e Service · ConfigMap e Secret · Probes e recursos · Operação e rollback · Helm | Não iniciado |
+| 15 | Cloud | **Kubernetes** | (8) Por que existe · Cluster local · Pod, Deployment e Service · ConfigMap e Secret · Probes e recursos · Operação e rollback · Helm · EKS | Não iniciado |
 | 16 | DevOps | **Observabilidade e SRE** | (8) Métricas, logs e traces · Prometheus · Grafana · Logs estruturados · Alertas · SLI, SLO e SLA · Incidentes e postmortem · OpenTelemetry | Não iniciado |
 | 17 | IA | **Fundamentos de ML e LLMs por dentro** | (12) Álgebra linear, cálculo e probabilidade · Regressão e árvores · Perda, gradiente e overfitting · Métricas de ML · Redes neurais e backpropagation · PyTorch · CNN e RNN · Tokenização e atenção · Transformer · Pré-treino, SFT e RLHF · Leis de escala e MoE · Interpretabilidade | Não iniciado |
 | 18 | IA | **Modelos abertos e fine-tuning** | (11) Hugging Face · Famílias abertas · Rodar local e quantização · Servir com vLLM · Quando fazer fine-tuning · Dataset de instruções · LoRA e QLoRA · Avaliação, destilação e DPO · Servir com FastAPI e Docker · Filas, cache e versionamento · Monitoramento e rollback | Não iniciado |
