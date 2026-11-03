@@ -1,6 +1,6 @@
 ---
 tipo: pautas
-atualizado: 2026-10-28
+atualizado: 2026-11-03
 ---
 
 # Banco de pautas
@@ -9,6 +9,7 @@ O tutor acrescenta aqui, no fim de cada sessão de estudo, o que rendeu post. Vo
 
 | Data | Ideia | Origem | Formato sugerido | Status |
 | --- | --- | --- | --- | --- |
+| 2026-11-03 | Dicionário em Python é o environment do Postman com superpoderes: busco o valor pelo nome, mas o valor tem tipo (número, booleano, lista). E `bug["Aberto"]` não é `bug["aberto"]`: atribuir com a maiúscula errada cria uma chave nova em silêncio, sem erro | Dicionários em Python | LinkedIn | Ideia |
 | 2026-10-28 | Para testar meu primeiro contador, montei uma lista com 4 resultados e 3 "ok": se Total e Ok dessem o mesmo número, um bug que mostra o valor errado passaria batido. Dado de teste bom é o que faz cada saída dar um número diferente | `for` com contador em Python | LinkedIn | Ideia |
 | 2026-10-27 | Meu primeiro programa com `if` dizia "Suite reprovada: -2 falharam": testei com mais testes passando do que o total e o código aceitou o impossível. O instinto de teste negativo vale para o próprio código | `if`/`elif` em Python | LinkedIn | Ideia |
 | 2026-10-26 | 10 + 10 dá 20, mas "10" + "10" dá "1010": o mesmo + soma ou junta conforme o tipo, o bug do carrinho que mostra 1010 itens quando o valor chega como texto | Variáveis e tipos em Python | LinkedIn | Ideia |

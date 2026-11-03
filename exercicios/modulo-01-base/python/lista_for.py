@@ -24,3 +24,13 @@ for teste in testes:
     total = total + 1
 
 print(f"Total: {total}")
+
+#Revisão
+tempos = [120, 45, 300, 80, 510]
+lentos = 0
+
+for tempo in tempos:
+    if tempo > 100:
+        lentos = lentos + 1
+
+print(f"Lentos: {lentos} de {len(tempos)}")

@@ -1,6 +1,6 @@
 ---
 tipo: progresso
-atualizado: 2026-10-28
+atualizado: 2026-11-03
 modulo_atual: 1
 ---
 
@@ -12,9 +12,9 @@ O tutor lê este arquivo no início de cada sessão e o atualiza no fim.
 
 - **Módulo atual:** 1. Base técnica (Base), de 21 no roteiro
 - **Tópico atual:** Python do zero (em andamento)
-- **Próximo passo:** dicionários; depois funções, `try/except` e arquivos. Feitos: variáveis, tipos, f-string, conversão, `input()`, listas, `if`/`elif`/`else` e `for` com contador.
+- **Próximo passo:** fechar dicionários (`in`, `.get()`, `for` com `.items()`, lista de dicionários); depois Exercício 3 de funções (`mostrar_bug` em `funcoes.py`), `return`, arquivos e `try/except`. Feitos: variáveis, tipos, f-string, conversão, `input()`, listas, `if`/`elif`/`else`, `for` com contador e o básico de dicionários.
 - **Próximo módulo:** 2. Linux e terminal (DevOps)
-- **Última sessão:** [[2026-10-28]]. Revisão 3/3; `for`, contador e `if` dentro do `for` (`contagem.py`), feito em passos pequenos.
+- **Última sessão:** [[2026-11-03]]. Revisão 3/3; dicionários (ler, trocar, criar chave, `KeyError`) em `dicionario.py`; explicação de funções, exercício ficou para a próxima.
 - **Ver também:** [[plano]] | [[duvidas]]
 
 ## Ritmo
@@ -23,10 +23,10 @@ Atualizado a cada `/encerrar`. Serve para planejar as sessões e ver o caminho f
 
 | Medida | Valor |
 | --- | --- |
-| Sessões feitas | 6 |
-| Minutos estudados | 305 |
-| Média por sessão | 51 min |
-| Sessões por semana | 2,6 |
+| Sessões feitas | 7 |
+| Minutos estudados | 345 |
+| Média por sessão | 49 min |
+| Sessões por semana | 2,3 |
 | Tópicos concluídos | 1 |
 | Minutos por tópico concluído | 60 |
 
@@ -77,6 +77,7 @@ Mais recente primeiro. Detalhes de cada sessão ficam em `sessoes/`.
 
 | Data | Módulo | Tópico | Resumo | Nota |
 | --- | --- | --- | --- | --- |
+| 2026-11-03 | 1 | Python do zero | Revisão 3/3; dicionários: ler com `d["chave"]`, trocar valor, criar chave nova, `len()`, `KeyError`; comparação com environment do Postman; explicação de `def` e parâmetros (exercício fica para a próxima) | [[2026-11-03]] |
 | 2026-10-28 | 1 | Python do zero | Revisão 3/3; `for` sobre listas, contador `total = total + 1`, `if` dentro do `for`; `contagem.py` com previsão certa; travou com tudo junto e destravou em passos | [[2026-10-28]] |
 | 2026-10-27 | 1 | Python do zero | `int()`/`float()`/`str()`, `input()`, `ValueError` x `TypeError`, listas (índice, `len()`, `append()`, `-1`, `IndexError`), `if`/`elif`/`else`; 10 exercícios, bug de "-2 falharam" achado sozinho | [[2026-10-27]] |
 | 2026-10-26 | 1 | Python do zero | Variáveis, tipos `str`/`int`/`float`, `type()`, `+` com texto, f-string; `NameError` e `TypeError`; `caso2.py` sem dica | [[2026-10-26]] |

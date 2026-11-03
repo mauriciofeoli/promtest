@@ -1,6 +1,6 @@
 ---
 tipo: duvidas
-atualizado: 2026-10-28
+atualizado: 2026-11-03
 ---
 
 # Dúvidas e revisão
@@ -15,13 +15,14 @@ O tutor acrescenta aqui o que ficou em aberto e o que você errou nos exercício
 
 | Tópico | Módulo | Errei em | Próxima revisão |
 | --- | --- | --- | --- |
-| `for` com contador e `if` dentro, sem esqueleto | 1 | Travou quando veio tudo junto; fez com esqueleto (2026-10-28) | 2026-10-29 e 2026-11-04 |
-| Nome do erro quando falta uma aspa: `SyntaxError` (nada roda) x `NameError`/`TypeError` (rodam as linhas de antes) | 1 | Explicou o comportamento certo, mas não lembrou o nome (2026-10-27); acertou em 2026-10-28 | 2026-11-03 |
-| `!=` (diferente) e maiúsculas em comparação: `10 != 10` e `"Login" == "login"` são `False` | 1 | Disse `True` nas duas na 1ª tentativa (2026-10-27); acertou com o motivo em 2026-10-28 | 2026-11-03 |
-| Prever o resultado antes de rodar e usar dado de teste que não se confunde com outro valor da saída | 1 | Rodou `[-3]`/`[-4]` antes de prever; testou `falhas.py` com a entrada `3` (2026-10-27); rodou o 1º `lista_for.py` antes de prever, depois previu certo duas vezes (2026-10-28) | 2026-11-03 |
+| Prever o resultado antes de rodar e usar dado de teste que não se confunde com outro valor da saída | 1 | Rodou `[-3]`/`[-4]` antes de prever; testou `falhas.py` com a entrada `3` (2026-10-27); rodou o 1º `lista_for.py` antes de prever, depois previu certo duas vezes (2026-10-28); rodou o `dicionario.py` sem escrever a previsão (2026-11-03) | 2026-11-04 e 2026-11-10 |
 
 ## Resolvidas
 
+- `for` com contador e `if` dentro, sem esqueleto: fez sozinho a revisão de `tempos` acima de 100 em `lista_for.py` (2026-11-03)
+- `SyntaxError` impede o arquivo inteiro de rodar; `NameError`/`TypeError`/`KeyError` deixam rodar as linhas de antes (revisão de 2026-11-03)
+- `!=` e maiúsculas: `5 != 5` e `"Senha" == "senha"` são `False` (revisão de 2026-11-03)
+- Dicionários: `d["chave"]`, trocar valor, criar chave nova, `KeyError` e chave com maiúscula diferente (4/4 na previsão, 2026-11-03)
 - `for` sobre lista: prevê a saída volta por volta e escreve o próprio `for` com contador (`lista_for.py`, 2026-10-28)
 - Comentário não impede o Python de rodar o código; o arquivo roda inteiro de cima a baixo (2026-10-28)
 - `int()`, `float()`, `str()`; `int(7.8)` corta para 7; `ValueError` (valor não converte) x `TypeError` (tipos não combinam), explicado com as próprias palavras (2026-10-27)
