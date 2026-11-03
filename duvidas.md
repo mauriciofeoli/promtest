@@ -15,10 +15,12 @@ O tutor acrescenta aqui o que ficou em aberto e o que você errou nos exercício
 
 | Tópico | Módulo | Errei em | Próxima revisão |
 | --- | --- | --- | --- |
-| Prever o resultado antes de rodar e usar dado de teste que não se confunde com outro valor da saída | 1 | Rodou `[-3]`/`[-4]` antes de prever; testou `falhas.py` com a entrada `3` (2026-10-27); rodou o 1º `lista_for.py` antes de prever, depois previu certo duas vezes (2026-10-28); rodou o `dicionario.py` sem escrever a previsão (2026-11-03) | 2026-11-04 e 2026-11-10 |
+| Prever o resultado antes de rodar e usar dado de teste que não se confunde com outro valor da saída | 1 | Rodou `[-3]`/`[-4]` antes de prever; testou `falhas.py` com a entrada `3` (2026-10-27); rodou o 1º `lista_for.py` antes de prever, depois previu certo duas vezes (2026-10-28); rodou o `dicionario.py` sem escrever a previsão (2026-11-03); previu 5/6 antes de rodar, mas rodou sem escrever a previsão corrigida (2026-11-03, 2ª sessão) | 2026-11-04 e 2026-11-10 |
+| `.get(chave, reserva)` devolve o valor atual quando a chave existe; o reserva só entra se ela não existir | 1 | Previu `baixa` para `bug.get("severidade", "baixa")`, mas a chave existia com `media` (2026-11-03) | 2026-11-04 e 2026-11-10 |
 
 ## Resolvidas
 
+- `in` só olha chaves (`"alta" in bug` é `False`); `.get()` sem reserva devolve `None` sem erro (previsão certa, 2026-11-03)
 - `for` com contador e `if` dentro, sem esqueleto: fez sozinho a revisão de `tempos` acima de 100 em `lista_for.py` (2026-11-03)
 - `SyntaxError` impede o arquivo inteiro de rodar; `NameError`/`TypeError`/`KeyError` deixam rodar as linhas de antes (revisão de 2026-11-03)
 - `!=` e maiúsculas: `5 != 5` e `"Senha" == "senha"` são `False` (revisão de 2026-11-03)

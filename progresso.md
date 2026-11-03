@@ -12,9 +12,9 @@ O tutor lê este arquivo no início de cada sessão e o atualiza no fim.
 
 - **Módulo atual:** 1. Base técnica (Base), de 21 no roteiro
 - **Tópico atual:** Python do zero (em andamento)
-- **Próximo passo:** fechar dicionários (`in`, `.get()`, `for` com `.items()`, lista de dicionários); depois Exercício 3 de funções (`mostrar_bug` em `funcoes.py`), `return`, arquivos e `try/except`. Feitos: variáveis, tipos, f-string, conversão, `input()`, listas, `if`/`elif`/`else`, `for` com contador e o básico de dicionários.
+- **Próximo passo:** fechar dicionários (`for` com `.items()`, lista de dicionários); depois Exercício 3 de funções (`mostrar_bug` em `funcoes.py`), `return`, arquivos e `try/except`. Feitos: variáveis, tipos, f-string, conversão, `input()`, listas, `if`/`elif`/`else`, `for` com contador, o básico de dicionários, `in` e `.get()`.
 - **Próximo módulo:** 2. Linux e terminal (DevOps)
-- **Última sessão:** [[2026-11-03]]. Revisão 3/3; dicionários (ler, trocar, criar chave, `KeyError`) em `dicionario.py`; explicação de funções, exercício ficou para a próxima.
+- **Última sessão:** [[2026-11-03]] (2ª do dia, 15 min). `in` e `.get()` com valor reserva; previsão 5/6 em `dicionario.py`.
 - **Ver também:** [[plano]] | [[duvidas]]
 
 ## Ritmo
@@ -23,10 +23,10 @@ Atualizado a cada `/encerrar`. Serve para planejar as sessões e ver o caminho f
 
 | Medida | Valor |
 | --- | --- |
-| Sessões feitas | 7 |
-| Minutos estudados | 345 |
-| Média por sessão | 49 min |
-| Sessões por semana | 2,3 |
+| Sessões feitas | 8 |
+| Minutos estudados | 360 |
+| Média por sessão | 45 min |
+| Sessões por semana | 2,7 |
 | Tópicos concluídos | 1 |
 | Minutos por tópico concluído | 60 |
 
@@ -77,6 +77,7 @@ Mais recente primeiro. Detalhes de cada sessão ficam em `sessoes/`.
 
 | Data | Módulo | Tópico | Resumo | Nota |
 | --- | --- | --- | --- | --- |
+| 2026-11-03 | 1 | Python do zero | Sessão curta (15 min): `in` só olha chaves, `.get()` com `None` e valor reserva; previsão 5/6 (errou o `.get()` de chave que existe) e explicou o acerto com as próprias palavras | [[2026-11-03]] |
 | 2026-11-03 | 1 | Python do zero | Revisão 3/3; dicionários: ler com `d["chave"]`, trocar valor, criar chave nova, `len()`, `KeyError`; comparação com environment do Postman; explicação de `def` e parâmetros (exercício fica para a próxima) | [[2026-11-03]] |
 | 2026-10-28 | 1 | Python do zero | Revisão 3/3; `for` sobre listas, contador `total = total + 1`, `if` dentro do `for`; `contagem.py` com previsão certa; travou com tudo junto e destravou em passos | [[2026-10-28]] |
 | 2026-10-27 | 1 | Python do zero | `int()`/`float()`/`str()`, `input()`, `ValueError` x `TypeError`, listas (índice, `len()`, `append()`, `-1`, `IndexError`), `if`/`elif`/`else`; 10 exercícios, bug de "-2 falharam" achado sozinho | [[2026-10-27]] |
