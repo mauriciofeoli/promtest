@@ -17,7 +17,7 @@ python veredito.py
 
 ### Python do zero (histórico)
 
-Estes exercícios foram feitos antes de o Python sair deste plano. O estudo de Python continua, do zero, no [PyQA](https://github.com/mauriciofeoli/pyqa).
+Estes exercícios foram feitos antes de o Python sair do plano como matéria. Ficam como histórico.
 
 | Arquivo | Conceito praticado |
 | --- | --- |

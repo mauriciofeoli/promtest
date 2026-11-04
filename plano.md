@@ -11,7 +11,7 @@ atualizado: 2026-10-31
 Um plano só, com 21 módulos numa ordem única. Cada módulo pertence a uma área (Base, IA, DevOps, Cloud ou QA), mas a área é só uma etiqueta: ela diz de que tipo é o módulo, não cria um caminho separado. Cada módulo prepara o seguinte e tem objetivo, tópicos, fontes gratuitas, um projeto e um critério de "pronto".
 
 - **Nível de partida:** zero em tudo, de propósito, como nível padrão para qualquer pessoa usar o plano. O Módulo 1 ensina terminal, Git e Docker do zero; os módulos seguintes contam com isso. Quem já conhece um assunto passa rápido por ele no diagnóstico do módulo.
-- **Python fica no PyQA:** a linguagem é estudada à parte, no repositório [PyQA](https://github.com/mauriciofeoli/pyqa), só com documentação oficial e foco em QA. Aqui o Python é ferramenta dos projetos, não assunto de aula. Os projetos que usam Python dizem até onde o PyQA precisa estar.
+- **Python como ferramenta, não como aula:** este plano não ensina a linguagem do zero. Os projetos usam Python, e o tutor explica só o que cada projeto pede, na hora em que pede. Quem quiser estudar Python a fundo pode usar qualquer trilha, como o tutorial oficial (docs.python.org/pt-br/3/tutorial) ou o [PyQA](https://github.com/mauriciofeoli/pyqa), um repositório separado.
 - **Ordem:** prática antes da teoria profunda. Você constrói com APIs e agentes (módulos 5 a 14) antes de estudar matemática e redes neurais (Módulo 17), porque a teoria fica mais clara depois de ver o modelo errar na prática. Os módulos de DevOps e cloud entram logo antes do módulo de IA que precisa deles.
 - **Ritmo livre:** não há prazo nem meta de velocidade (veja "Ritmo").
 - **Regra 70/30:** 70% do tempo construindo, 30% assistindo ou lendo.
@@ -115,7 +115,7 @@ Objetivo: ter a caixa de ferramentas de quem constrói com IA, partindo do zero.
 
 **Fontes gratuitas:** Kaggle Learn (SQL); documentação do Git (git-scm.com/book/pt-br) e do Docker (docs.docker.com/get-started).
 
-**Projeto:** um script em Python que consome uma API pública, trata erros e retries, e salva o resultado em JSON, rodando dentro de um container Docker. Pré-requisito: PyQA até o Módulo 9 (biblioteca padrão para QA).
+**Projeto:** um script em Python que consome uma API pública, trata erros e retries, e salva o resultado em JSON, rodando dentro de um container Docker.
 
 **Pronto quando:** você sobe um serviço com docker compose e escreve um cliente HTTP robusto sem consultar tutorial.
 
@@ -257,7 +257,7 @@ Objetivo: trabalhar como numa equipe de engenharia: histórico limpo, branches, 
 - GitHub Skills (skills.github.com): cursos práticos dentro do próprio GitHub.
 - Documentação do FastAPI (fastapi.tiangolo.com/pt).
 
-**Projeto:** `painel-testes` (início do projeto principal). Uma API pequena em Python que registra e lista execuções de teste (nome da suíte, quantos passaram, quantos falharam, duração), com testes em `pytest`, desenvolvida com branches e pull requests. Junto, um script que lê um relatório JUnit XML e envia os resultados para a API. A API sai documentada em OpenAPI, com Swagger UI no ar e o `openapi.json` versionado no repositório. Pré-requisito: PyQA até o Módulo 11 (pytest).
+**Projeto:** `painel-testes` (início do projeto principal). Uma API pequena em Python que registra e lista execuções de teste (nome da suíte, quantos passaram, quantos falharam, duração), com testes em `pytest`, desenvolvida com branches e pull requests. Junto, um script que lê um relatório JUnit XML e envia os resultados para a API. A API sai documentada em OpenAPI, com Swagger UI no ar e o `openapi.json` versionado no repositório.
 
 **Pronto quando:** você resolve um conflito de merge sem medo, abre um PR com descrição e testes, documenta cada endpoint no Swagger com exemplo e códigos de resposta, e automatiza em Python uma tarefa que antes fazia à mão.
 

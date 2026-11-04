@@ -53,7 +53,7 @@ O Tutor de IA é o Claude configurado para conduzir você pelos 21 módulos de `
 - **Prática primeiro:** 70% do tempo fazendo; toda explicação termina num exercício.
 - **Tentar antes de ver a resposta:** dicas graduais em vez de solução pronta.
 - **Camadas:** intuição, conceito, exemplo, código e armadilha comum.
-- **Nível certo:** parte do zero em programação (Git, Docker, terminal; Python é estudado no PyQA) e usa o que você já sabe de QA como ponte nos exemplos; se algo ficar fácil, acelera.
+- **Nível certo:** parte do zero em programação (Git, Docker, terminal; Python entra como ferramenta, explicado conforme cada projeto pede) e usa o que você já sabe de QA como ponte nos exemplos; se algo ficar fácil, acelera.
 - **Repetição espaçada:** o que errou volta no dia seguinte, em 1 semana e na revisão quinzenal.
 - **Ensinar para aprender:** de vez em quando, você explica com suas palavras e o tutor corrige.
 - **Fonte oficial sempre:** cada tópico aponta o curso gratuito ou a documentação.

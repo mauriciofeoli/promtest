@@ -12,7 +12,7 @@ O tutor lê este arquivo no início de cada sessão e o atualiza no fim.
 
 - **Módulo atual:** 1. Base técnica (Base), de 21 no roteiro
 - **Tópico atual:** Git e GitHub básico (não iniciado)
-- **Próximo passo:** começar Git e GitHub básico. Python saiu deste plano e segue do zero no PyQA.
+- **Próximo passo:** começar Git e GitHub básico. Python saiu do plano como matéria; entra só como ferramenta nos projetos.
 - **Próximo módulo:** 2. Linux e terminal (DevOps)
 - **Última sessão:** [[2026-11-03]] (2ª do dia, 15 min). `in` e `.get()` com valor reserva; previsão 5/6 em `dicionario.py`.
 - **Ver também:** [[plano]] | [[duvidas]]
@@ -75,7 +75,7 @@ Mais recente primeiro. Detalhes de cada sessão ficam em `sessoes/`.
 
 | Data | Módulo | Tópico | Resumo | Nota |
 | --- | --- | --- | --- | --- |
-| 2026-11-03 | 1 | Reorganização | Python saiu do PromTest (tópicos "Python do zero", "Python para IA" e os de Python do Módulo 6) e passou a ser estudado do zero no PyQA. As sessões de Python abaixo ficam como histórico | - |
+| 2026-11-03 | 1 | Reorganização | Python saiu do PromTest (tópicos "Python do zero", "Python para IA" e os de Python do Módulo 6) e passou a ser só ferramenta dos projetos. As sessões de Python abaixo ficam como histórico | - |
 | 2026-11-03 | 1 | Python do zero | Sessão curta (15 min): `in` só olha chaves, `.get()` com `None` e valor reserva; previsão 5/6 (errou o `.get()` de chave que existe) e explicou o acerto com as próprias palavras | [[2026-11-03]] |
 | 2026-11-03 | 1 | Python do zero | Revisão 3/3; dicionários: ler com `d["chave"]`, trocar valor, criar chave nova, `len()`, `KeyError`; comparação com environment do Postman; explicação de `def` e parâmetros (exercício fica para a próxima) | [[2026-11-03]] |
 | 2026-10-28 | 1 | Python do zero | Revisão 3/3; `for` sobre listas, contador `total = total + 1`, `if` dentro do `for`; `contagem.py` com previsão certa; travou com tudo junto e destravou em passos | [[2026-10-28]] |

@@ -12,7 +12,7 @@
 
 ## Objetivo
 
-Ganhar habilidade prática e aprender os fundamentos principais de IA, do básico ao avançado. É um plano único de 21 módulos, cada um de uma área: Base, IA, DevOps (Linux, redes, Docker, CI/CD, observabilidade), Cloud (AWS, Terraform, Kubernetes) e QA. Os módulos se alternam para que cada um prepare o seguinte, e o último aplica tudo em qualidade de software. Python é estudado à parte, no [PyQA](https://github.com/mauriciofeoli/pyqa).
+Ganhar habilidade prática e aprender os fundamentos principais de IA, do básico ao avançado. É um plano único de 21 módulos, cada um de uma área: Base, IA, DevOps (Linux, redes, Docker, CI/CD, observabilidade), Cloud (AWS, Terraform, Kubernetes) e QA. Os módulos se alternam para que cada um prepare o seguinte, e o último aplica tudo em qualidade de software. Python entra como ferramenta dos projetos, não como matéria.
 
 Três regras guiam o caminho:
 
