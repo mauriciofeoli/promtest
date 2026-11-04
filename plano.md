@@ -10,7 +10,8 @@ atualizado: 2026-10-31
 
 Um plano só, com 21 módulos numa ordem única. Cada módulo pertence a uma área (Base, IA, DevOps, Cloud ou QA), mas a área é só uma etiqueta: ela diz de que tipo é o módulo, não cria um caminho separado. Cada módulo prepara o seguinte e tem objetivo, tópicos, fontes gratuitas, um projeto e um critério de "pronto".
 
-- **Nível de partida:** zero em tudo, de propósito, como nível padrão para qualquer pessoa usar o plano. O Módulo 1 ensina terminal, Python, Git e Docker do zero; os módulos seguintes contam com isso. Quem já conhece um assunto passa rápido por ele no diagnóstico do módulo.
+- **Nível de partida:** zero em tudo, de propósito, como nível padrão para qualquer pessoa usar o plano. O Módulo 1 ensina terminal, Git e Docker do zero; os módulos seguintes contam com isso. Quem já conhece um assunto passa rápido por ele no diagnóstico do módulo.
+- **Python fica no PyQA:** a linguagem é estudada à parte, no repositório [PyQA](https://github.com/mauriciofeoli/pyqa), só com documentação oficial e foco em QA. Aqui o Python é ferramenta dos projetos, não assunto de aula. Os projetos que usam Python dizem até onde o PyQA precisa estar.
 - **Ordem:** prática antes da teoria profunda. Você constrói com APIs e agentes (módulos 5 a 14) antes de estudar matemática e redes neurais (Módulo 17), porque a teoria fica mais clara depois de ver o modelo errar na prática. Os módulos de DevOps e cloud entram logo antes do módulo de IA que precisa deles.
 - **Ritmo livre:** não há prazo nem meta de velocidade (veja "Ritmo").
 - **Regra 70/30:** 70% do tempo construindo, 30% assistindo ou lendo.
@@ -23,7 +24,7 @@ Um plano só, com 21 módulos numa ordem única. Cada módulo pertence a uma ár
 
 | Área | Módulos | O que cobre |
 | --- | --- | --- |
-| Base | 1 | Terminal, Python, Git, HTTP, Docker e SQL do zero |
+| Base | 1 | Terminal, Git, HTTP, Docker e SQL do zero |
 | IA | 3, 5, 7, 9, 11, 14, 17, 18, 19, 20 | Prompt, APIs, RAG, agentes, evals, fundamentos de ML, modelos abertos, multimodal, segurança |
 | DevOps | 2, 4, 6, 8, 10, 16 | Linux, redes, Git e scripting, Docker, CI/CD, observabilidade e SRE |
 | Cloud | 12, 13, 15 | AWS, Terraform, Kubernetes |
@@ -35,7 +36,7 @@ A ordem abaixo é a ordem de estudo. Um módulo só começa quando o anterior es
 
 | Módulo | Área | Tema | Estimativa | Por que aqui |
 | --- | --- | --- | --- | --- |
-| 1 | Base | Base técnica | 6 sem | Ponto de partida: terminal, Python, Git, HTTP e Docker do zero |
+| 1 | Base | Base técnica | 6 sem | Ponto de partida: terminal, Git, HTTP e Docker do zero |
 | 2 | DevOps | Linux e terminal | 3 sem | Aprofunda o terminal do Módulo 1 enquanto está fresco; servidores e agentes rodam em Linux |
 | 3 | IA | Prompt e uso avançado | 4 sem | Não depende de infraestrutura e traz IA logo no começo |
 | 4 | DevOps | Redes | 2 sem | Prepara o Módulo 5: chamar APIs exige entender DNS, HTTPS, portas e timeouts |
@@ -100,23 +101,21 @@ O Módulo 21 concentra a parte de QA, mas o tema aparece antes, e o seu conhecim
 
 ## Módulo 1: Base técnica (Base, 6 semanas)
 
-Objetivo: ter a caixa de ferramentas de quem constrói com IA, partindo do zero. Por padrão, o plano não supõe experiência prévia em programação, Python, Git ou Docker; quem já conhece um assunto passa rápido por ele. O conhecimento de QA entra como ponte nos exemplos (testar uma API, achar bug, pensar em cenários), mas nenhuma ferramenta é tida como conhecida.
+Objetivo: ter a caixa de ferramentas de quem constrói com IA, partindo do zero. Por padrão, o plano não supõe experiência prévia em programação, Git ou Docker; quem já conhece um assunto passa rápido por ele. O conhecimento de QA entra como ponte nos exemplos (testar uma API, achar bug, pensar em cenários), mas nenhuma ferramenta é tida como conhecida.
 
 **Tópicos (nesta ordem; cada um só começa quando o anterior estiver firme)**
 
 1. **Terminal básico:** o que é o terminal, abrir, navegar entre pastas, criar e apagar arquivos, rodar comandos, ler mensagens de erro. Aprofundado no Módulo 2.
-2. **Python do zero:** instalar e rodar, variáveis, texto, números, listas e dicionários, `if`, `for`, funções, ler e escrever arquivos, erros e `try/except`.
-3. **Git e GitHub básico:** o que é versionar, `init`, `add`, `commit`, `push`, ler o histórico, branches, pull request. Aprofundado no Módulo 6.
-4. **Python para IA:** ambientes virtuais (`uv`, venv), instalar bibliotecas, JSON e CSV, variáveis de ambiente e segredos (`.env`), tipagem, dataclasses e Pydantic, `async/await`.
-5. **HTTP e APIs:** o que é uma API, métodos, status, headers, autenticação por chave, JSON e XML (ler, escrever e comparar os dois formatos), paginação, rate limit, retries com backoff, webhooks; ler o contrato OpenAPI de uma API pública e testá-la pelo Swagger UI. O lado de redes e servidor vem no Módulo 4.
-6. **Docker:** o que é um container, imagens, volumes, `docker compose` (vai rodar n8n, bancos vetoriais e modelos locais). Dockerfile próprio e boas práticas vêm no Módulo 8.
-7. **SQL básico:** `SELECT`, `JOIN`, `GROUP BY`; base para bancos vetoriais como o pgvector.
-8. **Jupyter Notebooks:** para experimentos rápidos.
-9. **TypeScript (opcional):** a segunda linguagem do AI engineer, útil para interfaces e agentes em Node. Fica a seu critério.
+2. **Git e GitHub básico:** o que é versionar, `init`, `add`, `commit`, `push`, ler o histórico, branches, pull request. Aprofundado no Módulo 6.
+3. **HTTP e APIs:** o que é uma API, métodos, status, headers, autenticação por chave, JSON e XML (ler, escrever e comparar os dois formatos), paginação, rate limit, retries com backoff, webhooks; ler o contrato OpenAPI de uma API pública e testá-la pelo Swagger UI. O lado de redes e servidor vem no Módulo 4.
+4. **Docker:** o que é um container, imagens, volumes, `docker compose` (vai rodar n8n, bancos vetoriais e modelos locais). Dockerfile próprio e boas práticas vêm no Módulo 8.
+5. **SQL básico:** `SELECT`, `JOIN`, `GROUP BY`; base para bancos vetoriais como o pgvector.
+6. **Jupyter Notebooks:** para experimentos rápidos.
+7. **TypeScript (opcional):** a segunda linguagem do AI engineer, útil para interfaces e agentes em Node. Fica a seu critério.
 
-**Fontes gratuitas:** Kaggle Learn (Python, Pandas, SQL); tutorial oficial do Python em português (docs.python.org/pt-br/3/tutorial); documentação do `uv` (docs.astral.sh/uv); documentação do Git (git-scm.com/book/pt-br) e do Docker (docs.docker.com/get-started).
+**Fontes gratuitas:** Kaggle Learn (SQL); documentação do Git (git-scm.com/book/pt-br) e do Docker (docs.docker.com/get-started).
 
-**Projeto:** um script em Python que consome uma API pública, trata erros e retries, e salva o resultado em JSON, rodando dentro de um container Docker.
+**Projeto:** um script em Python que consome uma API pública, trata erros e retries, e salva o resultado em JSON, rodando dentro de um container Docker. Pré-requisito: PyQA até o Módulo 9 (biblioteca padrão para QA).
 
 **Pronto quando:** você sobe um serviço com docker compose e escreve um cliente HTTP robusto sem consultar tutorial.
 
@@ -248,8 +247,6 @@ Objetivo: trabalhar como numa equipe de engenharia: histórico limpo, branches, 
 
 - **Git do dia a dia** (além do básico do Módulo 1): branches e `merge`, conflitos e como resolver, `rebase` simples, `git stash`, desfazer com segurança (`restore`, `revert`, `reset`), `.gitignore`, tags de versão.
 - **GitHub:** pull request com revisão, issues, proteção da branch `main`, mensagens de commit claras.
-- **Python para automação:** ler argumentos (`argparse`), variáveis de ambiente, chamar comandos do sistema (`subprocess`), ler e escrever JSON e CSV, chamar APIs (`requests` ou `httpx`), logs com `logging`.
-- **Testes do próprio script:** `pytest` para funções de automação; o seu lado QA entra aqui.
 - **Bash ou Python:** Bash para colar comandos curtos; Python quando houver lógica, dados ou testes.
 - **Uma API pequena:** o que é um endpoint, FastAPI ou Flask para expor dados por HTTP.
 - **Documentação da API com OpenAPI:** o contrato OpenAPI (antigo Swagger) gerado pelo FastAPI, com descrições, exemplos de requisição e resposta e códigos de status; Swagger UI e ReDoc; exportar o `openapi.json`.
@@ -258,10 +255,9 @@ Objetivo: trabalhar como numa equipe de engenharia: histórico limpo, branches, 
 
 - Pro Git em português (git-scm.com/book/pt-br).
 - GitHub Skills (skills.github.com): cursos práticos dentro do próprio GitHub.
-- "Automate the Boring Stuff with Python" (automatetheboringstuff.com), gratuito para ler online.
-- Documentação do pytest e do FastAPI (fastapi.tiangolo.com/pt).
+- Documentação do FastAPI (fastapi.tiangolo.com/pt).
 
-**Projeto:** `painel-testes` (início do projeto principal). Uma API pequena em Python que registra e lista execuções de teste (nome da suíte, quantos passaram, quantos falharam, duração), com testes em `pytest`, desenvolvida com branches e pull requests. Junto, um script que lê um relatório JUnit XML e envia os resultados para a API. A API sai documentada em OpenAPI, com Swagger UI no ar e o `openapi.json` versionado no repositório.
+**Projeto:** `painel-testes` (início do projeto principal). Uma API pequena em Python que registra e lista execuções de teste (nome da suíte, quantos passaram, quantos falharam, duração), com testes em `pytest`, desenvolvida com branches e pull requests. Junto, um script que lê um relatório JUnit XML e envia os resultados para a API. A API sai documentada em OpenAPI, com Swagger UI no ar e o `openapi.json` versionado no repositório. Pré-requisito: PyQA até o Módulo 11 (pytest).
 
 **Pronto quando:** você resolve um conflito de merge sem medo, abre um PR com descrição e testes, documenta cada endpoint no Swagger com exemplo e códigos de resposta, e automatiza em Python uma tarefa que antes fazia à mão.
 

@@ -15,7 +15,9 @@ python veredito.py
 
 ## Módulo 1: Base técnica
 
-### Python do zero
+### Python do zero (histórico)
+
+Estes exercícios foram feitos antes de o Python sair deste plano. O estudo de Python continua, do zero, no [PyQA](https://github.com/mauriciofeoli/pyqa).
 
 | Arquivo | Conceito praticado |
 | --- | --- |

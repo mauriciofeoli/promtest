@@ -12,7 +12,7 @@
 
 ## Objetivo
 
-Ganhar habilidade prática e aprender os fundamentos principais de IA, do básico ao avançado. É um plano único de 21 módulos, cada um de uma área: Base, IA, DevOps (Linux, redes, Docker, CI/CD, observabilidade), Cloud (AWS, Terraform, Kubernetes) e QA. Os módulos se alternam para que cada um prepare o seguinte, e o último aplica tudo em qualidade de software.
+Ganhar habilidade prática e aprender os fundamentos principais de IA, do básico ao avançado. É um plano único de 21 módulos, cada um de uma área: Base, IA, DevOps (Linux, redes, Docker, CI/CD, observabilidade), Cloud (AWS, Terraform, Kubernetes) e QA. Os módulos se alternam para que cada um prepare o seguinte, e o último aplica tudo em qualidade de software. Python é estudado à parte, no [PyQA](https://github.com/mauriciofeoli/pyqa).
 
 Três regras guiam o caminho:
 
@@ -22,16 +22,16 @@ Três regras guiam o caminho:
 
 ## Progresso
 
-Cada módulo tem um projeto próprio e só termina quando ele está pronto. A coluna "Tópicos" mostra o tamanho de cada assunto, com a contagem entre parênteses: são 185 no total.
+Cada módulo tem um projeto próprio e só termina quando ele está pronto. A coluna "Tópicos" mostra o tamanho de cada assunto, com a contagem entre parênteses: são 181 no total.
 
 | Módulo | Área | Tema | Tópicos | Status |
 | --- | --- | --- | --- | --- |
-| 1 | Base | **Base técnica** | (9) Terminal básico · Python do zero · Git e GitHub · Python para IA · HTTP e APIs · Docker · SQL básico · Jupyter Notebooks · TypeScript (opcional) | Em andamento (1 de 9) |
+| 1 | Base | **Base técnica** | (7) Terminal básico · Git e GitHub · HTTP e APIs · Docker · SQL básico · Jupyter Notebooks · TypeScript (opcional) | Em andamento (1 de 7) |
 | 2 | DevOps | **Linux e terminal** | (8) WSL2 e Bash · Sistema de arquivos · Permissões · Processos · Pacotes · Logs · SSH · Scripts Bash e cron | Não iniciado |
 | 3 | IA | **Prompt e uso avançado** | (13) Como um LLM funciona · Modelo, ferramenta e agente · Famílias de modelos · Anatomia do prompt · Zero-shot e few-shot · Chain-of-thought · Encadeamento de prompts · Tags XML e saída em JSON · Grounding e citações · Autocrítica · Meta-prompting · Recursos de Claude, ChatGPT e Gemini · Uso responsável | Não iniciado |
 | 4 | DevOps | **Redes** | (7) TCP/IP e sub-redes · Portas · DNS · HTTP e HTTPS · Load balancer · Firewall · Diagnóstico | Não iniciado |
 | 5 | IA | **APIs de modelos** | (11) APIs da Anthropic, OpenAI e Gemini · SDKs e chaves · Streaming · Saídas estruturadas · Tool use · Entradas multimodais · Raciocínio estendido · Caching e batch · Custo, limites e retries · Interfaces com Streamlit e Gradio · Bibliotecas multiprovedor | Não iniciado |
-| 6 | DevOps | **Git e scripting** | (7) Git do dia a dia · GitHub e pull requests · Python para automação · Testes com pytest · Bash ou Python · API com FastAPI · Documentação com OpenAPI (Swagger) | Não iniciado |
+| 6 | DevOps | **Git e scripting** | (5) Git do dia a dia · GitHub e pull requests · Bash ou Python · API com FastAPI · Documentação com OpenAPI (Swagger) | Não iniciado |
 | 7 | IA | **RAG e dados** | (10) Embeddings · Ingestão · Chunking · Bancos vetoriais · Busca híbrida e reranking · Técnicas avançadas · Agentic RAG · Contexto longo x RAG · Avaliação de RAG · LlamaIndex e LangChain | Não iniciado |
 | 8 | DevOps | **Docker** | (6) Imagens e containers · Dockerfile · Boas práticas · Volumes e redes · docker-compose · Segurança da imagem | Não iniciado |
 | 9 | IA | **Agentes, MCP e OpenClaw** | (12) Loop agêntico · Workflow x agente · Planejamento e ReAct · Memória e contexto · Multiagentes · Humano no circuito · Computer use · MCP · A2A · Skills · Frameworks (Claude Agent SDK, OpenAI Agents SDK, LangGraph, CrewAI) · OpenClaw | Não iniciado |

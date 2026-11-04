@@ -11,8 +11,8 @@ O tutor lê este arquivo no início de cada sessão e o atualiza no fim.
 ## Onde paramos
 
 - **Módulo atual:** 1. Base técnica (Base), de 21 no roteiro
-- **Tópico atual:** Python do zero (em andamento)
-- **Próximo passo:** fechar dicionários (`for` com `.items()`, lista de dicionários); depois Exercício 3 de funções (`mostrar_bug` em `funcoes.py`), `return`, arquivos e `try/except`. Feitos: variáveis, tipos, f-string, conversão, `input()`, listas, `if`/`elif`/`else`, `for` com contador, o básico de dicionários, `in` e `.get()`.
+- **Tópico atual:** Git e GitHub básico (não iniciado)
+- **Próximo passo:** começar Git e GitHub básico. Python saiu deste plano e segue do zero no PyQA.
 - **Próximo módulo:** 2. Linux e terminal (DevOps)
 - **Última sessão:** [[2026-11-03]] (2ª do dia, 15 min). `in` e `.get()` com valor reserva; previsão 5/6 em `dicionario.py`.
 - **Ver também:** [[plano]] | [[duvidas]]
@@ -61,9 +61,7 @@ Status possíveis: Não iniciado, Em andamento, Concluído.
 ## Tópicos do módulo atual (Módulo 1)
 
 - [x] Terminal básico
-- [ ] Python do zero (variáveis, listas, if, for, funções, arquivos, erros)
 - [ ] Git e GitHub básico
-- [ ] Python para IA (uv, .env, JSON, Pydantic, async)
 - [ ] HTTP e APIs (status, headers, JSON e XML, OpenAPI e Swagger UI, retries, webhooks)
 - [ ] Docker e docker compose
 - [ ] SQL básico
@@ -77,6 +75,7 @@ Mais recente primeiro. Detalhes de cada sessão ficam em `sessoes/`.
 
 | Data | Módulo | Tópico | Resumo | Nota |
 | --- | --- | --- | --- | --- |
+| 2026-11-03 | 1 | Reorganização | Python saiu do PromTest (tópicos "Python do zero", "Python para IA" e os de Python do Módulo 6) e passou a ser estudado do zero no PyQA. As sessões de Python abaixo ficam como histórico | - |
 | 2026-11-03 | 1 | Python do zero | Sessão curta (15 min): `in` só olha chaves, `.get()` com `None` e valor reserva; previsão 5/6 (errou o `.get()` de chave que existe) e explicou o acerto com as próprias palavras | [[2026-11-03]] |
 | 2026-11-03 | 1 | Python do zero | Revisão 3/3; dicionários: ler com `d["chave"]`, trocar valor, criar chave nova, `len()`, `KeyError`; comparação com environment do Postman; explicação de `def` e parâmetros (exercício fica para a próxima) | [[2026-11-03]] |
 | 2026-10-28 | 1 | Python do zero | Revisão 3/3; `for` sobre listas, contador `total = total + 1`, `if` dentro do `for`; `contagem.py` com previsão certa; travou com tudo junto e destravou em passos | [[2026-10-28]] |
